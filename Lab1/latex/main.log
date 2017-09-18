@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,16 +989,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 84.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 103.
 
@@ -1016,7 +1012,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
@@ -1026,11 +1026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
@@ -1075,16 +1071,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 182.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 182.
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 187.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 187.
-[3] <hilo.png, id=76, 663.47874pt x 183.68625pt>
+<hilo.png, id=76, 663.47874pt x 183.68625pt>
 File: hilo.png Graphic file (type png)
  <use hilo.png>
 Package pdftex.def Info: hilo.png used on input line 196.
@@ -1111,14 +1107,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  packages /
  []
 
-
-Underfull \vbox (badness 3019) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
- [4 <./hilo.png>])
+[4 <./hilo.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 229.
 Package babel Info: Redefining portuges shorthand "|
@@ -1134,13 +1127,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 18619 strings out of 493089
- 340156 string characters out of 6134841
+ 18620 strings out of 493089
+ 340170 string characters out of 6134841
  420140 words of memory out of 5000000
- 21721 multiletter control sequences out of 15000+600000
+ 21722 multiletter control sequences out of 15000+600000
  22891 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,56p,484b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,10n,56p,438b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
@@ -1150,7 +1143,7 @@ ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 118264 bytes).
+Output written on main.pdf (5 pages, 120860 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams

@@ -76,28 +76,28 @@ Para compilar código C em código Assembly foi utilizado o cross compiler \cite
 Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores x86. Todas as diretivas começam com (.) (ASCII 0x2E). Elas permitem a alocação de espaço para a declaração de variáveis " .byte, .word ", definição de escopo " .glob1 ", além de várias outras funções de gerenciamento como as listadas a seguir:
 
 \begin{itemize}
-\item .file \textit{string} : Cria uma tabela de símbolos de entrada onde a \textit{string} é o nome do símbolo e \textit{STT_FILE} é o tipo deste símbolo, a \textit{string} especifica o nome do arquivo fonte associado ao arquivo objeto.
-\item .section : Texto que segue é montado na seção nomeada. 
+	
+\item .file \textit{string} : Cria uma tabela de símbolos de entrada onde a \textit{string} é o nome do símbolo e \textit{STT\_FILE} é o tipo deste símbolo, a \textit{string} especifica o nome do arquivo fonte associado ao arquivo objeto.
+\item .section \textit{section}, \textit{attributes} : \textit{Section} é montado como seção atual. \textit{Attributes} é incluso se for a primeira vez que \textit{.section} é especificado.
 \item .mdebug : Força a saída de depuração para entrar em uma seção .mdebug de estilo ECOFF em vez das seções padrão ELF .stabs.
 \item .previous : Troca esta seção pela que foi referenciada recentemente.
-\item .nan : 3
-\item .gnu\_attribute : 4
-\item .globl : Torna símbolo visível ao ligador, aumentando seu escopo.
-\item .data : O que seguir a partir desse ponto deve ser alocado na seção .data - Dados. 
-\item .type : Atribui tipo ao símbolo, função ou objeto.
-\item .size : Resolve expressão e atribui tamanho em bytes ao símbolo.
+\item .nan : Esta diretiva diz qual codificação \textit{MIPS} será usada para ponto flutuante IEEE 754. A primeira, padrão \textit{2008}, diz para o montador utilizar a codificação IEEE 754-2008, enquando a \textit{legacy} utiliza a codificação original do \textit{MIPS}.
+\item .gnu\_attribute \textit{tag}, \textit{value} : Grava um atributo objeto \textit{gnu} para este arquivo.
+\item .globl \textit{symbol1, symbol2, ..., symbolN}: Torna global cada símbolo da lista. A diretiva torna o símbolo global no escopo mas não declara o símbolo.
+\item .data : Muda a seção atual para \textit{.data} (dados estáticos do programa).
+\item .type \textit{symbol[, symbol, ..., symbol], type[, visibility]}: Atribui tipo ao símbolo, podendo ser do tipo função, objeto, sem tipo e um objeto \textit{TLS (Thread Local Storage)}.
+\item .size \textit{symbol, expr}: Resolve expressão e atribui tamanho em bytes ao \textit{symbol}.
 \item .word : Armazena o valor listado como palavras de 32 bits no limite.
-\item .rdata : 5
-\item .align : Ajusta o contador de locação para um valor multiplo de 2.
-\item .ascii : Aloca espaço para cadeias sem o barra zero.
-\item .text : O que seguir deve ser alocado na seção .text - Codigo.
-\item .ent : Primeira instrução de "entrada" no código. Primeira instrução da função.
-\item .frame : O frame não é descrito no manual.
-\item .set : Resolve expressão e atribui valor ao símbolo.
-\item .mask : Mascaras no registradores usados no código.
-\item .fmask : Mascaras no registradores usados no código.\\
+\item .rdata : Adiciona dados apenas de leitura.
+\item .align \textit{integer} : Ajusta o contador de locação para um valor múltiplo de 2.
+\item .ascii "\textit{string}" : Aloca espaço para cadeias de caracteres sem o "\textit{$\backslash$0}".
+\item .text : Muda a seção atual para \textit{.text} (instruções).
+\item .ent \textit{name[,label]} : Marca o começo da função \textit{name}.
+\item .frame : Descreve o quadro da pilha usada para chamar a função principal(\textit{main}).
+\item .set \textit{symbol, expression}: Resolve a expressão (\textit{expression}) e atribui o valor ao símbolo (\textit{symbol}).
+\item .mask \textit{mask offset} : Configura uma máscara que indica quais registradores de uso geral foram salvos na rotina atual. Esses valores são usados pelo montador para gerar a seção \textit{.reginfo} do arquivo objeto dos processadores \textit{MIPS}. 
+\item .fmask \textit{mask offset} : Configura uma máscara informando os registradores de ponto flutuante que a rotina atual salvou. Esses valores são usados pelo montador para gerar a seção \textit{.reginfo} do arquivo objeto dos processadores \textit{MIPS}.
 
-As diretivas .mask e .fmask através de seus valores indicam quais registradores são usados, por exemplo se o bit 13 estiver ativo então o registrador 13 esta sendo usado. Esses valores são usados pelo ligador para gerar a seção .reginfo do arquivo objeto dos processadores MIPS. A diferença entre .mask e .fmask é que a .mask indica quais registradores de inteiros estão sendo usados, quanto ao .fmask indica quais registradores float estão sendo usados.
 \end{itemize}
 
 \subsubsection{Assembly no MARS}
