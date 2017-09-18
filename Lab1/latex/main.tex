@@ -73,7 +73,8 @@ Para compilar código C em código Assembly foi utilizado o cross compiler \cite
 \subsubsection{Diretivas}
 \label{subsubsec:diretivas}
 
-Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores x86. Todas as diretivas começam com (.) (ASCII 0x2E). Elas permitem a alocação de espaço para a declaração de variáveis " .byte, .word ", definição de escopo " .glob1 ", além de várias outras funções de gerenciamento como as listadas a seguir:
+Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores \textit{x86}. Todas as diretivas começam com (.) (\textit{ASCII 0x2E}). Elas permitem a alocação de espaço para a declaração de variáveis " \textit{.byte}, \textit{.word} ", definição de escopo " \textit{.glob1} ", além de várias outras funções de gerenciamento como as listadas a seguir (as informações abaixo foram encontradas usando as fontes \cite{mips1}, \cite{mips2-1}, \cite{mips2-2}, \cite{mips2-3}, \cite{mips3}, 
+\cite{mips4}, \cite{mips5} e \cite{mips6} ):
 
 \begin{itemize}
 	
@@ -103,7 +104,7 @@ Diretivas são apenas comandos ao montador e não fazem parte do conjunto de ins
 \subsubsection{Assembly no MARS}
 \label{subsubsec:atomars}
 
-Algumas diretivas listadas acima não são reconhecidas pelo MARS (Mips Assembly and Runtime Simulator), como por exemplo \textit{.section, .previous, . nan, etc}, assim como alguns elementos como \textit{@object, @function, etc}. Logo, as seguintes instruções foram retiradas:
+Algumas diretivas listadas acima não são reconhecidas pelo \textit{MARS (Mips Assembly and Runtime Simulator)}, como por exemplo \textit{.section, .previous, . nan, etc}, assim como alguns elementos como \textit{@object, @function, etc}. Logo, as seguintes instruções foram retiradas:
 
 \begin{itemize}
 \item @object\\
