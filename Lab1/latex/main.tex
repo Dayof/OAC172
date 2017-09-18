@@ -190,8 +190,8 @@ Algumas diretivas listadas acima não são reconhecidas pelo \textit{MARS (Mips 
   \end{itemize}
 \end{itemize}
 
-Há também outras instruções que o simulador emitiu alertas, como por exemplo sobre \textit{.align} não poder estar dentro de um segmento de texto, portanto todos \textit{.align} dentro de subrotinas foram retirados.
-`x
+Há também outras instruções que o simulador emitiu alertas, como por exemplo sobre o \textit{.align} não poder estar dentro de um segmento de texto. Portanto todos \textit{.align} dentro de subrotinas foram retirados.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{hilo.png}
@@ -199,7 +199,7 @@ Há também outras instruções que o simulador emitiu alertas, como por exemplo
 	\label{fig:hilo}
 \end{figure}
 
-Os construtores \%hi() e \%lo() também não estão presentes em todos montadores MIPS, podendo ser substituídos como mostra a Figura~\ref{fig:hilo}. As seguintes instruções foram trocadas :
+Os construtores \%hi() e \%lo() também não estão presentes em todos montadores MIPS, podendo ser substituídos como mostra a Figura~\ref{fig:hilo}. Logo, as seguintes instruções foram trocadas :
 
 \begin{itemize}
 	\item lui \$v1,\%hi(\$LC0) e addiu \$a0,\$v1,\%lo(\$LC0) : la \$a0, \$LC0
@@ -210,7 +210,7 @@ Outro problema encontrado foi na instrução \textit{j \$31, ou seja, j \$ra}. A
 
 Algumas subrotinas como \textit{printf e putchar} não são encontradas no assembly gerado mas são chamadas com a instrução \textit{jal}, portanto estas também foram retiradas.
 
-Por fim, mesmo após estas modificações básicas de sintaxe para que o código possa ser executado no MARS, ainda assim o código possui o fluxo um pouco confuso, já que após o primeiro \textit{loop} ele já iria sair do processo com a instrução \textit{li \$a0, 10} que chama o serviço \textit{exit (terminate execution)}.
+Por fim, mesmo após estas modificações básicas de sintaxe para que o código possa ser executado no MARS, ainda assim o código possui o fluxo um pouco confuso, já que após o primeiro \textit{loop} ele já iria sair do processo com a instrução \textit{li \$a0, 10} que chama o serviço \textit{exit (terminate execution)}. Portanto, algumas modificações foram realizadas para que o fluxo deste programa se inicie no \textit{main}, chame as subrotinas \textit{show} e \textit{sort} e encerre no final da subrotina \textit{main}.
 
 \subsubsection{Otimização do código Assembly}
 \label{subsubsec:ot}
