@@ -1,0 +1,229 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage[brazil,american]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{todonotes}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+     
+\sloppy
+
+\title{Laboratório 1\\- Assembly MIPS –}
+
+\author{Dayanne Fernandes da Cunha, 13/0107191}
+
+\address{Dep. Ciência da Computação -- Universidade de Brasília (UnB)\\
+  CiC 116394 - OAC - Turma A
+  \email{}
+}
+
+\begin{document} 
+\maketitle
+
+\selectlanguage{american}
+ \begin{abstract}
+	This report corresponds to the Experiment 1 about Assembly MIPS.
+ \end{abstract}
+\selectlanguage{brazil}     
+ \begin{resumo} 
+	Este relatório corresponde ao Experimento 1 sobre Assembly MIPS.
+ \end{resumo}
+
+\section{Introdução}
+\label{sec:Introducao}
+
+\subsection{Objetivos}
+\label{sec:Objetivos}
+
+\begin{itemize}
+\item Familiarizar o aluno com o Simulador/Montador MARS;
+\item Desenvolver a capacidade de codificação de algoritmos em linguagem Assembly MIPS;
+\item Desenvolver a capacidade de análise de desempenho de algoritmos em Assembly;
+\end{itemize}
+
+\subsection{Ferramentas} 
+\label{sec:Materiais}
+
+\begin{itemize}
+\item MARS v.4.5 Custom 7
+\item Cross compiler MIPS GCC
+\item Inkscape e GIMP
+\end{itemize}
+
+\section{Procedimentos}
+\label{sec:Procedimentos}
+
+\subsection{Simulador/Montador MARS}
+\label{subsec:mars}
+
+\subsection{Compilador GCC}
+\label{subsec:comp}
+
+Para compilar código C em código Assembly foi utilizado o cross compiler \cite{MIPS} GCC. Usando o comando \$ mips-elf-gcc -I../include -S testeX.c (X $\in$ [0,8]) foi testado a convenção para geração do código Assembly.
+
+\subsubsection{Diretivas}
+\label{subsubsec:diretivas}
+
+Diretivas do compilador são apenas comandos ao montador e não fazem parte do conjunto de instruções de nenhum processador, mas são elas que permitem a alocação de espaço para a declaração de variáveis " .byte, .word ", definição de escopo " .glob1 ", além várias outras funções de gerenciamento. 
+
+\begin{itemize}
+\item .file  --  1
+\item .section  -- Texto que segue é montado na seção nomeada. 
+\item .mdebug  -- Força a saída de depuração para entrar em uma seção .mdebug de estilo ECOFF em vez das seções padrão ELF .stabs.
+\item .previous  -- Troca esta seção pela que foi referenciada recentemente.
+\item .nan -- 3
+\item .gnu\_attribute -- 4
+\item .globl -- Torna símbolo visível ao ligador, aumentando seu escopo.
+\item .data -- O que seguir a partir desse ponto deve ser alocado na seção .data - Dados. 
+\item .type  -- Atribui tipo ao símbolo, função ou objeto.
+\item .size  -- Resolve expressão e atribui tamanho em bytes ao símbolo.
+\item .word -- Armazena o valor listado como palavras de 32 bits no limite.
+\item .rdata  -- 5
+\item .align  -- Ajusta o contador de locação para um valor multiplo de 2.
+\item .ascii  -- Aloca espaço para cadeias sem o barra zero.
+\item .text  -- O que seguir deve ser alocado na seção .text - Codigo.
+\item .ent  -- Primeira instrução de "entrada" no código. Primeira instrução da função.
+\item .frame  -- O frame não é descrito no manual.
+\item .set  -- Resolve expressão e atribui valor ao símbolo.
+\item .mask  -- Mascaras no registradores usados no código.
+\item .fmask  -- Mascaras no registradores usados no código.\\
+
+As diretivas .mask e .fmask através de seus valores indicam quais registradores são usados, por exemplo se o bit 13 estiver ativo então o registrador 13 esta sendo usado. Esses valores são usados pelo ligador para gerar a seção .reginfo do arquivo objeto dos processadores MIPS. A diferença entre .mask e .fmask é que a .mask indica quais registradores de inteiros estão sendo usados, quanto ao .fmask indica quais registradores float estão sendo usados.
+\end{itemize}
+
+\subsubsection{Assembly no MARS}
+\label{subsubsec:atomars}
+
+Algumas diretivas listadas acima não são reconhecidas pelo MARS (Mips Assembly and Runtime Simulator), como por exemplo \textit{.section, .previous, . nan, etc}, assim como alguns elementos como \textit{@object, @function, etc}. Logo, as seguintes instruções foram retiradas:
+
+\begin{itemize}
+\item @object\\
+  \begin{itemize}
+  \item .type v, @object
+  \end{itemize}
+ \item @function\\
+  \begin{itemize}
+  \item .type show, @function
+  \item .type swap, @function
+  \item .type sort, @function
+  \item .type main, @function
+  \end{itemize}
+\item .section\\
+  \begin{itemize}
+  \item .section .mdebug.abi32
+  \end{itemize}
+\item .previous\\
+  \begin{itemize}
+  \item .previous
+  \end{itemize}
+\item .nan\\
+  \begin{itemize}
+  \item .nan legacy
+  \end{itemize}
+\item .gnu\_attribute\\
+  \begin{itemize}
+  \item .gnu\_attribute 4, 1
+  \end{itemize}
+\item .size\\
+  \begin{itemize}
+  \item .size v, 40
+  \item .size show, .-show
+  \item .size swap, .-swap
+  \item .size sort, .-sort
+  \item .size	main, .-main
+  \end{itemize}
+\item .rdata\\
+  \begin{itemize}
+  \item .rdata
+  \end{itemize}
+\item .set\\
+  \begin{itemize}
+  \item .set nomips16
+  \item .set nomicromips
+  \item .set noreorder
+  \item .set nomacro
+  \item .set reorder
+  \item .set macro
+  \end{itemize}
+\item .ent\\
+  \begin{itemize}
+  \item .ent show
+  \item .ent swap
+  \item .ent sort
+  \item .ent main
+  \end{itemize}
+\item .frame\\
+  \begin{itemize}
+  \item .frame \$fp,24,\$31 \# vars= 0, regs= 2/0, args= 16, gp= 0
+  \item .frame \$fp,32,\$31 \# vars= 8, regs= 2/0, args= 16, gp= 0
+  \item .frame \$fp,16,\$31 \# vars= 8, regs= 1/0, args= 0, gp= 0
+  \item .frame \$fp,32,\$31 \# vars= 8, regs= 2/0, args= 16, gp= 0
+  \end{itemize}
+\item .mask\\
+  \begin{itemize}
+  \item .mask	0xc0000000,-4
+  \end{itemize}
+\item .fmask\\
+  \begin{itemize}
+  \item .fmask	0x00000000,0
+  \end{itemize}
+\item .end\\
+  \begin{itemize}
+  \item .end swap
+  \item .end sort
+  \item .end main
+  \item .end show
+  \end{itemize}
+\item .ident\\
+  \begin{itemize}
+  \item .ident "GCC: (GNU) 4.8.1"
+  \end{itemize}
+\end{itemize}
+
+Há também outras instruções que o simulador emitiu alertas, como por exemplo sobre \textit{.align} não poder estar dentro de um segmento de texto, portanto a diretiva \textit{.text} foi colocada após o \textit{label} \textit{\$LC0} e as diretivas \textit{.align} dentro de subrotinas foram removidas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{hilo.png}
+	\caption{Instruções equivalentes dos construtores \%hi() e \%lo().}
+	\label{fig:hilo}
+\end{figure}
+
+Os construtores \%hi() e \%lo() também não estão presentes em todos montadores MIPS, podendo ser substituídos como mostra a Figura~\ref{fig:hilo}. Portanto as seguintes instruções foram trocadas :
+
+\begin{itemize}
+	\item lui \$v1,\%hi(\$LC0) e addiu \$a0,\$v1,\%lo(\$LC0) : la \$a0, \$LC0
+    \item lui \$v0,\%hi(v) e addiu \$a0,\$v0,\%lo(v) : la \$a0, v
+\end{itemize}
+
+Outro problema encontrado foi na instrução \textit{j \$31, ou seja, j \$ra}. A instrução \textit{j} pula para um endereço alvo, e \$ra é um registrador, portanto esta instrução foi substituída por \textit{jr \$ra}.
+
+Algumas subrotinas como \textit{printf e putchar} não são encontradas no assembly gerado mas são chamadas com a instrução \textit{jal}, portanto estas também foram retiradas.
+
+Por fim, mesmo após estas modificações básicas de sintaxe para que o código possa ser executado no MARS, ainda assim o código possui o fluxo um pouco confuso, já que após o primeiro \textit{loop} ele já iria sair do processo com a instrução \textit{li \$a0, 10} que chama o serviço \textit{exit (terminate execution)}.
+
+\subsubsection{Otimização do código Assembly}
+\label{subsubsec:ot}
+
+\subsection{Sprites}
+\label{subsec:sprites}
+
+\section{Análise dos Resultados}
+\label{sec:Resultados}
+
+\section{Conclusão}
+\label{sec:Conclusao}
+
+\bibliographystyle{sbc}
+\bibliography{relatorio}  
+
+\end{document}

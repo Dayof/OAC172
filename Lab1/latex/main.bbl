@@ -1,0 +1,8 @@
+\begin{thebibliography}{}
+
+\bibitem[MIPS ]{MIPS}
+MIPS.
+\newblock \url{ https://aur.archlinux.org/packages/cross-mips-elf-gcc/ }.
+\newblock [Online; acessado 15-Setembro-2017].
+
+\end{thebibliography}
