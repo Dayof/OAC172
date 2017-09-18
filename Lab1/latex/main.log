@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,9 +989,9 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 86.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1112,7 +1112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  []
 
 
-Underfull \vbox (badness 3907) has occurred while \output is active []
+Underfull \vbox (badness 3019) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
@@ -1134,13 +1134,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 18617 strings out of 493089
- 340135 string characters out of 6134841
- 420062 words of memory out of 5000000
- 21720 multiletter control sequences out of 15000+600000
+ 18619 strings out of 493089
+ 340156 string characters out of 6134841
+ 420140 words of memory out of 5000000
+ 21721 multiletter control sequences out of 15000+600000
  22891 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,56p,484b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,10n,56p,484b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
@@ -1150,10 +1150,10 @@ ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 116792 bytes).
+Output written on main.pdf (5 pages, 118264 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

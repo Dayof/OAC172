@@ -73,29 +73,29 @@ Para compilar código C em código Assembly foi utilizado o cross compiler \cite
 \subsubsection{Diretivas}
 \label{subsubsec:diretivas}
 
-Diretivas do compilador são apenas comandos ao montador e não fazem parte do conjunto de instruções de nenhum processador, mas são elas que permitem a alocação de espaço para a declaração de variáveis " .byte, .word ", definição de escopo " .glob1 ", além várias outras funções de gerenciamento. 
+Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores x86. Todas as diretivas começam com (.) (ASCII 0x2E). Elas permitem a alocação de espaço para a declaração de variáveis " .byte, .word ", definição de escopo " .glob1 ", além de várias outras funções de gerenciamento como as listadas a seguir:
 
 \begin{itemize}
-\item .file  --  1
-\item .section  -- Texto que segue é montado na seção nomeada. 
-\item .mdebug  -- Força a saída de depuração para entrar em uma seção .mdebug de estilo ECOFF em vez das seções padrão ELF .stabs.
-\item .previous  -- Troca esta seção pela que foi referenciada recentemente.
-\item .nan -- 3
-\item .gnu\_attribute -- 4
-\item .globl -- Torna símbolo visível ao ligador, aumentando seu escopo.
-\item .data -- O que seguir a partir desse ponto deve ser alocado na seção .data - Dados. 
-\item .type  -- Atribui tipo ao símbolo, função ou objeto.
-\item .size  -- Resolve expressão e atribui tamanho em bytes ao símbolo.
-\item .word -- Armazena o valor listado como palavras de 32 bits no limite.
-\item .rdata  -- 5
-\item .align  -- Ajusta o contador de locação para um valor multiplo de 2.
-\item .ascii  -- Aloca espaço para cadeias sem o barra zero.
-\item .text  -- O que seguir deve ser alocado na seção .text - Codigo.
-\item .ent  -- Primeira instrução de "entrada" no código. Primeira instrução da função.
-\item .frame  -- O frame não é descrito no manual.
-\item .set  -- Resolve expressão e atribui valor ao símbolo.
-\item .mask  -- Mascaras no registradores usados no código.
-\item .fmask  -- Mascaras no registradores usados no código.\\
+\item .file \textit{string} : Cria uma tabela de símbolos de entrada onde a \textit{string} é o nome do símbolo e \textit{STT_FILE} é o tipo deste símbolo, a \textit{string} especifica o nome do arquivo fonte associado ao arquivo objeto.
+\item .section : Texto que segue é montado na seção nomeada. 
+\item .mdebug : Força a saída de depuração para entrar em uma seção .mdebug de estilo ECOFF em vez das seções padrão ELF .stabs.
+\item .previous : Troca esta seção pela que foi referenciada recentemente.
+\item .nan : 3
+\item .gnu\_attribute : 4
+\item .globl : Torna símbolo visível ao ligador, aumentando seu escopo.
+\item .data : O que seguir a partir desse ponto deve ser alocado na seção .data - Dados. 
+\item .type : Atribui tipo ao símbolo, função ou objeto.
+\item .size : Resolve expressão e atribui tamanho em bytes ao símbolo.
+\item .word : Armazena o valor listado como palavras de 32 bits no limite.
+\item .rdata : 5
+\item .align : Ajusta o contador de locação para um valor multiplo de 2.
+\item .ascii : Aloca espaço para cadeias sem o barra zero.
+\item .text : O que seguir deve ser alocado na seção .text - Codigo.
+\item .ent : Primeira instrução de "entrada" no código. Primeira instrução da função.
+\item .frame : O frame não é descrito no manual.
+\item .set : Resolve expressão e atribui valor ao símbolo.
+\item .mask : Mascaras no registradores usados no código.
+\item .fmask : Mascaras no registradores usados no código.\\
 
 As diretivas .mask e .fmask através de seus valores indicam quais registradores são usados, por exemplo se o bit 13 estiver ativo então o registrador 13 esta sendo usado. Esses valores são usados pelo ligador para gerar a seção .reginfo do arquivo objeto dos processadores MIPS. A diferença entre .mask e .fmask é que a .mask indica quais registradores de inteiros estão sendo usados, quanto ao .fmask indica quais registradores float estão sendo usados.
 \end{itemize}
@@ -189,16 +189,16 @@ Algumas diretivas listadas acima não são reconhecidas pelo MARS (Mips Assembly
   \end{itemize}
 \end{itemize}
 
-Há também outras instruções que o simulador emitiu alertas, como por exemplo sobre \textit{.align} não poder estar dentro de um segmento de texto, portanto a diretiva \textit{.text} foi colocada após o \textit{label} \textit{\$LC0} e as diretivas \textit{.align} dentro de subrotinas foram removidas.
-
+Há também outras instruções que o simulador emitiu alertas, como por exemplo sobre \textit{.align} não poder estar dentro de um segmento de texto, portanto todos \textit{.align} dentro de subrotinas foram retirados.
+`x
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{hilo.png}
-	\caption{Instruções equivalentes dos construtores \%hi() e \%lo().}
+	\caption{Instruções equivalentes dos construtores \%hi() e \%lo(). Imagem retirada do livro \cite{mipsrun}.}
 	\label{fig:hilo}
 \end{figure}
 
-Os construtores \%hi() e \%lo() também não estão presentes em todos montadores MIPS, podendo ser substituídos como mostra a Figura~\ref{fig:hilo}. Portanto as seguintes instruções foram trocadas :
+Os construtores \%hi() e \%lo() também não estão presentes em todos montadores MIPS, podendo ser substituídos como mostra a Figura~\ref{fig:hilo}. As seguintes instruções foram trocadas :
 
 \begin{itemize}
 	\item lui \$v1,\%hi(\$LC0) e addiu \$a0,\$v1,\%lo(\$LC0) : la \$a0, \$LC0
