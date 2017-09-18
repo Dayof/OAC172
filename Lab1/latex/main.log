@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.10)  18 SEP 2017 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,18 +1096,17 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 215.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 218.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 219.
+ [4 <./hilo.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 220.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 226.
  (./main.bbl
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 9.
-
-[4 <./hilo.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\OT1/ptm/m/n/12 MIPS.  []$\OT1/pcr/m/n/12 https : / / aur . archlinux . org /
  packages /
@@ -1127,18 +1126,18 @@ u _
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 230.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 230.
+(babel)             in language  on input line 232.
  [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 543ADFE04F0D4E07B558F386BBA21418;758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
  18636 strings out of 493089
@@ -1157,7 +1156,7 @@ ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 129472 bytes).
+Output written on main.pdf (5 pages, 130013 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
