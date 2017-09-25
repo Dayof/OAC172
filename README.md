@@ -19,7 +19,12 @@ Repositório dedicado para armazenar material produzido nos laboratórios da mat
   - E-mail: dayannefernandesc@gmail.com
   - GitHub: [Dayof](https://github.com/Dayof)
 
-- X
-  - Matrícula: x
-  - E-mail: x
-  - GitHub: [x](https://github.com/x)
+- Marcelo Giordano Martins Costa de Oliveira
+  - Matrícula: 12/0037301
+  - E-mail: giordano.marcelo@gmail.com
+  - GitHub: [GiordanoMrc](https://github.com/GiordanoMrc)
+
+  - [X]
+    - Matrícula: [X]
+    - E-mail: [X]
+    - GitHub: [X](https://github.com/[X])
