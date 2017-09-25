@@ -24,7 +24,7 @@ Repositório dedicado para armazenar material produzido nos laboratórios da mat
   - E-mail: giordano.marcelo@gmail.com
   - GitHub: [GiordanoMrc](https://github.com/GiordanoMrc)
 
-  - [X]
-    - Matrícula: [X]
-    - E-mail: [X]
-    - GitHub: [X](https://github.com/[X])
+- [X]
+  - Matrícula: [X]
+  - E-mail: [X]
+  - GitHub: [X](https://github.com/[X])
