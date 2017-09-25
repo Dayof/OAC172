@@ -1,0 +1,3 @@
+Ex1 - Instruções
+
+Calculamos o a quantidade de instruções que o loop da subrotina de ordenação(sort) "realizou".
