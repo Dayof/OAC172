@@ -1,24 +1,43 @@
+.data
+$LC0:
+	.ascii	"\n"
+v:
+	.word	5
+	.word	8
+	.word	3
+	.word	4
+	.word	7
+	.word	6
+	.word	8
+	.word	0
+	.word	1
+	.word	9
 .text
 main:
-	# TODO fix flow logic
 	addiu	$sp,$sp,-24
 	sw	$31,20($sp)
 	sw	$16,16($sp)
-	la	$4,v
+	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
 	jal	show
 	li	$5,10			# 0xa
 
-	la	$4,v
+	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
 	jal	sort
 	li	$5,10			# 0xa
 
-	la	$4,v
+	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
+	# addiu	$4,$16,%lo(v)
 	jal	show
 	li	$5,10			# 0xa
-
-	li	$2, 10
-	syscall
 	
+	li	$2,10 # end program
+	syscall
+	nop
+	
+	#lw	$31,20($sp)
+	#lw	$16,16($sp)
+	#jr	$31
+	#addiu	$sp,$sp,24
 show:
 	addiu	$sp,$sp,-40
 	sw	$31,36($sp)
@@ -31,9 +50,9 @@ show:
 
 	move	$17,$4
 	move	$16,$0
-	la	$19,$LC0
+	# la $19, $LC0 # lui	$19,%hi($LC0), addiu	$19,$19,%lo($LC0)
 $L3:
-	move	$4,$19
+	# move	$4,$19
 	# jal	printf
 	lw	$5,0($17)
 
@@ -42,8 +61,8 @@ $L3:
 	addiu	$17,$17,4
 
 $L2:
-	#jal	putchar
-	li	$4,10			# 0xa
+	# jal	putchar
+	# li	$4,10			# 0xa
 
 	lw	$31,36($sp)
 	lw	$19,32($sp)
@@ -52,7 +71,7 @@ $L2:
 	lw	$16,20($sp)
 	jr	$31
 	addiu	$sp,$sp,40
-
+	
 swap:
 	sll	$5,$5,2
 	addu	$2,$4,$5
@@ -63,7 +82,7 @@ swap:
 	sw	$5,0($2)
 	jr	$31
 	sw	$3,0($4)
-
+	
 sort:
 	blez	$5,$L14
 	nop
@@ -130,17 +149,3 @@ $L14:
 	jr	$31
 	nop
 
-.data
-$LC0:
-	.ascii	"\n"
-v:
-	.word	5
-	.word	8
-	.word	3
-	.word	4
-	.word	7
-	.word	6
-	.word	8
-	.word	0
-	.word	1
-	.word	9
