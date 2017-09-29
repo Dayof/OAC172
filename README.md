@@ -24,6 +24,16 @@ Repositório dedicado para armazenar material produzido nos laboratórios da mat
   - E-mail: giordano.marcelo@gmail.com
   - GitHub: [GiordanoMrc](https://github.com/GiordanoMrc)
 
+- Lucas Mafra Chagas
+  - Matrícula: 12/0126443
+  - E-mail: chagas.lucas.mafra@gmail.com
+  - GitHub: [LMafra](https://github.com/LMafra)
+
+- [X]
+  - Matrícula: [X]
+  - E-mail: [X]
+  - GitHub: [X](https://github.com/[X])
+
 - [X]
   - Matrícula: [X]
   - E-mail: [X]

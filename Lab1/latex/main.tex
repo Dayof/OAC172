@@ -14,27 +14,31 @@
 \usepackage{algorithm}
 \usepackage{hyperref}
 \usepackage{indentfirst}
-     
+
 \sloppy
 
 \title{Laboratório 1\\- Assembly MIPS –}
 
 \author{Dayanne Fernandes da Cunha, 13/0107191}
+\author{Lucas Mafra Chagas, 12/0126443}
+\author{Marcelo Giordano Martins Costa de Oliveira, 12/0037301}
+
+
 
 \address{Dep. Ciência da Computação -- Universidade de Brasília (UnB)\\
   CiC 116394 - OAC - Turma A
   \email{}
 }
 
-\begin{document} 
+\begin{document}
 \maketitle
 
 \selectlanguage{american}
  \begin{abstract}
 	This report corresponds to the Experiment 1 about Assembly MIPS.
  \end{abstract}
-\selectlanguage{brazil}     
- \begin{resumo} 
+\selectlanguage{brazil}
+ \begin{resumo}
 	Este relatório corresponde ao Experimento 1 sobre Assembly MIPS.
  \end{resumo}
 
@@ -50,7 +54,7 @@
 \item Desenvolver a capacidade de análise de desempenho de algoritmos em Assembly;
 \end{itemize}
 
-\subsection{Ferramentas} 
+\subsection{Ferramentas}
 \label{sec:Materiais}
 
 \begin{itemize}
@@ -73,11 +77,11 @@ Para compilar código C em código Assembly foi utilizado o cross compiler \cite
 \subsubsection{Diretivas}
 \label{subsubsec:diretivas}
 
-Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores \textit{x86}. Todas as diretivas começam com (.) (\textit{ASCII 0x2E}). Elas permitem a alocação de espaço para a declaração de variáveis " \textit{.byte}, \textit{.word} ", definição de escopo " \textit{.glob1} ", além de várias outras funções de gerenciamento como as listadas a seguir (as informações abaixo foram encontradas usando as fontes \cite{mips1}, \cite{mips2-1}, \cite{mips2-2}, \cite{mips2-3}, \cite{mips3}, 
+Diretivas são apenas comandos ao montador e não fazem parte do conjunto de instruções dos processadores \textit{x86}. Todas as diretivas começam com (.) (\textit{ASCII 0x2E}). Elas permitem a alocação de espaço para a declaração de variáveis " \textit{.byte}, \textit{.word} ", definição de escopo " \textit{.glob1} ", além de várias outras funções de gerenciamento como as listadas a seguir (as informações abaixo foram encontradas usando as fontes \cite{mips1}, \cite{mips2-1}, \cite{mips2-2}, \cite{mips2-3}, \cite{mips3},
 \cite{mips4}, \cite{mips5} e \cite{mips6} ):
 
 \begin{itemize}
-	
+
 \item .file \textit{string} : Cria uma tabela de símbolos de entrada onde a \textit{string} é o nome do símbolo e \textit{STT\_FILE} é o tipo deste símbolo, a \textit{string} especifica o nome do arquivo fonte associado ao arquivo objeto.
 \item .section \textit{section}, \textit{attributes} : \textit{Section} é montado como seção atual. \textit{Attributes} é incluso se for a primeira vez que \textit{.section} é especificado.
 \item .mdebug : Força a saída de depuração para entrar em uma seção .mdebug de estilo ECOFF em vez das seções padrão ELF .stabs.
@@ -96,7 +100,7 @@ Diretivas são apenas comandos ao montador e não fazem parte do conjunto de ins
 \item .ent \textit{name[,label]} : Marca o começo da função \textit{name}.
 \item .frame : Descreve o quadro da pilha usada para chamar a função principal(\textit{main}).
 \item .set \textit{symbol, expression}: Resolve a expressão (\textit{expression}) e atribui o valor ao símbolo (\textit{symbol}).
-\item .mask \textit{mask offset} : Configura uma máscara que indica quais registradores de uso geral foram salvos na rotina atual. Esses valores são usados pelo montador para gerar a seção \textit{.reginfo} do arquivo objeto dos processadores \textit{MIPS}. 
+\item .mask \textit{mask offset} : Configura uma máscara que indica quais registradores de uso geral foram salvos na rotina atual. Esses valores são usados pelo montador para gerar a seção \textit{.reginfo} do arquivo objeto dos processadores \textit{MIPS}.
 \item .fmask \textit{mask offset} : Configura uma máscara informando os registradores de ponto flutuante que a rotina atual salvou. Esses valores são usados pelo montador para gerar a seção \textit{.reginfo} do arquivo objeto dos processadores \textit{MIPS}.
 
 \end{itemize}
@@ -220,6 +224,40 @@ O arquivo \textit{sortc.c} foi compilado novamente usando 5 diretivas de compila
 \subsection{Sprites}
 \label{subsec:sprites}
 
+	 
+
+	As sprites utilizadas foram:
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=.125\textwidth]{parte1.jpg}
+			\caption{Movimento 1 do Ryu.}
+			\label{fig:Ryu1}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=.125\textwidth]{parte2.jpg}
+			\caption{Movimento 2 do Ryu.}
+			\label{fig:Ryu2}
+		\end{subfigure}	
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=.125\textwidth]{parte3.jpg}
+			\caption{Movimento 3 do Ryu.}
+			\label{fig:Ryu3}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=.125\textwidth]{parte4.jpg}
+			\caption{Movimento 4 do Ryu.}
+			\label{fig:Ryu4}
+		\end{subfigure}	
+		\label{fig:SpriteRyu}
+	\end{figure}
+	
+
 \section{Análise dos Resultados}
 \label{sec:Resultados}
 
@@ -227,6 +265,6 @@ O arquivo \textit{sortc.c} foi compilado novamente usando 5 diretivas de compila
 \label{sec:Conclusao}
 
 \bibliographystyle{sbc}
-\bibliography{relatorio}  
+\bibliography{relatorio}
 
 \end{document}
