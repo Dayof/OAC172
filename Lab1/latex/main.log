@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.29)  29 SEP 2017 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.29)  29 SEP 2017 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,7 +924,44 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `subsec:sprites' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+
+LaTeX Warning: Label `fig:hilo' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -942,8 +979,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1067,7 +1103,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 69.
 
-<txnMC.png, id=57, 402.75468pt x 328.97906pt>
+<txnMC.png, id=73, 402.75468pt x 328.97906pt>
 File: txnMC.png Graphic file (type png)
  <use txnMC.png>
 Package pdftex.def Info: txnMC.png used on input line 77.
@@ -1089,7 +1125,7 @@ Package babel Info: Redefining portuges shorthand "|
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<txnPC.png, id=71, 402.75468pt x 328.97906pt>
+<txnPC.png, id=87, 402.75468pt x 328.97906pt>
 File: txnPC.png Graphic file (type png)
  <use txnPC.png>
 Package pdftex.def Info: txnPC.png used on input line 84.
@@ -1196,7 +1232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-<hilo.png, id=108, 663.47874pt x 183.68625pt>
+<hilo.png, id=124, 663.47874pt x 183.68625pt>
 File: hilo.png Graphic file (type png)
  <use hilo.png>
 Package pdftex.def Info: hilo.png used on input line 220.
@@ -1211,44 +1247,169 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 243.
 
-<parte1.jpg, id=121, 36.88782pt x 69.25874pt>
+<parte1.jpg, id=138, 36.88782pt x 69.25874pt>
 File: parte1.jpg Graphic file (type jpg)
  <use parte1.jpg>
 Package pdftex.def Info: parte1.jpg used on input line 253.
 (pdftex.def)             Requested size: 26.67445pt x 50.08394pt.
 
-<parte2.jpg, id=122, 36.88782pt x 69.25874pt>
+<parte2.jpg, id=139, 36.88782pt x 69.25874pt>
 File: parte2.jpg Graphic file (type jpg)
  <use parte2.jpg>
 Package pdftex.def Info: parte2.jpg used on input line 259.
 (pdftex.def)             Requested size: 26.67445pt x 50.08394pt.
 
-<parte3.jpg, id=123, 36.88782pt x 69.25874pt>
+<parte3.jpg, id=140, 36.88782pt x 69.25874pt>
 File: parte3.jpg Graphic file (type jpg)
  <use parte3.jpg>
 Package pdftex.def Info: parte3.jpg used on input line 269.
 (pdftex.def)             Requested size: 26.67445pt x 50.08394pt.
 
-<parte4.jpg, id=124, 36.88782pt x 69.25874pt>
+<parte4.jpg, id=141, 36.88782pt x 69.25874pt>
 File: parte4.jpg Graphic file (type jpg)
  <use parte4.jpg>
 Package pdftex.def Info: parte4.jpg used on input line 275.
 (pdftex.def)             Requested size: 26.67445pt x 50.08394pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 283.
+
+<EX_4_1.png, id=142, 881.2925pt x 428.60126pt>
+File: EX_4_1.png Graphic file (type png)
+ <use EX_4_1.png>
+Package pdftex.def Info: EX_4_1.png used on input line 288.
+(pdftex.def)             Requested size: 426.79135pt x 207.56398pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 291.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 291.
+ [7 <./parte1.jpg> <./parte2.jpg> <./parte3.jpg> <./parte4.jpg>]
+<EX_4_2.png, id=152, 879.285pt x 433.62pt>
+File: EX_4_2.png Graphic file (type png)
+ <use EX_4_2.png>
+Package pdftex.def Info: EX_4_2.png used on input line 294.
+(pdftex.def)             Requested size: 426.79135pt x 210.47086pt.
+
+<EX_4_3.png, id=153, 875.27pt x 427.5975pt>
+File: EX_4_3.png Graphic file (type png)
+ <use EX_4_3.png>
+Package pdftex.def Info: EX_4_3.png used on input line 301.
+(pdftex.def)             Requested size: 426.79135pt x 208.50024pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 305.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 305.
+ [8 <./EX_4_1.png> <./EX_4_2.png>] <EX_4_4.png, id=162, 875.27pt x 430.60875pt>
+File: EX_4_4.png Graphic file (type png)
+
+<use EX_4_4.png>
+Package pdftex.def Info: EX_4_4.png used on input line 308.
+(pdftex.def)             Requested size: 426.79135pt x 209.96855pt.
+ <EX_4_5.png, id=163, 876.27374pt x 428.60126pt>
+File: EX_4_5.png Graphic file (type png)
+
+<use EX_4_5.png>
+Package pdftex.def Info: EX_4_5.png used on input line 315.
+(pdftex.def)             Requested size: 426.79135pt x 208.75424pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 319.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 319.
+ [9 <./EX_4_3.png> <./EX_4_4.png>] <EX_4_6.png, id=172, 878.28125pt x 428.60126
+pt>
+File: EX_4_6.png Graphic file (type png)
+
+<use EX_4_6.png>
+Package pdftex.def Info: EX_4_6.png used on input line 322.
+(pdftex.def)             Requested size: 426.79135pt x 208.27682pt.
+ <EX_4_7.png, id=173, 884.30376pt x 428.60126pt>
+File: EX_4_7.png Graphic file (type png)
+
+<use EX_4_7.png>
+Package pdftex.def Info: EX_4_7.png used on input line 329.
+(pdftex.def)             Requested size: 426.79135pt x 206.85767pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 333.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 333.
+ [10 <./EX_4_5.png> <./EX_4_6.png>] <EX_4_8.png, id=183, 872.25874pt x 421.575p
+t>
+File: EX_4_8.png Graphic file (type png)
+
+<use EX_4_8.png>
+Package pdftex.def Info: EX_4_8.png used on input line 336.
+(pdftex.def)             Requested size: 426.79135pt x 206.27121pt.
+ <EX_4_9.png, id=184, 885.3075pt x 433.62pt>
+File: EX_4_9.png Graphic file (type png)
+ <use EX_4_9.png>
+Package pdftex.def Info: EX_4_9.png used on input line 343.
+(pdftex.def)             Requested size: 426.79135pt x 209.04169pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 347.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 347.
+ [11 <./EX_4_7.png> <./EX_4_8.png>] <EX_4_10.png, id=193, 881.2925pt x 431.6125
+pt>
+File: EX_4_10.png Graphic file (type png)
+
+<use EX_4_10.png>
+Package pdftex.def Info: EX_4_10.png used on input line 350.
+(pdftex.def)             Requested size: 426.79135pt x 209.02226pt.
+ <EX_4_11.png, id=194, 883.3pt x 433.62pt>
+File: EX_4_11.png Graphic file (type png)
+ <use EX_4_11.png>
+Package pdftex.def Info: EX_4_11.png used on input line 357.
+(pdftex.def)             Requested size: 426.79135pt x 209.51808pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 361.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 361.
+ [12 <./EX_4_9.png> <./EX_4_10.png>] <EX_4_12.png, id=203, 900.36375pt x 427.59
+75pt>
+File: EX_4_12.png Graphic file (type png)
+
+<use EX_4_12.png>
+Package pdftex.def Info: EX_4_12.png used on input line 364.
+(pdftex.def)             Requested size: 426.79135pt x 202.69334pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 369.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 374.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 378.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 378.
+ [13 <./EX_4_11.png> <./EX_4_12.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 379.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 386.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 389.
  (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\OT1/ptm/m/n/12 MIPS.  []$\OT1/pcr/m/n/12 https : / / aur . archlinux . org /
  packages /
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
-[7 <./parte1.jpg> <./parte2.jpg> <./parte3.jpg> <./parte4.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 28--34
 []\OT1/ptm/m/n/12 SourceWare.  Gnu at-tri-bute.  []$\OT1/pcr/m/n/12 https : / /
  sourceware . org /
@@ -1262,24 +1423,28 @@ u _
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 395.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 292.
- [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+(babel)             in language  on input line 395.
+ [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 543ADFE04F0D4E07B558F386BBA21418;758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+(rerunfilecheck)             Checksum: 71EE8EF5FD8B4E9B583F70617FB7C97E;1088.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
- 18865 strings out of 493029
- 342233 string characters out of 6136234
- 423986 words of memory out of 5000000
- 21994 multiletter control sequences out of 15000+600000
+ 18954 strings out of 493029
+ 343426 string characters out of 6136234
+ 424198 words of memory out of 5000000
+ 22049 multiletter control sequences out of 15000+600000
  22891 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,56p,578b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1293,10 +1458,10 @@ etic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 179388 bytes).
+Output written on main.pdf (14 pages, 531434 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
