@@ -14,6 +14,7 @@
 \usepackage{algorithm}
 \usepackage{hyperref}
 \usepackage{indentfirst}
+\usepackage[inline]{enumitem}
 
 \sloppy
 
@@ -382,6 +383,33 @@ Utilizamos a função show figura 8, que por sua vez dependendo se a mesma receb
 Inicializamos o codigo printando uma mensagem pedindo os coeficientes que utilizaremos na equação de segundo grau(usando os comandos de syscall e os respectivos registradores), após o recebimento das mesmas chamamos a instrução bhaskara que por sua vez chama delta e assim subsequentemente chamando show, no final imprimos os resultados e perguntamos ao usuario se ele continuara utilizando o programa e caso sim chamasse continue que retorna ao começo do arquivo. mostrados respectivamente com seus processos em todas as figuras desde a 2.
  
 	
+
+\subsubsection{Respostas da questão 4.4}
+\label{subsubsec:4.4}
+Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo não tem nenhum loop as Instruções FR e FI são utilizadas em um número constante de vezes, já os outros tipos podem sofrer pequenas diferenças na quantidade de instruções. Foi fornecido que o codigo rodaria em um processador MIPS de 1GHZ. Utilizamos \(texec= C * T\) e chegamos aos resultados:
+
+\begin{enumerate}[label={\alph*)}]
+
+\item \([1, 0, -9.86960440]\)
+
+	\(texec = 211 \mu s\)
+\item \([1, 0, 0]\)
+
+	\(texec = 222 \mu s\)
+\item \([1, 99, 2459]\)
+
+	\(texec = 219 \mu s\)
+	
+\item \([1, -2468, 33762440]\)
+
+	\(texec = 219 \mu s\)
+\item \([0, 10, 100]\)
+
+	\(texec = 211 \mu s\)
+\end{enumerate}
+
+
+
 
 \section{Análise dos Resultados}
 \label{sec:Resultados}
