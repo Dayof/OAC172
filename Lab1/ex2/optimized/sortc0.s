@@ -1,4 +1,3 @@
-
 .data
 v:
 	.word	5
@@ -56,9 +55,9 @@ $L3:
 	addu	$2,$3,$2
 	lw	$2,0($2)
 	
-	move	$4,$2
-	li	$2,1
-	syscall
+	# move	$4,$2
+	# li	$2,1
+	# syscall
 	nop
 
 	lw	$2,16($fp)
@@ -71,9 +70,9 @@ $L2:
 	bne	$2,$0,$L3
 	nop
 
-	la	$4,$LC0
-	li	$2,4
-	syscall
+	# la	$4,$LC0
+	# li	$2,4
+	# syscall
 	nop
 
 	move	$sp,$fp
