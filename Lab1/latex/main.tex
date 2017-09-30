@@ -20,11 +20,10 @@
 
 \title{Laboratório 1\\- Assembly MIPS –}
 
-\author{Dayanne Fernandes da Cunha, 13/0107191}
-\author{Lucas Mafra Chagas, 12/0126443}
-\author{Marcelo Giordano Martins Costa de Oliveira, 12/0037301}
 
-
+\author{Dayanne Fernandes da Cunha, 13/0107191\\ 
+	Marcelo Giordano Martins Costa de Oliveira, 12/0037301\\
+	Lucas Mafra Chagas, 12/0126443}
 
 \address{Dep. Ciência da Computação -- Universidade de Brasília (UnB)\\
   CiC 116394 - OAC - Turma A
@@ -71,18 +70,18 @@
 \label{subsec:mars}
 Essa parte do relatório foi realizada com o intuito de familiarizar os alunos ao Simulador/Montador MARS.
 
-No item 1.2 do relatório, foram pedidos os gráficos relacionados aos valores do vetor fornecido e ao tempo de execução da subrotina Sort fornecida pelo professor. Temos então o grafico em Melhor caso~\ref{fig:txnMC} e Pior Caso~\ref{fig:txnPC} da rotina de ordenação Sort.
+No item 1.2 do relatório, foram pedidos os gráficos relacionados aos valores do vetor fornecido e ao tempo de execução da subrotina Sort fornecida pelo professor. Temos então o gráfico em Melhor caso~\ref{fig:txnMC} e Pior Caso~\ref{fig:txnPC} da rotina de ordenação Sort.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{txnMC.png}
+	\includegraphics[width=.8\textwidth]{txnMC.png}
 	\caption{n x texec(Melhor Caso)}
 	\label{fig:txnMC}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{txnPC.png}
+	\includegraphics[width=.8\textwidth]{txnPC.png}
 	\caption{n x texec(Pior Caso)}
 	\label{fig:txnPC}
 \end{figure}
@@ -248,12 +247,15 @@ Com ajuda do \textit{Mars} foram coletadas informações sobre o número de inst
 	\begin{tabular}{|c|c|c|}
 		\hline
 		\textbf{Arquivo} & \textbf{Instruções} & \textbf{Tamanho (Bytes)} \\\hline
+		\textit{sortc.s} & 1748 & 890 \\\hline
 		\textit{sortc0.s} & 1748 & 890 \\\hline
 		\textit{sortc1.s} & 172 & 57 \\\hline
 	\end{tabular}
 	\caption{Códigos otimizados do arquivo \textit{sortc.c} utilizando o \textit{cross compiler mips-elf-gcc}.}
 	\label{tab:opt}
 \end{table}
+
+Como podemos ver na Tabela~\ref{tab:opt} a otimização \textit{-O0} do arquivo citado do item \textit{1.1} da descrição do Laboratório 1, \textit{sortc.s}, não altera em nada a quantidade de instruções e memória utilizada, porém a primeira otimização (\textit{-O1}) já altera a quantidade de instruções executadas em uma proporção de aproximadamente 9.84 da original.
 
 Não foi possível analisar as informações das otimizações \textit{-O2, -O3 e -Os} pois estes códigos emitiram erros de lógica e de instruções como é mostrado a seguir: 
 
