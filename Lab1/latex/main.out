@@ -1,14 +1,14 @@
-\BOOKMARK [2][-]{subsection.0.1}{Objetivos}{}% 1
-\BOOKMARK [2][-]{subsection.0.2}{Ferramentas}{}% 2
-\BOOKMARK [1][-]{section.1}{Procedimentos}{}% 3
-\BOOKMARK [2][-]{subsection.1.1}{Exerc\355cio 1. Simulador/Montador MARS}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.2}{Exerc\355cio 2. Compilador GCC}{section.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Diretivas}{subsection.1.2}% 6
-\BOOKMARK [3][-]{subsubsection.1.2.2}{Assembly no MARS}{subsection.1.2}% 7
-\BOOKMARK [3][-]{subsubsection.1.2.3}{Otimiza\347\343o do c\363digo Assembly}{subsection.1.2}% 8
-\BOOKMARK [2][-]{subsection.1.3}{Exerc\355cio 3. Sprites}{section.1}% 9
-\BOOKMARK [2][-]{subsection.1.4}{Exerc\355cio 4. C\341lculo das ra\355zes da equa\347\343o de segundo grau:}{section.1}% 10
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Teste de ra\355zes reais e complexas}{subsection.1.4}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Show}{subsection.1.4}% 12
-\BOOKMARK [3][-]{subsubsection.1.4.3}{Main}{subsection.1.4}% 13
-\BOOKMARK [3][-]{subsubsection.1.4.4}{Tempos de execu\347\343o da rotina baskara}{subsection.1.4}% 14
+\BOOKMARK [1][-]{section.1}{Objetivos}{}% 1
+\BOOKMARK [1][-]{section.2}{Ferramentas}{}% 2
+\BOOKMARK [1][-]{section.3}{Procedimentos}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Exerc\355cio 1. Simulador/Montador MARS}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Exerc\355cio 2. Compilador GCC}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Diretivas}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Assembly no MARS}{subsection.3.2}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Otimiza\347\343o do c\363digo Assembly}{subsection.3.2}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Exerc\355cio 3. Sprites}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Exerc\355cio 4. C\341lculo das ra\355zes da equa\347\343o de segundo grau:}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Teste de ra\355zes reais e complexas}{subsection.3.4}% 11
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Show}{subsection.3.4}% 12
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Main}{subsection.3.4}% 13
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Tempos de execu\347\343o da rotina baskara}{subsection.3.4}% 14
