@@ -20,10 +20,12 @@
 
 \title{Laboratório 1\\- Assembly MIPS –}
 
-
-\author{Dayanne Fernandes da Cunha, 13/0107191\\ 
-	Marcelo Giordano Martins Costa de Oliveira, 12/0037301\\
-	Lucas Mafra Chagas, 12/0126443}
+\author{Dayanne Fernandes da Cunha, 13/0107191\\
+  Lucas Mafra Chagas, 12/0126443\\
+  Marcelo Giordano Martins Costa de Oliveira, 12/0037301\\
+  Lucas Junior Ribas, 16/0052289\\
+  Caio Nunes de Alencar Osório, 16/0115132\\
+  Diego Vaz Fernandes, 16/0117925}
 
 \address{Dep. Ciência da Computação -- Universidade de Brasília (UnB)\\
   CiC 116394 - OAC - Turma A
@@ -86,7 +88,7 @@ No item 1.2 do relatório, foram pedidos os gráficos relacionados aos valores d
 	\label{fig:txnPC}
 \end{figure}
 
-Analisando somente os gráficos, percebemos que esse algoritmo tem tempo de execução Linear em seu Melhor caso e em Pior caso, sendo representado por um braço de parábola, tem tempo de execução limitado por O(\(n^2\)). 
+Analisando somente os gráficos, percebemos que esse algoritmo tem tempo de execução Linear em seu Melhor caso e em Pior caso, sendo representado por um braço de parábola, tem tempo de execução limitado por O(\(n^2\)).
 
 \subsection{Compilador GCC}
 \label{subsec:comp}
@@ -240,7 +242,7 @@ Por fim, mesmo após estas modificações básicas de sintaxe para que o código
 
 O arquivo \textit{sortc.c} foi compilado novamente usando 5 diretivas de compilação, \textit{-O0, -O1, -O2, -O3 e -Os}. Todos os arquivos gerados, \textit{sortc0.s}, \textit{sortc1.s}, \textit{sortc2.s}, \textit{sortc3.s} e \textit{sortcs.s} foram alterados de acordo com a subseção anterior para que fosse possível executá-los no \textit{MARS}. Também foram removidos os códigos para mostrar os números da ordenação na tela de \textit{debug} do \textit{MARS}.
 
-Com ajuda do \textit{Mars} foram coletadas informações sobre o número de instruções executadas e a quantidade de memória utilizada nas otimizações \textit{sortc0.s} e \textit{sortc1.s} como é possível ver na Tabela~\ref{tab:opt}. A contagem das instruções e informações sobre a memória foram conferidas no menu \textit{Tools $>$ Instruction Statistics}. 
+Com ajuda do \textit{Mars} foram coletadas informações sobre o número de instruções executadas e a quantidade de memória utilizada nas otimizações \textit{sortc0.s} e \textit{sortc1.s} como é possível ver na Tabela~\ref{tab:opt}. A contagem das instruções e informações sobre a memória foram conferidas no menu \textit{Tools $>$ Instruction Statistics}.
 
 \begin{table}[H]
 	\centering
@@ -257,7 +259,7 @@ Com ajuda do \textit{Mars} foram coletadas informações sobre o número de inst
 
 Como podemos ver na Tabela~\ref{tab:opt} a otimização \textit{-O0} do arquivo citado do item \textit{1.1} da descrição do Laboratório 1, \textit{sortc.s}, não altera em nada a quantidade de instruções e memória utilizada, porém a primeira otimização (\textit{-O1}) já altera a quantidade de instruções executadas em uma proporção de aproximadamente 9.84 da original.
 
-Não foi possível analisar as informações das otimizações \textit{-O2, -O3 e -Os} pois estes códigos emitiram erros de lógica e de instruções como é mostrado a seguir: 
+Não foi possível analisar as informações das otimizações \textit{-O2, -O3 e -Os} pois estes códigos emitiram erros de lógica e de instruções como é mostrado a seguir:
 
 \begin{itemize}
 	\item Os arquivos \textit{sortc2.s} e \textit{sortc3.s} emitiram o seguinte erro de lógica : \textit{line 105: Runtime exception at 0x0040010c: fetch address not aligned on word boundary 0xfffffffd}.
@@ -266,12 +268,12 @@ Não foi possível analisar as informações das otimizações \textit{-O2, -O3 
 
 \subsection{Sprites}
 \label{subsec:sprites}
-	Na resolução do exercício, utilizamos as sprites do Ryu para conseguir realizar a atividade de colisão proposta. 
-	
+	Na resolução do exercício, utilizamos as sprites do Ryu para conseguir realizar a atividade de colisão proposta.
+
 	A colisão acontece quando duas hitbox de personagens distintos encostam entre si.
-	
+
 	Vídeo mostrando a interação de colisão. \url{https://www.youtube.com/watch?v=kbTLQQuw6RA}
-		
+
 
 \subsection{ Cálculo das raízes da equação de segundo grau:}
 \label{subsec:sprites}
@@ -345,7 +347,7 @@ Não foi possível analisar as informações das otimizações \textit{-O2, -O3 
 	\label{fig:hilo}
 \end{figure}
 
-\begin{figure}[H] 
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_11.png}
 	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
@@ -362,26 +364,23 @@ Não foi possível analisar as informações das otimizações \textit{-O2, -O3 
 \subsubsection{Teste de raizes reais e complexas}
 \label{subsubsec:testebhas}
 
-Criamos o procedimento bhaskara expecificado na figura 6, e chamamos delta cujo o codigo esta comentado na figura 5 para fazer o calcula e retornar o resultado e dependendo se ele era positivo (resultados reais) ou negativo (resultados imaginarios) e retornariamos 1 ou 2 respectivamente. 
+Criamos o procedimento bhaskara expecificado na figura 6, e chamamos delta cujo o codigo esta comentado na figura 5 para fazer o calcula e retornar o resultado e dependendo se ele era positivo (resultados reais) ou negativo (resultados imaginarios) e retornariamos 1 ou 2 respectivamente.
 
 \subsubsection{Show}
 \label{subsubsec:show}
 
-Utilizamos a função show figura 8, que por sua vez dependendo se a mesma recebeu 2 ou 1 chama showC (função pra printar as raizes complexas), ou deixa prosseguir para showR (cujo o procedimento é printar as raizes reais) respectivamente. comentado e apresentados nas figuras 9,10,11,12. 
+Utilizamos a função show figura 8, que por sua vez dependendo se a mesma recebeu 2 ou 1 chama showC (função pra printar as raizes complexas), ou deixa prosseguir para showR (cujo o procedimento é printar as raizes reais) respectivamente. comentado e apresentados nas figuras 9,10,11,12.
 
 \subsubsection{Main}
 \label{subsubsec:Main}
 
 Inicializamos o codigo printando uma mensagem pedindo os coeficientes que utilizaremos na equação de segundo grau(usando os comandos de syscall e os respectivos registradores), após o recebimento das mesmas chamamos a instrução bhaskara que por sua vez chama delta e assim subsequentemente chamando show, no final imprimos os resultados e perguntamos ao usuario se ele continuara utilizando o programa e caso sim chamasse continue que retorna ao começo do arquivo. mostrados respectivamente com seus processos em todas as figuras desde a 2.
- 
-	
 
 \subsubsection{Respostas da questão 4.4}
 \label{subsubsec:4.4}
 Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo não tem nenhum loop as Instruções FR e FI são utilizadas em um número constante de vezes, já os outros tipos podem sofrer pequenas diferenças na quantidade de instruções. Foi fornecido que o codigo rodaria em um processador MIPS de 1GHZ. Utilizamos \(texec= C * T\) e chegamos aos resultados:
 
 \begin{enumerate}[label={\alph*)}]
-
 \item \([1, 0, -9.86960440]\)
 
 	\(texec = 211 \mu s\)
@@ -391,7 +390,7 @@ Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo
 \item \([1, 99, 2459]\)
 
 	\(texec = 219 \mu s\)
-	
+
 \item \([1, -2468, 33762440]\)
 
 	\(texec = 219 \mu s\)
@@ -399,9 +398,6 @@ Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo
 
 	\(texec = 211 \mu s\)
 \end{enumerate}
-
-
-
 
 \section{Análise dos Resultados}
 \label{sec:Resultados}
