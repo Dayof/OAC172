@@ -7,7 +7,7 @@ Costas: .word 36212, 40372, 9, 13	#[0]=Aresta Superior esquerda, [2]=Aresta infe
 Frente: .word 36862, 43902, 9, 22	#[0]=Aresta Superior esquerda, [2]=Aresta infeiror esquerda , [3]= aresta inferior direita
 PernaD:	.word 49665, 56705, 12, 22	#[0]=Aresta Superior esquerda, [2]=Aresta infeiror esquerda , [3]= aresta inferior direita
 PernaE: .word 52530, 56690, 10, 13	#[0]=Aresta Superior esquerda, [2]=Aresta infeiror esquerda , [3]= aresta inferior direita
-ADV:	.word 35910, 33, 14
+ADV:	.word 35980, 33, 14
 ADV1:	.byte 85, 62, 0, 0
 SPRITE: .byte 92,49,0,0 		#Altura da imagem, largura da imagem
 BUFFER: .space 5300			#Endereço inicial do buffer
@@ -70,7 +70,7 @@ FORA101:
 
 		la $a0,ADV1 	#pega o endereço do Sprite 
 		li $a1,100	#Coordenada x, onde o sprite vai começar a ser printado
-		li $a2,70	#Coordenada y, onde o sprite vai começar a ser printado
+		li $a2,140	#Coordenada y, onde o sprite vai começar a ser printado
 		jal PrintSprite	#Pula para a função que mostra o sprite
 		
 		la $t0, Cabeça	
