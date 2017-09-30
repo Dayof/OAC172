@@ -44,9 +44,6 @@
 	Este relatório corresponde ao Experimento 1 sobre Assembly MIPS.
  \end{resumo}
 
-\section{Introdução}
-\label{sec:Introducao}
-
 \subsection{Objetivos}
 \label{sec:Objetivos}
 
@@ -68,11 +65,10 @@
 \section{Procedimentos}
 \label{sec:Procedimentos}
 
-\subsection{Simulador/Montador MARS}
+\subsection{Exercício 1. Simulador/Montador MARS}
 \label{subsec:mars}
-Essa parte do relatório foi realizada com o intuito de familiarizar os alunos ao Simulador/Montador MARS.
 
-No item 1.2 do relatório, foram pedidos os gráficos relacionados aos valores do vetor fornecido e ao tempo de execução da subrotina Sort fornecida pelo professor. Temos então o gráfico em Melhor caso~\ref{fig:txnMC} e Pior Caso~\ref{fig:txnPC} da rotina de ordenação Sort.
+Esta parte do relatório foi realizada com o intuito de familiarizar os alunos ao Simulador/Montador \textit{MARS}. No item \textit{1.2} do relatório, foram pedidos os gráficos relacionados aos valores do vetor fornecido e ao tempo de execução da sub rotina \textit{Sort} fornecida pelo professor. Temos então o gráfico em melhor caso~\ref{fig:txnMC} e pior caso~\ref{fig:txnPC} da rotina de ordenação \textit{Sort}.
 
 \begin{figure}[H]
 	\centering
@@ -88,12 +84,12 @@ No item 1.2 do relatório, foram pedidos os gráficos relacionados aos valores d
 	\label{fig:txnPC}
 \end{figure}
 
-Analisando somente os gráficos, percebemos que esse algoritmo tem tempo de execução Linear em seu Melhor caso e em Pior caso, sendo representado por um braço de parábola, tem tempo de execução limitado por O(\(n^2\)).
+Analisando somente os gráficos, percebemos que esse algoritmo tem tempo de execução linear em seu melhor caso, e em pior caso possui tempo de execução limitado por O(\(n^2\)), sendo representado por um braço de parábola.
 
-\subsection{Compilador GCC}
+\subsection{Exercício 2. Compilador GCC}
 \label{subsec:comp}
 
-Para compilar código C em código Assembly foi utilizado o cross compiler \cite{MIPS} GCC. Usando o comando \$ mips-elf-gcc -I../include -S testeX.c (X $\in$ [0,8]) foi testado a convenção para geração do código Assembly.
+Para compilar código \textit{C} em código \textit{Assembly} foi utilizado o \textit{cross compiler} \cite{MIPS} \textit{GCC}. Usando o comando \textit{\$ mips-elf-gcc -I../include -S testeX.c (X $\in$ [0,8])} foi testado a convenção para geração do código \textit{Assembly}.
 
 \subsubsection{Diretivas}
 \label{subsubsec:diretivas}
@@ -266,119 +262,118 @@ Não foi possível analisar as informações das otimizações \textit{-O2, -O3 
 	\item O arquivo \textit{sortcs.s} continha um pseudo código \textit{bltzl $8,$L10} que o conjunto de instruções do \textit{Mars} não possui, portanto não foi possível executá-lo.
 \end{itemize}
 
-\subsection{Sprites}
+\subsection{Exercício 3. Sprites}
 \label{subsec:sprites}
-	Na resolução do exercício, utilizamos as sprites do Ryu para conseguir realizar a atividade de colisão proposta.
 
-	A colisão acontece quando duas hitbox de personagens distintos encostam entre si.
-
-	Vídeo mostrando a interação de colisão. \url{https://www.youtube.com/watch?v=kbTLQQuw6RA}
+Na resolução do exercício, utilizamos as \textit{sprites} do \textit{Ryu} para conseguir realizar a atividade de colisão proposta. A colisão acontece quando duas \textit{hitbox} de personagens distintos encostam entre si. O vídeo mostrando a interação de colisão pode ser vista neste \href{https://www.youtube.com/watch?v=kbTLQQuw6RA}{link}.
 
 
-\subsection{ Cálculo das raízes da equação de segundo grau:}
-\label{subsec:sprites}
+\subsection{Exercício 4. Cálculo das raízes da equação de segundo grau:}
+\label{subsec:raizes}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_1.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_2.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_3.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_4.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_5.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo5}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_6.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo6}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_7.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo7}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_8.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo8}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_9.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo9}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_10.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo10}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_11.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo11}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{EX_4_12.png}
-	\caption{Imagens dos codigos ja comentados relacionados ao exercicioo 4.}
-	\label{fig:hilo}
+	\caption{Código do exercício 4.}
+	\label{fig:hilo12}
 \end{figure}
 
-\subsubsection{Teste de raizes reais e complexas}
+\subsubsection{Teste de raízes reais e complexas}
 \label{subsubsec:testebhas}
 
-Criamos o procedimento bhaskara expecificado na figura 6, e chamamos delta cujo o codigo esta comentado na figura 5 para fazer o calcula e retornar o resultado e dependendo se ele era positivo (resultados reais) ou negativo (resultados imaginarios) e retornariamos 1 ou 2 respectivamente.
+Criamos o procedimento \textit{baskara} especificado na Figura~\ref{fig:hilo5}, e chamamos a sub rotina \textit{delta}, cujo o código está comentado na Figura~\ref{fig:hilo4}. O programa retorna como resultado, 1 caso o valor de \textit{delta} for positivo (resultados reais), ou 2 caso for negativo (resultados imaginários).
 
 \subsubsection{Show}
 \label{subsubsec:show}
 
-Utilizamos a função show figura 8, que por sua vez dependendo se a mesma recebeu 2 ou 1 chama showC (função pra printar as raizes complexas), ou deixa prosseguir para showR (cujo o procedimento é printar as raizes reais) respectivamente. comentado e apresentados nas figuras 9,10,11,12.
+Utilizamos a função \textit{show} apresentada na Figura~\ref{fig:hilo8}, que por sua vez caso a mesma receber os valores 2 ou 1, chama \textit{showC} (função pra mostrar as raízes complexas), ou deixa prosseguir para \textit{showR} (cujo o procedimento é mostrar as raízes reais) respectivamente. Todas as sub rotinas para mostrar valores são apresentadas e comentadas na Figura~\ref{fig:hilo9},  Figura~\ref{fig:hilo10}, Figura~\ref{fig:hilo11} e Figura~\ref{fig:hilo12}.
 
 \subsubsection{Main}
 \label{subsubsec:Main}
 
-Inicializamos o codigo printando uma mensagem pedindo os coeficientes que utilizaremos na equação de segundo grau(usando os comandos de syscall e os respectivos registradores), após o recebimento das mesmas chamamos a instrução bhaskara que por sua vez chama delta e assim subsequentemente chamando show, no final imprimos os resultados e perguntamos ao usuario se ele continuara utilizando o programa e caso sim chamasse continue que retorna ao começo do arquivo. mostrados respectivamente com seus processos em todas as figuras desde a 2.
+Ao iniciar o programa é mostrado uma mensagem pedindo os coeficientes que utilizaremos na equação de segundo grau (usando os comandos de \textit{syscall} e os respectivos registradores para coletar as entradas do teclado). Ao receber os valores de entrada, é chamado a instrução \textit{baskara}, que por sua vez chama \textit{delta} e assim em sequência chama a sub rotina \textit{show}. No final da execução é mostrado os resultados e perguntamos ao usuário se ele deseja continuar utilizando o programa. Caso o usuário concordar em dar continuidade ao programa, a sub rotina \textit{continue} é chamada, que retorna ao começo do arquivo. Todos os processos são mostrados em todas figuras a partir da Figura~\ref{fig:hilo1}.
 
-\subsubsection{Respostas da questão 4.4}
+\subsubsection{Tempos de execução da rotina \textit{baskara}}
 \label{subsubsec:4.4}
-Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo não tem nenhum loop as Instruções FR e FI são utilizadas em um número constante de vezes, já os outros tipos podem sofrer pequenas diferenças na quantidade de instruções. Foi fornecido que o codigo rodaria em um processador MIPS de 1GHZ. Utilizamos \(texec= C * T\) e chegamos aos resultados:
+
+Nesta parte foi preciso calcular o \textit{texec} para vários valores, como nosso código não possui nenhum \textit{loop}, as instruções \textit{FR} e \textit{FI} são utilizadas em um número constante de vezes. Em outros tipos podem sofrer pequenas diferenças na quantidade de instruções. Foi fornecido que o código iria ser executado em um processador \textit{MIPS} de \textit{1GHZ}. Utilizamos a equação \(texec= C * T\) e chegamos aos seguintes resultados:
 
 \begin{enumerate}[label={\alph*)}]
 \item \([1, 0, -9.86960440]\)
@@ -398,12 +393,6 @@ Nessa parte, precisamos calcular o texec para vários valores, como nosso codigo
 
 	\(texec = 211 \mu s\)
 \end{enumerate}
-
-\section{Análise dos Resultados}
-\label{sec:Resultados}
-
-\section{Conclusão}
-\label{sec:Conclusao}
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
