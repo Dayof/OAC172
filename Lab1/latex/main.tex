@@ -20,12 +20,13 @@
 
 \title{Laboratório 1\\- Assembly MIPS –}
 
-\author{Dayanne Fernandes da Cunha, 13/0107191\\
-  Lucas Mafra Chagas, 12/0126443\\
-  Marcelo Giordano Martins Costa de Oliveira, 12/0037301\\
-  Lucas Junior Ribas, 16/0052289\\
-  Caio Nunes de Alencar Osório, 16/0115132\\
-  Diego Vaz Fernandes, 16/0117925}
+\author{Grupo 6\\
+	Dayanne Fernandes da Cunha, 13/0107191\\
+	Lucas Mafra Chagas, 12/0126443\\
+	Marcelo Giordano Martins Costa de Oliveira, 12/0037301\\
+	Lucas Junior Ribas, 16/0052289\\
+	Caio Nunes de Alencar Osório, 16/0115132\\
+	Diego Vaz Fernandes, 16/0117925}
 
 \address{Dep. Ciência da Computação -- Universidade de Brasília (UnB)\\
   CiC 116394 - OAC - Turma A
@@ -264,13 +265,13 @@ Não foi possível analisar as informações das otimizações \textit{-O2, -O3 
 	\item O arquivo \textit{sortcs.s} continha um pseudo código \textit{bltzl $8,$L10} que o conjunto de instruções do \textit{Mars} não possui, portanto não foi possível executá-lo.
 \end{itemize}
 
-\subsection{Exercício 3. Sprites}
+\subsection{Exercício 3. \textit{Sprites}}
 \label{subsec:sprites}
 
 Na resolução do exercício, utilizamos as \textit{sprites} do \textit{Ryu} para conseguir realizar a atividade de colisão proposta. A colisão acontece quando duas \textit{hitbox} de personagens distintos encostam entre si. O vídeo mostrando a interação de colisão pode ser vista neste \href{https://www.youtube.com/watch?v=kbTLQQuw6RA}{link}.
 
 
-\subsection{Exercício 4. Cálculo das raízes da equação de segundo grau:}
+\subsection{Exercício 4. Cálculo das raízes da equação de segundo grau}
 \label{subsec:raizes}
 
 \begin{figure}[H]
@@ -395,6 +396,19 @@ Nesta parte foi preciso calcular o \textit{texec} para vários valores, como nos
 
 	\(texec = 211 ns\)
 \end{enumerate}
+
+\subsection{Exercício 5. Trajetórias}
+
+A simulação pedida no exercício 5 foi concluída parcialmente devido alguns problemas na representação dos \textit{pixels} na tela, os cálculos da física estão corretos, porém ao serem convertidos em \textit{pixels} e mostrados na tela não demonstravam o resultado esperado. O código escrito pode ser encontrado neste \href{https://github.com/Dayof/OAC172/blob/master/Lab1/ex5/lancamento.asm}{link}.
+
+A demonstração foi concluída apenas na metade do trajeto, ou seja, a bola de canhão apenas subiu, assim não concluindo seu trajeto de queda como podemos ver na Figura~\ref{fig:traj}. Os valores testados nos cálculos foram de $v_{0x} = 14$ m/s e $v_{0y} = 10$ m/s.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{5.jpg}
+	\caption{Trajetória de subida da bola do canhão.}
+	\label{fig:traj}
+\end{figure}
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
