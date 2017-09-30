@@ -84,7 +84,7 @@
 		
 		
 		
-       delta:
+delta:
        		la $t0, abc
        		lwc1, $f1,0($t0)		# a
        		lwc1, $f2,4($t0)		# b
@@ -108,7 +108,7 @@
     
        		jr $ra
        		
-     baskara:
+baskara:
      		addi $sp, $sp, -4	# libera espaco para um word na pilha
      		sw $ra, 4($sp)		# salva o endereco de retorno $ra na pilha
      		jal delta		# chama a funcao que calcula o delta
