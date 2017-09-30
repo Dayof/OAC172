@@ -239,7 +239,28 @@ Por fim, mesmo após estas modificações básicas de sintaxe para que o código
 \subsubsection{Otimização do código Assembly}
 \label{subsubsec:ot}
 
-O arquivo \textit{sortc.c} foi compilado novamente usando 5 diretivas de compilação, \textit{-O0, -O1, -O2, -O3 e -Os}. Todos os arquivos gerados, \textit{sortc0.s}, \textit{sortc1.s}, \textit{sortc2.s}, \textit{sortc3.s} e \textit{sortcs.s} foram alterados de acordo com a subseção anterior para que fosse possível executá-los no \textit{MARS}.
+O arquivo \textit{sortc.c} foi compilado novamente usando 5 diretivas de compilação, \textit{-O0, -O1, -O2, -O3 e -Os}. Todos os arquivos gerados, \textit{sortc0.s}, \textit{sortc1.s}, \textit{sortc2.s}, \textit{sortc3.s} e \textit{sortcs.s} foram alterados de acordo com a subseção anterior para que fosse possível executá-los no \textit{MARS}. Também foram removidos os códigos para mostrar os números da ordenação na tela de \textit{debug} do \textit{MARS}.
+
+Com ajuda do \textit{Mars} foram coletadas informações sobre o número de instruções executadas e a quantidade de memória utilizada nas otimizações \textit{sortc0.s} e \textit{sortc1.s} como é possível ver na Tabela~\ref{tab:opt}. A contagem das instruções e informações sobre a memória foram conferidas no menu \textit{Tools $>$ Instruction Statistics}. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Arquivo} & \textbf{Instruções} & \textbf{Tamanho (Bytes)} \\\hline
+		\textit{sortc0.s} & 1748 & 890 \\\hline
+		\textit{sortc1.s} & 172 & 57 \\\hline
+	\end{tabular}
+	\caption{Códigos otimizados do arquivo \textit{sortc.c} utilizando o \textit{cross compiler mips-elf-gcc}.}
+	\label{tab:opt}
+\end{table}
+
+Não foi possível analisar as informações das otimizações \textit{-O2, -O3 e -Os} pois estes códigos emitiram erros de lógica e de instruções como é mostrado a seguir: 
+
+\begin{itemize}
+	\item Os arquivos \textit{sortc2.s} e \textit{sortc3.s} emitiram o seguinte erro de lógica : \textit{line 105: Runtime exception at 0x0040010c: fetch address not aligned on word boundary 0xfffffffd}.
+	\item O arquivo \textit{sortcs.s} continha um pseudo código \textit{bltzl $8,$L10} que o conjunto de instruções do \textit{Mars} não possui, portanto não foi possível executá-lo.
+\end{itemize}
 
 \subsection{Sprites}
 \label{subsec:sprites}
