@@ -1,8 +1,8 @@
 # Laboratório 2
 
-| Título        | Data de Entrega | Nota     |
-| ------------- | --------------- | -------- |
-| ULA e FPULA   | 09/10/2017      | x.x/10.0 |
+| Título      | Data de Entrega | Nota     |
+| ----------- | --------------- | -------- |
+| ULA e FPULA | 09/10/2017      | x.x/10.0 |
 
 ## Exercícios
 
