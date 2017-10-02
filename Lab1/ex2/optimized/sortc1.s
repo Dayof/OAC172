@@ -17,27 +17,26 @@ main:
 	addiu	$sp,$sp,-24
 	sw	$31,20($sp)
 	sw	$16,16($sp)
-	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
+	la	$4, v # lui	$16,%hi(v) and addiu	$4,$16,%lo(v)
 	jal	show
 	li	$5,10			# 0xa
 
-	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
+	la	$4, v # addiu	$4,$16,%lo(v)
 	jal	sort
 	li	$5,10			# 0xa
 
-	la $4, v # lui	$16,%hi(v), addiu	$4,$16,%lo(v)
-	# addiu	$4,$16,%lo(v)
+	la	$4, v # addiu	$4,$16,%lo(v)
 	jal	show
 	li	$5,10			# 0xa
 	
 	li	$2,10 # end program
 	syscall
 	nop
-	
-	#lw	$31,20($sp)
-	#lw	$16,16($sp)
+
+	# lw	$31,20($sp)
+	# lw	$16,16($sp)
 	#jr	$31
-	#addiu	$sp,$sp,24
+	# addiu	$sp,$sp,24
 show:
 	addiu	$sp,$sp,-40
 	sw	$31,36($sp)
@@ -50,7 +49,8 @@ show:
 
 	move	$17,$4
 	move	$16,$0
-	# la $19, $LC0 # lui	$19,%hi($LC0), addiu	$19,$19,%lo($LC0)
+	
+	# la $19, $LC0 # lui	$19,%hi($LC0) and addiu	$19,$19,%lo($LC0)
 $L3:
 	# move	$4,$19
 	# jal	printf
@@ -71,7 +71,6 @@ $L2:
 	lw	$16,20($sp)
 	jr	$31
 	addiu	$sp,$sp,40
-	
 swap:
 	sll	$5,$5,2
 	addu	$2,$4,$5
@@ -82,7 +81,6 @@ swap:
 	sw	$5,0($2)
 	jr	$31
 	sw	$3,0($4)
-	
 sort:
 	blez	$5,$L14
 	nop
@@ -148,4 +146,3 @@ $L8:
 $L14:
 	jr	$31
 	nop
-

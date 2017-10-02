@@ -1,2 +1,7 @@
 .DS_Store
 Mars45_Custom7.jar
+
+*.aux
+*.log
+*.synctex.gz
+
