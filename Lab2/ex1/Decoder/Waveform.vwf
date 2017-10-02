@@ -1,4 +1,3 @@
-/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -26,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
+	DATA_DURATION = 800.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -91,16 +90,6 @@ SIGNAL("In[0]")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "In";
-}
-
-SIGNAL("Out")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 7;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
 }
 
 SIGNAL("Out[6]")
@@ -173,6 +162,11 @@ SIGNAL("Out[0]")
 	PARENT = "Out";
 }
 
+GROUP("Out")
+{
+	MEMBERS = "Out[6]", "Out[5]", "Out[4]", "Out[3]", "Out[2]", "Out[1]", "Out[0]";
+}
+
 TRANSITION_LIST("Clk")
 {
 	NODE
@@ -180,7 +174,7 @@ TRANSITION_LIST("Clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
+			REPEAT = 16;
 			LEVEL 0 FOR 25.0;
 			LEVEL 1 FOR 25.0;
 		}
@@ -198,7 +192,6 @@ TRANSITION_LIST("In[3]")
 			LEVEL 0 FOR 400.0;
 			LEVEL 1 FOR 400.0;
 		}
-		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -213,7 +206,6 @@ TRANSITION_LIST("In[2]")
 			LEVEL 0 FOR 200.0;
 			LEVEL 1 FOR 200.0;
 		}
-		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -224,7 +216,7 @@ TRANSITION_LIST("In[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
+			REPEAT = 4;
 			LEVEL 0 FOR 100.0;
 			LEVEL 1 FOR 100.0;
 		}
@@ -238,7 +230,7 @@ TRANSITION_LIST("In[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 10;
+			REPEAT = 8;
 			LEVEL 0 FOR 50.0;
 			LEVEL 1 FOR 50.0;
 		}
@@ -250,7 +242,7 @@ TRANSITION_LIST("Out[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -259,7 +251,7 @@ TRANSITION_LIST("Out[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -268,7 +260,7 @@ TRANSITION_LIST("Out[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -277,7 +269,7 @@ TRANSITION_LIST("Out[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -286,7 +278,7 @@ TRANSITION_LIST("Out[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -295,7 +287,7 @@ TRANSITION_LIST("Out[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 
@@ -304,7 +296,7 @@ TRANSITION_LIST("Out[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 800.0;
 	}
 }
 

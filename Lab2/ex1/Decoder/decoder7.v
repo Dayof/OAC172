@@ -5,8 +5,8 @@ module decoder7 (
 	output reg [6:0] Out,
 	input Clk);
 
-	always@(posedge Clk)		// Síncrono
-	//always @(*)						// Assincrono
+	//always@(posedge Clk)		// Síncrono
+	always @(*)						// Assincrono
 		case (In)
 			4'b0000 : Out = ~7'b0111111; 
 			4'b0001 : Out = ~7'b0000110;
