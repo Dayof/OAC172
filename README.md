@@ -12,6 +12,10 @@ Repositório dedicado para armazenar material produzido nos laboratórios da mat
 | [Lab4](Lab4) | X             | X               |
 | [Lab5](Lab5) | X             | X               |
 
+## Mídia
+
+Canal do Youtube para vídeos dos laboratórios e trabalhos : https://www.youtube.com/channel/UCtyrFYKa4yLMnlFPTT5Mthw.
+
 ## Equipe
 
 - Dayanne Fernandes da Cunha
