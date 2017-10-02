@@ -97,7 +97,24 @@ Para as versões síncrona e assíncrona foram geradas as simulações temporais
 	\label{fig:ex1asf}
 \end{figure}
 
-Foi obtido 7 elementos lógicos na versão assíncrona, sendo que teve 9.761 ns como maior tempo de atraso. Já na versão síncrona foi obtido 7 elementos lógicos, sendo a frequência máxima de operação de 6.787MHz.
+Os requisitos físicos do \textit{decoder7} do \textit{driver} para \textit{display} de 7 segmentos foram analisados nas versões síncrona e assíncrona como é possível ver na Tabela~\ref{tab:req1}.
+
+% max freq f=1/T
+% max delay T=1/f
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& \textbf{Elementos} & \textbf{Maior} & \textbf{Frequência máxima} \\
+		& \textbf{lógicos} & \textbf{atraso (ns)} & \textbf{de operação (MHz)} \\\hline
+		\hline
+		\textbf{Síncrono} & 7 & ? & ? \\\hline
+		\textbf{Assíncrono} & 7 & 9.761 & ? \\\hline
+	\end{tabular}
+	\caption{Requisitos físicos do \textit{display} de 7 segmentos assíncrono e síncrono.}
+	\label{tab:req1}
+\end{table}
 
 O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e testado como é mostrado no link \url{https://youtu.be/wGKjze5PkcU}.
 
@@ -124,6 +141,48 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 % número de elementos lógicos
 % tempos de atraso
 % máxima frequência de clock utilizável
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& \textbf{Elementos} & \textbf{Tempo de} & \textbf{Frequência máxima de} \\
+		& \textbf{lógicos} & \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
+		\hline
+		\textbf{ULA} & ? & ? & ? \\\hline
+		\textbf{OPAND} & ? & ? & ? \\\hline
+		\textbf{OPOR} & ? & ? & ? \\\hline
+		\textbf{OPADD} & ? & ? & ? \\\hline
+		\textbf{OPMFHI} & ? & ? & ? \\\hline
+		\textbf{OPSLL} & ? & ? & ? \\\hline
+		\textbf{OPMFLO} & ? & ? & ? \\\hline
+		\textbf{OPSUB} & ? & ? & ? \\\hline
+		\textbf{OPSLT} & ? & ? & ? \\\hline
+		\textbf{OPSGT} & ? & ? & ? \\\hline
+		\textbf{OPSRL} & ? & ? & ? \\\hline
+		\textbf{OPSRA} & ? & ? & ? \\\hline
+		\textbf{OPXOR} & ? & ? & ? \\\hline
+		\textbf{OPSLTU} & ? & ? & ? \\\hline
+		\textbf{OPNOR} & ? & ? & ? \\\hline
+		\textbf{OPLUI} & ? & ? & ? \\\hline
+		\textbf{OPSLLV} & ? & ? & ? \\\hline
+		\textbf{OPSRAV} & ? & ? & ? \\\hline
+		\textbf{OPSRLV} & ? & ? & ? \\\hline
+		\textbf{OPMULT} & ? & ? & ? \\\hline
+		\textbf{OPDIV} & ? & ? & ? \\\hline
+		\textbf{OPDEBUG} & ? & ? & ? \\\hline
+		\textbf{OPMULTU} & ? & ? & ? \\\hline
+		\textbf{OPDIVU} & ? & ? & ? \\\hline
+		\textbf{OPMTHI} & ? & ? & ? \\\hline
+		\textbf{OPMTLO} & ? & ? & ? \\\hline
+		\textbf{OPMADD} & ? & ? & ? \\\hline
+		\textbf{OPMADDU} & ? & ? & ? \\\hline
+		\textbf{OPMSUB} & ? & ? & ? \\\hline
+		\textbf{OPMSUBU}  & ? & ? & ? \\\hline
+	\end{tabular}
+	\caption{Requisitos físicos da \textit{ULA} total e de cada operação.}
+	\label{tab:req2}
+\end{table}
 
 \subsubsection{Funcionamento}
 \label{subsubsec:ulafunc}
@@ -153,6 +212,31 @@ O projeto da \textit{ULA} de inteiros foi sintetizado utilizando a interface \te
 % número de elementos lógicos
 % número de ciclos para a conclusão da operação (tempos)
 % máxima frequência de clock utilizável
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& \textbf{Elementos} & \textbf{Número de ciclos} & \textbf{Frequência máxima de} \\
+		& \textbf{lógicos} & \textbf{mínimo da operação (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
+		\hline
+		\textbf{FPULA} & ? & ? & ? \\\hline
+		\textbf{OPADDS} & ? & ? & ? \\\hline
+		\textbf{OPSUBS} & ? & ? & ? \\\hline
+		\textbf{OPMULS} & ? & ? & ? \\\hline
+		\textbf{OPDIVS} & ? & ? & ? \\\hline
+		\textbf{OPSQRT} & ? & ? & ? \\\hline
+		\textbf{OPABS} & ? & ? & ? \\\hline
+		\textbf{OPNEG} & ? & ? & ? \\\hline
+		\textbf{OPCEQ} & ? & ? & ? \\\hline
+		\textbf{OPCLT} & ? & ? & ? \\\hline
+		\textbf{OPCLE} & ? & ? & ? \\\hline
+		\textbf{OPCVTSW} & ? & ? & ? \\\hline
+		\textbf{OPCVTWS} & ? & ? & ? \\\hline
+	\end{tabular}
+	\caption{Requisitos físicos da \textit{FPULA} total e de cada operação.}
+	\label{tab:req3}
+\end{table}
 
 \subsubsection{Funcionamento}
 \label{subsubsec:fpulafunc}
