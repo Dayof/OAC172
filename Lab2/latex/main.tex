@@ -65,14 +65,41 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 \subsection{Exercício 1. Implementação de um \textit{driver} para \textit{display} de 7 segmentos}
 \label{subsec:1driver}
 
-Conforme descrito no arquivo \textit{QuartusIIv3.txt} e \textit{Set.txt}, um novo projeto foi criado no diretório \textit{Display}.
+Conforme descrito no arquivo \textit{QuartusIIv3.txt} e \textit{Set.txt}, um novo projeto foi criado no diretório \textit{Lab2}, denominado \textit{Display}. 
 
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=.8\textwidth]{txnMC.png}
-%	\caption{n x texec(Melhor Caso)}
-%	\label{fig:txnMC}
-%\end{figure}
+Para as versões síncrona e assíncrona foram geradas as simulações temporais (Figura~\ref{fig:ex1st} e Figura~\ref{fig:ex1ast}) e funcionais (Figura~\ref{fig:ex1sf} e Figura~\ref{fig:ex1asf}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{ex1_st.png}
+	\caption{Simulação síncrona temporal do \textit{decoder7}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{ex1_sf.png}
+	\caption{Simulação síncrona funcional do \textit{decoder7}.}
+	\label{fig:ex1sf}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{ex1_ast.png}
+	\caption{Simulação assíncrona temporal do \textit{decoder7}.}
+	\label{fig:ex1ast}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{ex1_asf.png}
+	\caption{Simulação assíncrona funcional do \textit{decoder7}.}
+	\label{fig:ex1asf}
+\end{figure}
+
+Foi obtido 7 elementos lógicos, sendo que teve 9.761 ns como maior tempo de atraso. Já na versão síncrona foi obtido 7 elementos lógicos, sendo a frequência máxima de operação de 6.787MHz.
+
+O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e testado como é mostrado no link \url{?}.
 
 \subsection{Exercício 2. Unidade Lógica Aritmética de Inteiros}
 \label{subsec:ulaint}
