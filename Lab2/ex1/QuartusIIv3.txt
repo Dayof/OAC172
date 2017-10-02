@@ -1,0 +1,85 @@
+Usando o Quartus-II
+
+O Quartus-II é a ferramenta de desenvolvimento desenvolvido pela empresa Altera para seus produtos FPGA. Esta ferramenta permite a síntese de circuitos descritos em esquemático ou nas Linguagem de Descrição de Hardware Verilog ou VHDL, para fins de implementação no dispositivo FPGA ou para simulação.
+
+Use sempre a versão 13.0 do Quartus-II nos micros do LINF. (Está instalada também a versão 9.1!)
+Instale o Quartus-II v13.0 (não use versão mais nova) na sua máquina de casa, faça o download da versão Web Edition a partir do site da Altera
+>>>>>>Não instale a versão de avaliação/subscription que funciona só por 30 dias!<<<<<<<<<
+Para usuários do Linux: https://www-acc.gsi.de/wiki/Timing/QuartusInstallUbuntu1404
+		
+1) Iniciando um novo projeto
+- Iniciar o programa Quartus-II através do Menu Iniciar do Windows, submenu Altera.
+- Escolha criar um novo projeto (Create a New Project > New Project Wizard)
+- Introduction: Next
+- Diretory, name and Top-Level: Crie um novo diretório na Área de Trabalho onde estará o projeto
+							  Defina o nome do Projeto e, automaticamente, o nome do arquivo Top-Level.
+							  Next
+							  Use nomes que não contenham caracteres especiais (!@#$%¨&()-[]{}.:;<>/?| etc.
+- Add Files: Next
+- Family & device settings: Family Cyclone II  
+		Em CD : Device: EP2C35F672C6 : Next
+		Em OAC: Device: EP2C70F896C6 : Next
+- EDA Tool Settings: Next
+- Summary: Finish
+
+>>>Em OAC siga ainda as orientações do arquivo Set.txt.
+
+2) Criando um novo Circuito Esquemático
+- Selecione File > New > Block Diagram/Schematic File
+- Inserting: Pressione ícone Symbol Tool (ícone da portinha and) para inserir um novo componente. Selecione a biblioteca Altera/Primitives/Logic
+- Placement: Escolha o local onde cada componente será colocado
+- Routing: Faça as ligações (fios) usando o ícone Orthogonal Node Tool.  Cuide para que as conexões sejam feitas corretamente!
+- Insira os Pinos de IO:  Defina os pontos de entrada IN e saída OUT do circuito pelo ícone Pin Tool (ao lado do Symbol Tool)
+	Dica: Use nomes A[0], A[1], A[2] para definir uma palavra de entrada A com 3 bits.
+	NÃO dê nomes aos pinos que iniciem com Números nem que contenham caracteres especiais (!@#$%¨&(=)-[]{}.:;<>/?| "espaço" etc.)
+- Salve o esquemático em um arquivo .bdf
+
+	2.1) Criando um sub-circuito
+	-Crie um novo circuito File > New > Block Diagram/Schematic File
+	-Desenhe o sub-circuito, definindo também os nomes dos pinos de entrada e saída (não use caracteres especiais nos nomes dos pinos ><=) 
+	-Salve o sub-circuito em formato .bdf
+	-Crie File > Create/Update > Create Symbol Files From Current file
+	-Salve o símbolo como arquivo .bsf
+
+	2.2) Usando um sub-circuito já criado em seu circuito principal (Top-Level)
+	-Inserir novo componente ícone Symbol Tool
+	-Selecionar a biblioteca que está no diretório Project
+	-Lá deve estar o símbolo criado para o seu sub-circuito
+
+3) Compilando o projeto
+	Lembre-se que o arquivo principal do projeto, que será compilado e simulado inicialmente, é definido pelo Top-Level!
+- Inicie a compilação ícone Start Compilation
+- Corrija os erros encontrados e "despreze" os Warnings.
+- Os requerimentos físicos do projeto: 
+	-número de elementos lógicos/registradores/memória/multiplicadores podem ser obtidos a partir do relatório da compilação  Compilation Report > Flow Summary
+	-tempos tpd,tsu,tco,th podem ser obtidos a partir do relatório da compilação Compilation Report > QuestTime Timing Analyzer > Multicorner Report
+	
+4) Simulando o projeto
+- Crie o arquivo com a forma de onda dos sinais de entrada:
+	File > New > University Program (VWF)
+- Defina os pinos a serem considerados na simulação.  
+	Click com botão direito > Insert Node or Bus >  Node Finder > Selecione Filter: Pins All > List
+	Click em >> para adicionar todos os nós encontrados.
+- OK
+- OK
+- Crie os sinais que verificam toda a tabela verdade. Selecione e agrupe os sinais de entrada e click em Count Value (icone com C)
+- Defina o período (em ns) de cada contagem (ex.: 40 ns).  Ps.: Edit/Set End Time/ define o tempo total da simulação
+- Salve como arquivo .vwf
+- Execute as simulações
+		-Definir o Simulador: Simulation > Options > Quartus-II Simulator
+		-ícone Run Functional Simulation (simulação funcional, portas lógicas ideais)
+		-ícone Run Timing Simulation (simulação temporal, considerando os tempos de atrasos dos componentes)
+- Tire um print screen das formas de onda e do circuito para colocar no relatório.
+
+5) Implementando o projeto no chip FPGA da placa DE2
+- Faça o download do arquivo de definição dos pinos da FPGA DE2_pin_assigments.csv do Moodle.
+- Importe o arquivo de definição dos pinos: Assignments > Import Assignments > Selecione o arquivo .csv
+- Compile seu projeto
+- Icone Programmer
+- Verifique se o cabo USB está corretamente conectado na placa DE2 na entrada Blaster
+- Verifique se o driver USB Blaster está corretamente instalado: Hardware Setup > Currently selected hardware > USB Blaster
+- Selecione o arquivo a ser carregado na FPGA
+	Add File > output_files > arquivo.sof
+- Start
+- Teste o circuito implementado
+- Faça um vídeo do circuito em funcionamento, coloque no YouTube e o link no relatório
