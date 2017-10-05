@@ -53,8 +53,7 @@
 \begin{itemize}
 \item FPGA DE2 da Altera 
 \item QUARTUS-II
-\item Verilog
-\item HDL
+\item Verilog HDL
 \end{itemize}
 
 \section{Exercícios}
@@ -97,36 +96,10 @@ Para as versões síncrona e assíncrona foram geradas as simulações temporais
 	\label{fig:ex1asf}
 \end{figure}
 
-Os requisitos físicos do \textit{decoder7} do \textit{driver} para \textit{display} de 7 segmentos foram analisados nas versões síncrona e assíncrona como é possível ver na Tabela~\ref{tab:req1}.
-
-% max freq f=1/T
-% max delay T=1/f
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		& \textbf{Elementos} & \textbf{Maior} & \textbf{Frequência máxima} \\
-		& \textbf{lógicos} & \textbf{atraso (ns)} & \textbf{de operação (MHz)} \\\hline
-		\hline
-		\textbf{Síncrono} & 7 & ? & ? \\\hline
-		\textbf{Assíncrono} & 7 & 9.761 & ? \\\hline
-	\end{tabular}
-	\caption{Requisitos físicos do \textit{display} de 7 segmentos assíncrono e síncrono.}
-	\label{tab:req1}
-\end{table}
-
 O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e testado como é mostrado no link \url{https://youtu.be/wGKjze5PkcU}.
 
 \subsection{Exercício 2. Unidade Lógica Aritmética de Inteiros}
 \label{subsec:ulaint}
-
-\subsubsection{ULA MIPS32}
-\label{subsubsec:ulamips32}
-
-% diagrama em blocos
-% funções
-% tabela verdade de cada operação
 
 \subsubsection{Operações}
 \label{subsubsec:2op}
@@ -137,11 +110,11 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 \subsubsection{Requisitos físicos}
 \label{subsubsec:ulafis}
 
-Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e da ULA total como podemos ver na Tabela~\ref{tab:req2}. Todos estes dados foram encontrados utilizando o seguinte procedimento:
+Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e da ULA total como podemos ver na Tabela~\ref{tab:req21} e Tabela~\ref{tab:req22}. Todos estes dados foram encontrados utilizando o seguinte procedimento:
 
 \begin{itemize}
 	\item Foi aberto o projeto da \textit{ULA} no \textit{Quartus II 64-Bit};
-	\item No arquivo \textit{ALU.v} para testar cada operação da ULA foi utilizado a variável \textit{iControlSignal} (e.g. assign iControlSignal=OPSLL);
+	\item No arquivo \textit{ALU.v} para testar a ULA completa foi preciso comentar as linhas "\textit{wire [4:0]  iControlSignal}" e "\textit{assign iControlSignal=OPMSUB}" e descomentar a linha "\textit{input [4:0] iControlSignal}". No arquivo \textit{ALU.v} para testar cada operação foi preciso descomentar as linhas "\textit{wire [4:0]  iControlSignal}" e "\textit{assign iControlSignal=OPMSUB}" e comentar a linha "\textit{input [4:0] iControlSignal}". A troca de operação avaliada foi feita substituindo o nome da operação na variável \textit{iControlSignal} (e.g. assign iControlSignal=OPSLL);
 	\item Ao trocar a operação desejada foi compilado o projeto;
 	\item Com a nova aba (\textit{Compilation Report - ULA}) aberta, no menu \textit{Flow Summary} foi possível achar informações da quantidade total de elementos lógicos usado naquela operação;
 	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary} foram encontrados valores dos maiores / menores tempos de atraso para concluir a operação. Estes tempos são medidos desde o ato de inserir o dado na entrada (\textit{iA} e/ou \textit{iB}) e resultar em algo na saída (\textit{oALUresult}). Alguns resultados assíncronos eram aparentes na aba \textit{RR} (medição ao subir a borda inicial até a subida da borda final), outros na \textit{RF} (medição ao subir a borda inicial até a descida da borda final) \cite{altera}. Para operações síncronas era possível captar os resultados na aba \textit{Rise};
@@ -159,39 +132,54 @@ Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e
 		& \textbf{Elementos} & \textbf{Menor} & \textbf{Maior} & \textbf{Frequência máxima de} \\
 		& \textbf{lógicos} & \textbf{atraso (ns)} &  \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
 		\hline
-		\textbf{ULA} & ? & ? & ? & ? \\\hline
-		\textbf{OPAND} & 43 & 5.495 & 9.810 & 101.936 \\\hline
-		\textbf{OPOR} & 43 & 5.490 & 9.811 & 101,926 \\\hline
-		\textbf{OPADD} & 44 & 5.081 & 14.134 & 70,751 \\\hline
+		\textbf{ULA} & 6686 & 4,788 & 26,648 & 37,526 \\\hline
+		\textbf{OPAND} & 43 & 5,495 & 9,810 & 101,937 \\\hline
+		\textbf{OPOR} & 43 & 5,490 & 9,811 & 101,926 \\\hline
+		\textbf{OPADD} & 44 & 5,081 & 14,134 & 70,751 \\\hline
 		\textbf{OPMFHI} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPSLL} & 170 & 6.000 & 15.048 & 66,454 \\\hline
+		\textbf{OPSLL} & 170 & 6,000 & 15,048 & 66,454 \\\hline
 		\textbf{OPMFLO} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPSUB} & 44 & 5.119 & 13.909 & 71,896 \\\hline
-		\textbf{OPSLT} & 32 & 5.341 & 13.470 & 74,239 \\\hline
-		\textbf{OPSGT} & 32 & 5.341 & 13.470 & 74,239 \\\hline
-		\textbf{OPSRL} & 170 & 6.065 & 16.137 & 61,969 \\\hline
-		\textbf{OPSRA} & 174 & 4.908 & 15.736 & 63,548 \\\hline
-		\textbf{OPXOR} & 43 & 4.802 & 8.511 & 117,495 \\\hline
-		\textbf{OPSLTU} & 32 & 5.341 & 13.470 & 74,239 \\\hline
-		\textbf{OPNOR} & 43 & 4.822 & 9.811 & 101,926 \\\hline
-		\textbf{OPLUI} & 5 & 4.822 & 9.811 & 101,926 \\\hline
-		\textbf{OPSLLV} & 170 & 5.397 & 15.048 & 66,454 \\\hline
-		\textbf{OPSRAV} & 174 & 4.908 & 15.736 & 63,548 \\\hline
-		\textbf{OPSRLV} & 170 & 5.445 & 16.137 & 61,969 \\\hline
-		\textbf{OPMULT} & 53 & 3.914 & 8.885 & 112,549 \\\hline
-		\textbf{OPDIV} & 1266 & 4.051 & 9.446 & 105,865 \\\hline
-		\textbf{OPDEBUG} & 11 & 4.549 & 8.255 & 121,139 \\\hline
-		\textbf{OPMULTU} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPDIVU} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPMTHI} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPMTLO} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPMADD} & 0 & 0 & 0 & 0 \\\hline
-		\textbf{OPMADDU} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPSUB} & 44 & 5,119 & 13,909 & 71,896 \\\hline
+		\textbf{OPSLT} & 32 & 5,341 & 13,470 & 74,239 \\\hline
+		\textbf{OPSGT} & 32 & 5,341 & 13,470 & 74,239 \\\hline
+		\textbf{OPSRL} & 170 & 6,065 & 16,137 & 61,969 \\\hline
+		\textbf{OPSRA} & 174 & 4,908 & 15,736 & 63,549 \\\hline
+		\textbf{OPXOR} & 43 & 4,802 & 8,511 & 117,495 \\\hline
+		\textbf{OPSLTU} & 32 & 5,341 & 13,470 & 74,239 \\\hline
+		\textbf{OPNOR} & 43 & 4,822 & 9,811 & 101,926 \\\hline
+		\textbf{OPLUI} & 5 & 4,546 & 8,330 & 120,048 \\\hline
+		\textbf{OPSLLV} & 170 & 5,397 & 15,048 & 66,454 \\\hline
+		\textbf{OPSRAV} & 174 & 4,908 & 15,736 & 63,549 \\\hline
+		\textbf{OPSRLV} & 170 & 5,445 & 16,137 & 61,969 \\\hline
+		\textbf{OPMULT} & 53 & 3,914 & 8,885 & 112,549 \\\hline
+		\textbf{OPDIV} & 1266 & 4,051 & 9,446 & 105,865 \\\hline
+		\textbf{OPDEBUG} & 11 & 4,549 & 8,255 & 121,139 \\\hline
+	\end{tabular}
+	\caption{Requisitos físicos da \textit{ULA} total e de cada operação. Informações das operações assíncronas.}
+	\label{tab:req21}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		& \textbf{Elementos} & \textbf{Menor} & \textbf{Maior} & \textbf{Frequência máxima de} \\
+		& \textbf{lógicos} & \textbf{atraso (ns)} &  \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
+		\hline
+		\textbf{ULA} & 6686 & 6,804 & 14,672 &  68,157 \\\hline
+		\textbf{OPMULT} & 53 & ? & ? & ? \\\hline
+		\textbf{OPDIV} & 1266 & ? & ? & ? \\\hline
+		\textbf{OPMULTU} & ? & ? & ? & ? \\\hline
+		\textbf{OPDIVU} & ? & ? & ? & ? \\\hline
+		\textbf{OPMTHI} & ? & ? & ? & ? \\\hline
+		\textbf{OPMTLO} & ? & ? & ? & ? \\\hline
+		\textbf{OPMADD} & ? & ? & ? & ? \\\hline
+		\textbf{OPMADDU} & ? & ? & ? & ? \\\hline
 		\textbf{OPMSUB} & ? & ? & ? & ? \\\hline
 		\textbf{OPMSUBU}  & ? & ? & ? & ? \\\hline
 	\end{tabular}
-	\caption{Requisitos físicos da \textit{ULA} total e de cada operação.}
-	\label{tab:req2}
+	\caption{Requisitos físicos da \textit{ULA} total e de cada operação. Informações das operações síncronas.}
+	\label{tab:req22}
 \end{table}
 
 \subsubsection{Funcionamento}
@@ -202,13 +190,6 @@ O projeto da \textit{ULA} de inteiros foi sintetizado utilizando a interface \te
 \subsection{Exercício 3. Unidade Aritmética de Ponto Flutuante }
 \label{subsec:ulafloat}
 
-\subsubsection{FPULA MIPS}
-\label{subsubsec:fpulamips}
-
-% diagrama em blocos
-% funções (megawizard plug-in manager edit)
-% tabela verdade de cada operação
-
 \subsubsection{Operações}
 \label{subsubsec:3op}
 
@@ -218,10 +199,16 @@ O projeto da \textit{ULA} de inteiros foi sintetizado utilizando a interface \te
 \subsubsection{Requisitos físicos}
 \label{subsubsec:fpulafis}
 
-% para a FPULA total e para cada operação
-% número de elementos lógicos
-% número de ciclos para a conclusão da operação (tempos)
-% máxima frequência de clock utilizável
+Para a \textit{ULA} de ponto flutuante foi levantado os requisitos físicos de cada operação e da \textit{FPULA} total como podemos ver na Tabela~\ref{tab:req3}. Todos estes dados foram encontrados utilizando o seguinte procedimento:
+
+\begin{itemize}
+	\item Foi aberto o projeto da \textit{FPULA} no \textit{Quartus II 64-Bit};
+	\item No arquivo \textit{FPALU.v} para testar a \textit{FPULA} completa foi preciso comentar as linhas "\textit{wire [3:0] icontrol}" e "\textit{assign icontrol=OPSQRT}" e descomentar a linha "\textit{input [3:0] icontrol}". No arquivo \textit{FPALU.v} para testar cada operação foi preciso descomentar as linhas "\textit{wire [3:0] icontrol}" e "\textit{assign icontrol=OPSQRT}" e comentar a linha "\textit{input [3:0] icontrol}". A troca de operação avaliada foi feita substituindo o nome da operação na variável \textit{icontrol} (e.g. assign icontrol=OPSQRT);
+	\item Ao trocar a operação desejada foi compilado o projeto;
+	\item Com a nova aba (\textit{Compilation Report - FPULA}) aberta, no menu \textit{Flow Summary} foi possível achar informações da quantidade total de elementos lógicos usado naquela operação;
+	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary > Minimum Propagation Delay} foram encontrados os números de ciclos mínimos da operação avaliada. Estes tempos são medidos desde o ato de inserir o dado na entrada (\textit{idataa} e/ou \textit{idatab}) e resultar em algo na saída (\textit{oCompResult}). Os resultados eram aparentes na aba \textit{RR} (medição ao subir a borda inicial até a subida da borda final), outros na \textit{RF} (medição ao subir a borda inicial até a descida da borda final) \cite{altera};
+	\item A frequência máxima de \textit{clock} utilizável foi gerada a partir do cálculo $F_{MAX} = 1/T$, sendo $T$ o número de ciclos mínimo da operação.
+\end{itemize}
 
 \begin{table}[H]
 	\centering
