@@ -137,48 +137,58 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 \subsubsection{Requisitos físicos}
 \label{subsubsec:ulafis}
 
-% para a ULA total e para cada operação
-% número de elementos lógicos
-% tempos de atraso
-% máxima frequência de clock utilizável
+Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e da ULA total como podemos ver na Tabela~\ref{tab:req2}. Todos estes dados foram encontrados utilizando o seguinte procedimento:
+
+\begin{itemize}
+	\item Foi aberto o projeto da \textit{ULA} no \textit{Quartus II 64-Bit};
+	\item No arquivo \textit{ALU.v} para testar cada operação da ULA foi utilizado a variável \textit{iControlSignal} (e.g. assign iControlSignal=OPSLL);
+	\item Ao trocar a operação desejada foi compilado o projeto;
+	\item Com a nova aba (\textit{Compilation Report - ULA}) aberta, no menu \textit{Flow Summary} foi possível achar informações da quantidade total de elementos lógicos usado naquela operação;
+	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary} foram encontrados valores dos maiores / menores tempos de atraso para concluir a operação. Estes tempos são medidos desde o ato de inserir o dado na entrada (\textit{iA} e/ou \textit{iB}) e resultar em algo na saída (\textit{oALUresult}). Alguns resultados assíncronos eram aparentes na aba \textit{RR} (medição ao subir a borda inicial até a subida da borda final), outros na \textit{RF} (medição ao subir a borda inicial até a descida da borda final) \cite{altera}. Para operações síncronas era possível captar os resultados na aba \textit{Rise};
+		\begin{itemize}
+			\item Para operações puramente assíncronas o maior tempo foi encontrado no menu \textit{Propagation Delay}. Para operações também síncronas tiveram estes dados aparentes no menu \textit{Clock to Output Times}; 
+			\item Para operações puramente assíncronas o menor tempo foi encontrado no menu \textit{Minimum Propagation Delay}. Para operações também síncronas tiveram estes dados aparentes no menu \textit{Minimum Clock to Output Times}. 
+		\end{itemize}
+	\item A frequência máxima de \textit{clock} utilizável foi gerada a partir do cálculo $F_{MAX} = 1/T$, sendo $T$ o maior tempo de atraso da operação. Esse $T$ tem que ser o pior caso de tempo ocorrido pois precisa ser suficiente para concluir toda a operação em qualquer caso.
+\end{itemize}
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		& \textbf{Elementos} & \textbf{Tempo de} & \textbf{Frequência máxima de} \\
-		& \textbf{lógicos} & \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
+		& \textbf{Elementos} & \textbf{Menor} & \textbf{Maior} & \textbf{Frequência máxima de} \\
+		& \textbf{lógicos} & \textbf{atraso (ns)} &  \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
 		\hline
-		\textbf{ULA} & ? & ? & ? \\\hline
-		\textbf{OPAND} & ? & ? & ? \\\hline
-		\textbf{OPOR} & ? & ? & ? \\\hline
-		\textbf{OPADD} & ? & ? & ? \\\hline
-		\textbf{OPMFHI} & ? & ? & ? \\\hline
-		\textbf{OPSLL} & ? & ? & ? \\\hline
-		\textbf{OPMFLO} & ? & ? & ? \\\hline
-		\textbf{OPSUB} & ? & ? & ? \\\hline
-		\textbf{OPSLT} & ? & ? & ? \\\hline
-		\textbf{OPSGT} & ? & ? & ? \\\hline
-		\textbf{OPSRL} & ? & ? & ? \\\hline
-		\textbf{OPSRA} & ? & ? & ? \\\hline
-		\textbf{OPXOR} & ? & ? & ? \\\hline
-		\textbf{OPSLTU} & ? & ? & ? \\\hline
-		\textbf{OPNOR} & ? & ? & ? \\\hline
-		\textbf{OPLUI} & ? & ? & ? \\\hline
-		\textbf{OPSLLV} & ? & ? & ? \\\hline
-		\textbf{OPSRAV} & ? & ? & ? \\\hline
-		\textbf{OPSRLV} & ? & ? & ? \\\hline
-		\textbf{OPMULT} & ? & ? & ? \\\hline
-		\textbf{OPDIV} & ? & ? & ? \\\hline
-		\textbf{OPDEBUG} & ? & ? & ? \\\hline
-		\textbf{OPMULTU} & ? & ? & ? \\\hline
-		\textbf{OPDIVU} & ? & ? & ? \\\hline
-		\textbf{OPMTHI} & ? & ? & ? \\\hline
-		\textbf{OPMTLO} & ? & ? & ? \\\hline
-		\textbf{OPMADD} & ? & ? & ? \\\hline
-		\textbf{OPMADDU} & ? & ? & ? \\\hline
-		\textbf{OPMSUB} & ? & ? & ? \\\hline
-		\textbf{OPMSUBU}  & ? & ? & ? \\\hline
+		\textbf{ULA} & ? & ? & ? & ? \\\hline
+		\textbf{OPAND} & 43 & 5.495 & 9.810 & 101.936 \\\hline
+		\textbf{OPOR} & 43 & 5.490 & 9.811 & 101,926 \\\hline
+		\textbf{OPADD} & 44 & 5.081 & 14.134 & 70,751 \\\hline
+		\textbf{OPMFHI} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPSLL} & 170 & 6.000 & 15.048 & 66,454 \\\hline
+		\textbf{OPMFLO} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPSUB} & 44 & 5.119 & 13.909 & 71,896 \\\hline
+		\textbf{OPSLT} & 32 & 5.341 & 13.470 & 74,239 \\\hline
+		\textbf{OPSGT} & 32 & 5.341 & 13.470 & 74,239 \\\hline
+		\textbf{OPSRL} & 170 & 6.065 & 16.137 & 61,969 \\\hline
+		\textbf{OPSRA} & 174 & 4.908 & 15.736 & 63,548 \\\hline
+		\textbf{OPXOR} & 43 & 4.802 & 8.511 & 117,495 \\\hline
+		\textbf{OPSLTU} & 32 & 5.341 & 13.470 & 74,239 \\\hline
+		\textbf{OPNOR} & 43 & 4.822 & 9.811 & 101,926 \\\hline
+		\textbf{OPLUI} & 5 & 4.822 & 9.811 & 101,926 \\\hline
+		\textbf{OPSLLV} & 170 & 5.397 & 15.048 & 66,454 \\\hline
+		\textbf{OPSRAV} & 174 & 4.908 & 15.736 & 63,548 \\\hline
+		\textbf{OPSRLV} & 170 & 5.445 & 16.137 & 61,969 \\\hline
+		\textbf{OPMULT} & 53 & 3.914 & 8.885 & 112,549 \\\hline
+		\textbf{OPDIV} & 1266 & 4.051 & 9.446 & 105,865 \\\hline
+		\textbf{OPDEBUG} & 11 & 4.549 & 8.255 & 121,139 \\\hline
+		\textbf{OPMULTU} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPDIVU} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPMTHI} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPMTLO} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPMADD} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPMADDU} & 0 & 0 & 0 & 0 \\\hline
+		\textbf{OPMSUB} & ? & ? & ? & ? \\\hline
+		\textbf{OPMSUBU}  & ? & ? & ? & ? \\\hline
 	\end{tabular}
 	\caption{Requisitos físicos da \textit{ULA} total e de cada operação.}
 	\label{tab:req2}
