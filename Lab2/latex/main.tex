@@ -185,7 +185,35 @@ Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e
 \subsubsection{Funcionamento}
 \label{subsubsec:ulafunc}
 
-O projeto da \textit{ULA} de inteiros foi sintetizado utilizando a interface \textit{TopDE.v} na placa \textit{DE2-70} e seu funcionamento pode ser visto através do \textit{link} \url{?}. 
+O projeto da \textit{ULA} de inteiros foi sintetizado utilizando a interface \textit{TopDE.v} na placa \textit{DE2-70}.
+
+As funções testadas foram:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Operação} & \textbf{Vídeo} & \textbf{Operação} & \textbf{Vídeo} \\
+		\hline
+		\textbf{AND} & \href{https://youtu.be/3rOvkaxYP6Q}{AND}  & \textbf{OR} & \href{https://youtu.be/sCqV4z5Az1Q}{OR} \\\hline
+		\textbf{ADD} &  \href{https://youtu.be/PtU2MOLjm94}{ADD} & \textbf{*MFHI} &  \href{}{MFHI} \\\hline
+		\textbf{SLL} &  \href{https://youtu.be/oegfAdN_HYc}{SLL}  & \textbf{*MFLO} &  \href{}{MFLO}  \\\hline
+		\textbf{SUB} &  \href{https://youtu.be/jSYAjTycOTo}{SUB}  & \textbf{SLT} &  \href{https://youtu.be/I3R0-LyBugU}{SLT}  \\\hline
+		\textbf{SRL} &  \href{https://youtu.be/wdsBH2myWbc}{SRL} & \textbf{SRA} &  \href{https://youtu.be/aSTUbG23kdI}{SRA}   \\\hline
+		\textbf{XOR}  &  \href{}{XOR}  & \textbf{SLTU} &  \href{https://youtu.be/IazxX0OtrLE}{SLTU} \\\hline
+		\textbf{NOR} &  \href{}{NOR} & \textbf{MULT} &  \href{https://youtu.be/TvRZG23bw78}{MULT} \\\hline
+		\textbf{DIV} &  \href{https://youtu.be/l3nE2rxqUuY}{DIV}  & \textbf{LUI} &  \href{https://youtu.be/lTs8LDFBiIE}{LUI} \\\hline
+		\textbf{SLLV} &  \href{https://youtu.be/e2SjS3GcqtE}{SLLV}  & \textbf{SRAV} &  \href{}{SRAV} \\\hline
+		\textbf{SRLV} &  \href{}{SRLV}  & \textbf{*MULTU} &  \href{}{MULTU} \\\hline
+		\textbf{*DIVU} &  \href{}{DIVU}  & \textbf{*MTHI}  &  \href{}{MTHI} \\\hline
+		\textbf{*MLTO} &  \href{}{MLTO}  & \textbf{*SGT} &  \href{}{SGT} \\\hline
+		\textbf{*MADD} &  \href{}{MADD}  & \textbf{*MADDU} &  \href{}{MADDU} \\\hline
+		\textbf{*MSUB} &  \href{}{MSUB}  & \textbf{*MSUBU}  &  \href{}{MSUBU} \\\hline
+	\end{tabular}
+	\caption{Funcionamento das operações da ULA.}
+	\label{tab:youtubeULA}
+\end{table}
+
 
 \subsection{Exercício 3. Unidade Aritmética de Ponto Flutuante }
 \label{subsec:ulafloat}
