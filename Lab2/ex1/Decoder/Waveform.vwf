@@ -99,7 +99,7 @@ SIGNAL("Out[6]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[5]")
@@ -109,7 +109,7 @@ SIGNAL("Out[5]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[4]")
@@ -119,7 +119,7 @@ SIGNAL("Out[4]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[3]")
@@ -129,7 +129,7 @@ SIGNAL("Out[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[2]")
@@ -139,7 +139,7 @@ SIGNAL("Out[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[1]")
@@ -149,7 +149,7 @@ SIGNAL("Out[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 SIGNAL("Out[0]")
@@ -159,7 +159,7 @@ SIGNAL("Out[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Out";
+	PARENT = "";
 }
 
 GROUP("Out")
@@ -174,9 +174,9 @@ TRANSITION_LIST("Clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 16;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 80;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
 		}
 	}
 }

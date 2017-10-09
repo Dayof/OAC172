@@ -8,15 +8,15 @@
 module ALU (
 	input iCLK, iRST,
 	input signed [31:0] iA, iB,
-//	input [4:0] iControlSignal,   // comente para avaliar as funções
+	input [4:0] iControlSignal,   // comente para avaliar as funções
 	input [4:0] iShamt,
 	output oZero, oOverflow,
 	output [31:0] oALUresult
 	);
 
 /* use essas linhas para avaliar as operações da ula individualmente */
-wire [4:0]  iControlSignal;
-assign iControlSignal=OPOR;
+//wire [4:0]  iControlSignal;
+//assign iControlSignal=OPOR;
 	
 reg [31:0] HI, LO;
 
