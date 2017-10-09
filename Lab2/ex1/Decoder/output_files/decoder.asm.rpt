@@ -1,6 +1,11 @@
 Assembler report for decoder
+<<<<<<< HEAD
 Mon Oct 02 16:24:45 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+=======
+Mon Oct  2 13:27:46 2017
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 ---------------------
@@ -10,8 +15,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
+<<<<<<< HEAD
   5. Assembler Device Options: C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.sof
   6. Assembler Device Options: C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.pof
+=======
+  5. Assembler Device Options: decoder.sof
+  6. Assembler Device Options: decoder.pof
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
   7. Assembler Messages
 
 
@@ -38,9 +48,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Mon Oct 02 16:24:45 2017 ;
 ; Revision Name         ; decoder                               ;
 ; Top-level Entity Name ; TopDE                                 ;
+=======
+; Assembler Status      ; Successful - Mon Oct  2 13:27:46 2017 ;
+; Revision Name         ; decoder                               ;
+; Top-level Entity Name ; decoder7                              ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C70F896C6                          ;
 +-----------------------+---------------------------------------+
@@ -78,6 +94,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------------------+
 ; Assembler Generated Files                                                            ;
 +--------------------------------------------------------------------------------------+
@@ -109,12 +126,46 @@ applicable agreement for further details.
 ; Checksum           ; 0x187ED376                                                                                ;
 ; Compression Ratio  ; 3                                                                                         ;
 +--------------------+-------------------------------------------------------------------------------------------+
+=======
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; decoder.sof               ;
+; decoder.pof               ;
++---------------------------+
+
+
++---------------------------------------+
+; Assembler Device Options: decoder.sof ;
++----------------+----------------------+
+; Option         ; Setting              ;
++----------------+----------------------+
+; Device         ; EP2C70F896C6         ;
+; JTAG usercode  ; 0x0060794D           ;
+; Checksum       ; 0x0060794D           ;
++----------------+----------------------+
+
+
++---------------------------------------+
+; Assembler Device Options: decoder.pof ;
++--------------------+------------------+
+; Option             ; Setting          ;
++--------------------+------------------+
+; Device             ; EPCS16           ;
+; JTAG usercode      ; 0x00000000       ;
+; Checksum           ; 0x187FF17B       ;
+; Compression Ratio  ; 3                ;
++--------------------+------------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
+<<<<<<< HEAD
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
     Info: Processing started: Mon Oct 02 16:24:39 2017
@@ -126,5 +177,18 @@ Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Processing ended: Mon Oct 02 16:24:45 2017
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
+=======
+Info: Running Quartus II 32-bit Assembler
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Oct  2 13:27:35 2017
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off decoder -c decoder
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 346 megabytes
+    Info: Processing ended: Mon Oct  2 13:27:46 2017
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:12
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 

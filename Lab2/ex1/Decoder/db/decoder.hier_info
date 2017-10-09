@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |TopDE
 iCLK_50 => iCLK_50.IN4
 iSW[0] => iSW[0].IN1
@@ -136,10 +137,14 @@ Clk => ~NO_FANOUT~
 
 
 |TopDE|decoder7:u3
+=======
+|decoder7
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 In[0] => Decoder0.IN3
 In[1] => Decoder0.IN2
 In[2] => Decoder0.IN1
 In[3] => Decoder0.IN0
+<<<<<<< HEAD
 Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
@@ -148,5 +153,21 @@ Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 Clk => ~NO_FANOUT~
+=======
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Clk => Out[0]~reg0.CLK
+Clk => Out[1]~reg0.CLK
+Clk => Out[2]~reg0.CLK
+Clk => Out[3]~reg0.CLK
+Clk => Out[4]~reg0.CLK
+Clk => Out[5]~reg0.CLK
+Clk => Out[6]~reg0.CLK
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 

@@ -1,6 +1,11 @@
 Fitter report for decoder
+<<<<<<< HEAD
 Mon Oct 02 16:24:37 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+=======
+Mon Oct  2 13:27:28 2017
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 ---------------------
@@ -25,6 +30,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  17. Fitter Resource Utilization by Entity
  18. Delay Chain Summary
  19. Pad To Core Delay Chain Fanout
+<<<<<<< HEAD
  20. Non-Global High Fan-Out Signals
  21. Other Routing Usage Summary
  22. LAB Logic Elements
@@ -35,6 +41,21 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  27. Operating Settings and Conditions
  28. Fitter Messages
  29. Fitter Suppressed Messages
+=======
+ 20. Control Signals
+ 21. Global & Other Fast Signals
+ 22. Non-Global High Fan-Out Signals
+ 23. Other Routing Usage Summary
+ 24. LAB Logic Elements
+ 25. LAB-wide Signals
+ 26. LAB Signals Sourced
+ 27. LAB Signals Sourced Out
+ 28. LAB Distinct Inputs
+ 29. Fitter Device Options
+ 30. Operating Settings and Conditions
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 
@@ -60,6 +81,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                      ; Successful - Mon Oct 02 16:24:37 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; decoder                                         ;
@@ -72,6 +94,20 @@ applicable agreement for further details.
 ;     Dedicated logic registers      ; 0 / 68,416 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 82 / 622 ( 13 % )                               ;
+=======
+; Fitter Status                      ; Successful - Mon Oct  2 13:27:28 2017           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; decoder                                         ;
+; Top-level Entity Name              ; decoder7                                        ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C70F896C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 7 / 68,416 ( < 1 % )                            ;
+;     Total combinational functions  ; 7 / 68,416 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 7 / 68,416 ( < 1 % )                            ;
+; Total registers                    ; 7                                               ;
+; Total pins                         ; 12 / 622 ( 2 % )                                ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                                 ;
@@ -135,7 +171,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
+<<<<<<< HEAD
 ; Number detected on machine ; 4      ;
+=======
+; Number detected on machine ; 2      ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -356,6 +396,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Location ;                ;              ; SRAM_DQ[9]     ; PIN_AJ17      ; QSF Assignment ;
 ; Location ;                ;              ; iAUD_ADCDAT    ; PIN_E19       ; QSF Assignment ;
 ; Location ;                ;              ; iCLK_28        ; PIN_E16       ; QSF Assignment ;
+<<<<<<< HEAD
+=======
+; Location ;                ;              ; iCLK_50        ; PIN_AD15      ; QSF Assignment ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Location ;                ;              ; iCLK_50_2      ; PIN_D16       ; QSF Assignment ;
 ; Location ;                ;              ; iCLK_50_3      ; PIN_R28       ; QSF Assignment ;
 ; Location ;                ;              ; iCLK_50_4      ; PIN_R3        ; QSF Assignment ;
@@ -363,10 +407,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Location ;                ;              ; iEXT_CLOCK     ; PIN_R29       ; QSF Assignment ;
 ; Location ;                ;              ; iFLASH_RY_N    ; PIN_AH30      ; QSF Assignment ;
 ; Location ;                ;              ; iIRDA_RXD      ; PIN_W22       ; QSF Assignment ;
+<<<<<<< HEAD
+=======
+; Location ;                ;              ; iKEY[0]        ; PIN_T29       ; QSF Assignment ;
+; Location ;                ;              ; iKEY[1]        ; PIN_T28       ; QSF Assignment ;
+; Location ;                ;              ; iKEY[2]        ; PIN_U30       ; QSF Assignment ;
+; Location ;                ;              ; iKEY[3]        ; PIN_U29       ; QSF Assignment ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Location ;                ;              ; iOTG_DREQ0     ; PIN_G12       ; QSF Assignment ;
 ; Location ;                ;              ; iOTG_DREQ1     ; PIN_F12       ; QSF Assignment ;
 ; Location ;                ;              ; iOTG_INT0      ; PIN_F13       ; QSF Assignment ;
 ; Location ;                ;              ; iOTG_INT1      ; PIN_J13       ; QSF Assignment ;
+<<<<<<< HEAD
+=======
+; Location ;                ;              ; iSW[0]         ; PIN_AA23      ; QSF Assignment ;
+; Location ;                ;              ; iSW[10]        ; PIN_W5        ; QSF Assignment ;
+; Location ;                ;              ; iSW[11]        ; PIN_V10       ; QSF Assignment ;
+; Location ;                ;              ; iSW[12]        ; PIN_U9        ; QSF Assignment ;
+; Location ;                ;              ; iSW[13]        ; PIN_T9        ; QSF Assignment ;
+; Location ;                ;              ; iSW[14]        ; PIN_L5        ; QSF Assignment ;
+; Location ;                ;              ; iSW[15]        ; PIN_L4        ; QSF Assignment ;
+; Location ;                ;              ; iSW[16]        ; PIN_L7        ; QSF Assignment ;
+; Location ;                ;              ; iSW[17]        ; PIN_L8        ; QSF Assignment ;
+; Location ;                ;              ; iSW[1]         ; PIN_AB26      ; QSF Assignment ;
+; Location ;                ;              ; iSW[2]         ; PIN_AB25      ; QSF Assignment ;
+; Location ;                ;              ; iSW[3]         ; PIN_AC27      ; QSF Assignment ;
+; Location ;                ;              ; iSW[4]         ; PIN_AC26      ; QSF Assignment ;
+; Location ;                ;              ; iSW[5]         ; PIN_AC24      ; QSF Assignment ;
+; Location ;                ;              ; iSW[6]         ; PIN_AC23      ; QSF Assignment ;
+; Location ;                ;              ; iSW[7]         ; PIN_AD25      ; QSF Assignment ;
+; Location ;                ;              ; iSW[8]         ; PIN_AD24      ; QSF Assignment ;
+; Location ;                ;              ; iSW[9]         ; PIN_AE27      ; QSF Assignment ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Location ;                ;              ; iTD1_CLK27     ; PIN_G15       ; QSF Assignment ;
 ; Location ;                ;              ; iTD1_D[0]      ; PIN_A6        ; QSF Assignment ;
 ; Location ;                ;              ; iTD1_D[1]      ; PIN_B6        ; QSF Assignment ;
@@ -473,6 +545,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Location ;                ;              ; oFLASH_RST_N   ; PIN_AH28      ; QSF Assignment ;
 ; Location ;                ;              ; oFLASH_WE_N    ; PIN_AJ29      ; QSF Assignment ;
 ; Location ;                ;              ; oFLASH_WP_N    ; PIN_AH29      ; QSF Assignment ;
+<<<<<<< HEAD
+=======
+; Location ;                ;              ; oHEX0_DP       ; PIN_AF12      ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[0]     ; PIN_AE8       ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[1]     ; PIN_AF9       ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[2]     ; PIN_AH9       ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[3]     ; PIN_AD10      ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[4]     ; PIN_AF10      ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[5]     ; PIN_AD11      ; QSF Assignment ;
+; Location ;                ;              ; oHEX0_D[6]     ; PIN_AD12      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_DP       ; PIN_AC17      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[0]     ; PIN_AG13      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[1]     ; PIN_AE16      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[2]     ; PIN_AF16      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[3]     ; PIN_AG16      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[4]     ; PIN_AE17      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[5]     ; PIN_AF17      ; QSF Assignment ;
+; Location ;                ;              ; oHEX1_D[6]     ; PIN_AD17      ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_DP       ; PIN_AC19      ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[0]     ; PIN_AE7       ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[1]     ; PIN_AF7       ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[2]     ; PIN_AH5       ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[3]     ; PIN_AG4       ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[4]     ; PIN_AB18      ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[5]     ; PIN_AB19      ; QSF Assignment ;
+; Location ;                ;              ; oHEX2_D[6]     ; PIN_AE19      ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_DP       ; PIN_M4        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[0]     ; PIN_P6        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[1]     ; PIN_P4        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[2]     ; PIN_N10       ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[3]     ; PIN_N7        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[4]     ; PIN_M8        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[5]     ; PIN_M7        ; QSF Assignment ;
+; Location ;                ;              ; oHEX3_D[6]     ; PIN_M6        ; QSF Assignment ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Location ;                ;              ; oHEX4_DP       ; PIN_L6        ; QSF Assignment ;
 ; Location ;                ;              ; oHEX4_D[0]     ; PIN_P1        ; QSF Assignment ;
 ; Location ;                ;              ; oHEX4_D[1]     ; PIN_P2        ; QSF Assignment ;
@@ -512,6 +619,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Location ;                ;              ; oLCD_ON        ; PIN_F1        ; QSF Assignment ;
 ; Location ;                ;              ; oLCD_RS        ; PIN_F2        ; QSF Assignment ;
 ; Location ;                ;              ; oLCD_RW        ; PIN_F3        ; QSF Assignment ;
+<<<<<<< HEAD
+=======
+; Location ;                ;              ; oLEDG[0]       ; PIN_W27       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[1]       ; PIN_W25       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[2]       ; PIN_W23       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[3]       ; PIN_Y27       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[4]       ; PIN_Y24       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[5]       ; PIN_Y23       ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[6]       ; PIN_AA27      ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[7]       ; PIN_AA24      ; QSF Assignment ;
+; Location ;                ;              ; oLEDG[8]       ; PIN_AC14      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[0]       ; PIN_AJ6       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[10]      ; PIN_AC13      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[11]      ; PIN_AB13      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[12]      ; PIN_AC12      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[13]      ; PIN_AB12      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[14]      ; PIN_AC11      ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[15]      ; PIN_AD9       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[16]      ; PIN_AD8       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[17]      ; PIN_AJ7       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[1]       ; PIN_AK5       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[2]       ; PIN_AJ5       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[3]       ; PIN_AJ4       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[4]       ; PIN_AK3       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[5]       ; PIN_AH4       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[6]       ; PIN_AJ3       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[7]       ; PIN_AJ2       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[8]       ; PIN_AH3       ; QSF Assignment ;
+; Location ;                ;              ; oLEDR[9]       ; PIN_AD14      ; QSF Assignment ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Location ;                ;              ; oOTG_A[0]      ; PIN_E9        ; QSF Assignment ;
 ; Location ;                ;              ; oOTG_A[1]      ; PIN_D8        ; QSF Assignment ;
 ; Location ;                ;              ; oOTG_CS_N      ; PIN_E10       ; QSF Assignment ;
@@ -602,8 +739,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
+<<<<<<< HEAD
 ;     -- Requested    ; 0 / 114 ( 0.00 % )     ;
 ;     -- Achieved     ; 0 / 114 ( 0.00 % )     ;
+=======
+;     -- Requested    ; 0 / 30 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 30 ( 0.00 % )      ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -626,7 +768,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
+<<<<<<< HEAD
 ; Top                            ; 112     ; 0                 ; N/A                     ; Source File       ;
+=======
+; Top                            ; 28      ; 0                 ; N/A                     ; Source File       ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; hard_block:auto_generated_inst ; 2       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -634,7 +780,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
+<<<<<<< HEAD
 The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.pin.
+=======
+The pin-out file can be found in /home/lucas/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.pin.
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +---------------------------------------------------------------------+
@@ -642,6 +792,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
+<<<<<<< HEAD
 ; Total logic elements                        ; 29 / 68,416 ( < 1 % ) ;
 ;     -- Combinational with no register       ; 29                    ;
 ;     -- Register only                        ; 0                     ;
@@ -667,26 +818,66 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
 ;                                             ;                       ;
 ; Global signals                              ; 0                     ;
+=======
+; Total logic elements                        ; 7 / 68,416 ( < 1 % )  ;
+;     -- Combinational with no register       ; 0                     ;
+;     -- Register only                        ; 0                     ;
+;     -- Combinational with a register        ; 7                     ;
+;                                             ;                       ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 7                     ;
+;     -- 3 input functions                    ; 0                     ;
+;     -- <=2 input functions                  ; 0                     ;
+;     -- Register only                        ; 0                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 7                     ;
+;     -- arithmetic mode                      ; 0                     ;
+;                                             ;                       ;
+; Total registers*                            ; 7 / 70,234 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 7 / 68,416 ( < 1 % )  ;
+;     -- I/O registers                        ; 0 / 1,818 ( 0 % )     ;
+;                                             ;                       ;
+; Total LABs:  partially or completely used   ; 1 / 4,276 ( < 1 % )   ;
+; Virtual pins                                ; 0                     ;
+; I/O pins                                    ; 12 / 622 ( 2 % )      ;
+;     -- Clock pins                           ; 2 / 8 ( 25 % )        ;
+;                                             ;                       ;
+; Global signals                              ; 1                     ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; M4Ks                                        ; 0 / 250 ( 0 % )       ;
 ; Total block memory bits                     ; 0 / 1,152,000 ( 0 % ) ;
 ; Total block memory implementation bits      ; 0 / 1,152,000 ( 0 % ) ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 300 ( 0 % )       ;
 ; PLLs                                        ; 0 / 4 ( 0 % )         ;
+<<<<<<< HEAD
 ; Global clocks                               ; 0 / 16 ( 0 % )        ;
+=======
+; Global clocks                               ; 1 / 16 ( 6 % )        ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; JTAGs                                       ; 0 / 1 ( 0 % )         ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
+<<<<<<< HEAD
 ; Peak interconnect usage (total/H/V)         ; 0% / 1% / 0%          ;
 ; Maximum fan-out                             ; 8                     ;
 ; Highest non-global fan-out                  ; 8                     ;
 ; Total fan-out                               ; 168                   ;
 ; Average fan-out                             ; 1.49                  ;
+=======
+; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
+; Maximum fan-out                             ; 7                     ;
+; Highest non-global fan-out                  ; 7                     ;
+; Total fan-out                               ; 50                    ;
+; Average fan-out                             ; 1.72                  ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------+
 ; Fitter Partition Statistics                                                                         ;
 +---------------------------------------------+----------------------+--------------------------------+
@@ -851,6 +1042,103 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; oLEDR[8]   ; AH3   ; 8        ; 3            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; oLEDR[9]   ; AD14  ; 8        ; 38           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+=======
++----------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                        ;
++---------------------------------------------+---------------------+--------------------------------+
+; Statistic                                   ; Top                 ; hard_block:auto_generated_inst ;
++---------------------------------------------+---------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                 ; Low                            ;
+;                                             ;                     ;                                ;
+; Total logic elements                        ; 7 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
+;     -- Combinational with no register       ; 0                   ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
+;     -- Combinational with a register        ; 7                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Logic element usage by number of LUT inputs ;                     ;                                ;
+;     -- 4 input functions                    ; 7                   ; 0                              ;
+;     -- 3 input functions                    ; 0                   ; 0                              ;
+;     -- <=2 input functions                  ; 0                   ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Logic elements by mode                      ;                     ;                                ;
+;     -- normal mode                          ; 7                   ; 0                              ;
+;     -- arithmetic mode                      ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Total registers                             ; 7                   ; 0                              ;
+;     -- Dedicated logic registers            ; 7 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
+;                                             ;                     ;                                ;
+; Total LABs:  partially or completely used   ; 1 / 4276 ( < 1 % )  ; 0 / 4276 ( 0 % )               ;
+;                                             ;                     ;                                ;
+; Virtual pins                                ; 0                   ; 0                              ;
+; I/O pins                                    ; 12                  ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 300 ( 0 % )     ; 0 / 300 ( 0 % )                ;
+; Total memory bits                           ; 0                   ; 0                              ;
+; Total RAM block bits                        ; 0                   ; 0                              ;
+; Clock control block                         ; 1 / 20 ( 5 % )      ; 0 / 20 ( 0 % )                 ;
+;                                             ;                     ;                                ;
+; Connections                                 ;                     ;                                ;
+;     -- Input Connections                    ; 0                   ; 0                              ;
+;     -- Registered Input Connections         ; 0                   ; 0                              ;
+;     -- Output Connections                   ; 0                   ; 0                              ;
+;     -- Registered Output Connections        ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Internal Connections                        ;                     ;                                ;
+;     -- Total Connections                    ; 50                  ; 0                              ;
+;     -- Registered Connections               ; 7                   ; 0                              ;
+;                                             ;                     ;                                ;
+; External Connections                        ;                     ;                                ;
+;     -- Top                                  ; 0                   ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Partition Interface                         ;                     ;                                ;
+;     -- Input Ports                          ; 5                   ; 0                              ;
+;     -- Output Ports                         ; 7                   ; 0                              ;
+;     -- Bidir Ports                          ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Registered Ports                            ;                     ;                                ;
+;     -- Registered Input Ports               ; 0                   ; 0                              ;
+;     -- Registered Output Ports              ; 0                   ; 0                              ;
+;                                             ;                     ;                                ;
+; Port Connectivity                           ;                     ;                                ;
+;     -- Input Ports driven by GND            ; 0                   ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                   ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                   ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                   ; 0                              ;
+;     -- Input Ports with no Source           ; 0                   ; 0                              ;
+;     -- Output Ports with no Source          ; 0                   ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                   ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                   ; 0                              ;
++---------------------------------------------+---------------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                  ;
++-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
++-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; Clk   ; T2    ; 1        ; 0            ; 25           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; In[0] ; G15   ; 3        ; 47           ; 51           ; 2           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; In[1] ; H15   ; 3        ; 47           ; 51           ; 3           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; In[2] ; C15   ; 3        ; 44           ; 51           ; 0           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; In[3] ; B15   ; 3        ; 44           ; 51           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
++-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                          ;
++--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
++--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+; Out[0] ; A14   ; 3        ; 42           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[1] ; C13   ; 3        ; 40           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[2] ; E15   ; 3        ; 44           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[3] ; D14   ; 3        ; 40           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[4] ; D15   ; 3        ; 42           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[5] ; B14   ; 3        ; 42           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; Out[6] ; E14   ; 3        ; 40           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
++--------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +------------------------------------------------------------+
@@ -858,6 +1146,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
+<<<<<<< HEAD
 ; 1        ; 4 / 85 ( 5 % )   ; 3.3V          ; --           ;
 ; 2        ; 14 / 79 ( 18 % ) ; 3.3V          ; --           ;
 ; 3        ; 0 / 72 ( 0 % )   ; 3.3V          ; --           ;
@@ -866,6 +1155,16 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; 6        ; 22 / 81 ( 27 % ) ; 3.3V          ; --           ;
 ; 7        ; 12 / 74 ( 16 % ) ; 3.3V          ; --           ;
 ; 8        ; 32 / 72 ( 44 % ) ; 3.3V          ; --           ;
+=======
+; 1        ; 1 / 85 ( 1 % )   ; 3.3V          ; --           ;
+; 2        ; 2 / 79 ( 3 % )   ; 3.3V          ; --           ;
+; 3        ; 11 / 72 ( 15 % ) ; 3.3V          ; --           ;
+; 4        ; 0 / 74 ( 0 % )   ; 3.3V          ; --           ;
+; 5        ; 0 / 85 ( 0 % )   ; 3.3V          ; --           ;
+; 6        ; 0 / 81 ( 0 % )   ; 3.3V          ; --           ;
+; 7        ; 0 / 74 ( 0 % )   ; 3.3V          ; --           ;
+; 8        ; 0 / 72 ( 0 % )   ; 3.3V          ; --           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +----------+------------------+---------------+--------------+
 
 
@@ -886,7 +1185,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; A11      ; 586        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A12      ; 578        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; A14      ; 569        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+=======
+; A14      ; 569        ; 3        ; Out[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; A15      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A17      ; 549        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -924,11 +1227,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AA20     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA21     ;            ;          ; GND_PLL4                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA22     ;            ;          ; GND_PLL4                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AA23     ; 340        ; 6        ; iSW[0]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AA24     ; 339        ; 6        ; oLEDG[7]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AA25     ; 347        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA26     ; 356        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA27     ; 357        ; 6        ; oLEDG[6]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; AA23     ; 340        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AA24     ; 339        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AA25     ; 347        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AA26     ; 356        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AA27     ; 357        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AA28     ; 369        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; AA29     ; 376        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA30     ; 377        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -943,21 +1254,36 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AB9      ;            ;          ; VCCD_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AB10     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AB12     ; 218        ; 8        ; oLEDR[13]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AB13     ; 224        ; 8        ; oLEDR[11]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AB12     ; 218        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AB13     ; 224        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AB14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB15     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB16     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB17     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AB18     ; 279        ; 7        ; oHEX2_D[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AB19     ; 280        ; 7        ; oHEX2_D[5]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AB18     ; 279        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AB19     ; 280        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AB20     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB21     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB22     ;            ;          ; VCCD_PLL4                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AB23     ; 318        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AB24     ; 323        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AB25     ; 341        ; 6        ; iSW[2]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AB26     ; 342        ; 6        ; iSW[1]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; AB25     ; 341        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AB26     ; 342        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AB27     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB28     ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB29     ; 371        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -972,6 +1298,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AC8      ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC9      ;            ;          ; VCCA_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AC10     ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AC11     ; 196        ; 8        ; oLEDR[14]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AC12     ; 201        ; 8        ; oLEDR[12]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AC13     ; 223        ; 8        ; oLEDR[10]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -989,6 +1316,25 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AC25     ; 328        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AC26     ; 329        ; 6        ; iSW[4]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AC27     ; 350        ; 6        ; iSW[3]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; AC11     ; 196        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC12     ; 201        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC13     ; 223        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC14     ; 231        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC15     ; 245        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AC16     ; 250        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC17     ; 259        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC18     ; 272        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC19     ; 282        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC20     ; 293        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC21     ; 307        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC22     ;            ;          ; VCCA_PLL4                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; AC23     ; 321        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AC24     ; 322        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AC25     ; 328        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AC26     ; 329        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AC27     ; 350        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AC28     ; 351        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AC29     ; 365        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AC30     ; 366        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -999,6 +1345,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AD5      ; 160        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; AD6      ; 170        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AD7      ; 171        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AD8      ; 180        ; 8        ; oLEDR[16]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD9      ; 195        ; 8        ; oLEDR[15]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD10     ; 197        ; 8        ; oHEX0_D[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -1009,14 +1356,31 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AD15     ; 244        ; 7        ; iCLK_50                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD16     ; 249        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD17     ; 258        ; 7        ; oHEX1_D[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AD8      ; 180        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD9      ; 195        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD10     ; 197        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD11     ; 202        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD12     ; 210        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD13     ; 222        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD14     ; 229        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD15     ; 244        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AD16     ; 249        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD17     ; 258        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AD18     ; 271        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD19     ; 281        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD20     ; 294        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD21     ; 306        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD22     ; 301        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AD23     ;            ;          ; GNDA_PLL4                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AD24     ; 319        ; 6        ; iSW[8]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AD25     ; 320        ; 6        ; iSW[7]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; AD24     ; 319        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; AD25     ; 320        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AD26     ; 326        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AD27     ; 327        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; AD28     ; 338        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -1028,8 +1392,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AE4      ; 163        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE5      ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AE6      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AE7      ; 173        ; 8        ; oHEX2_D[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE8      ; 172        ; 8        ; oHEX0_D[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AE7      ; 173        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE8      ; 172        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AE9      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE10     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AE11     ; 204        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1037,10 +1406,17 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AE13     ; 221        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE15     ; 235        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AE16     ; 248        ; 7        ; oHEX1_D[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE17     ; 255        ; 7        ; oHEX1_D[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE18     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE19     ; 284        ; 7        ; oHEX2_D[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AE16     ; 248        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE17     ; 255        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE18     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; AE19     ; 284        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AE20     ; 290        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AE22     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1048,7 +1424,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AE24     ; 317        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE25     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE26     ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AE27     ; 336        ; 6        ; iSW[9]                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; AE27     ; 336        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AE28     ; 337        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE29     ; 352        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE30     ; 353        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1058,6 +1438,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AF4      ; 165        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AF5      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF6      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AF7      ; 183        ; 8        ; oHEX2_D[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AF8      ; 189        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF9      ; 192        ; 8        ; oHEX0_D[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -1069,6 +1450,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AF15     ; 234        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF16     ; 252        ; 7        ; oHEX1_D[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AF17     ; 264        ; 7        ; oHEX1_D[5]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AF7      ; 183        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF8      ; 189        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF9      ; 192        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AF10     ; 200        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF11     ; 203        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF12     ; 217        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AF13     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; AF14     ; 233        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF15     ; 234        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF16     ; 252        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF17     ; 264        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AF18     ; 269        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF19     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF20     ; 276        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1085,7 +1479,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AG1      ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AG2      ; 156        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AG3      ; 157        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AG4      ; 174        ; 8        ; oHEX2_D[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AG4      ; 174        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AG5      ; 175        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG6      ; 182        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG7      ; 191        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1094,10 +1492,17 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AG10     ; 212        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG11     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG12     ; 226        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AG13     ; 230        ; 8        ; oHEX1_D[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AG14     ; 232        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG15     ; 242        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AG16     ; 251        ; 7        ; oHEX1_D[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AG13     ; 230        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AG14     ; 232        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AG15     ; 242        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AG16     ; 251        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AG17     ; 254        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG18     ; 270        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG19     ; 268        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1114,6 +1519,7 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AG30     ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AH1      ; 158        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AH2      ; 159        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; AH3      ; 177        ; 8        ; oLEDR[8]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AH4      ; 185        ; 8        ; oLEDR[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AH5      ; 181        ; 8        ; oHEX2_D[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -1121,6 +1527,15 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AH7      ; 190        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH8      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AH9      ; 207        ; 8        ; oHEX0_D[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AH3      ; 177        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AH4      ; 185        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AH5      ; 181        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AH6      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; AH7      ; 190        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AH8      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; AH9      ; 207        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AH10     ; 211        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AH12     ; 225        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1143,12 +1558,21 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AH29     ; 332        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AH30     ; 334        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AJ1      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AJ2      ; 176        ; 8        ; oLEDR[7]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AJ3      ; 179        ; 8        ; oLEDR[6]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AJ4      ; 184        ; 8        ; oLEDR[3]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AJ5      ; 187        ; 8        ; oLEDR[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AJ6      ; 194        ; 8        ; oLEDR[0]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AJ7      ; 199        ; 8        ; oLEDR[17]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AJ2      ; 176        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ3      ; 179        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ4      ; 184        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ5      ; 187        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ6      ; 194        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ7      ; 199        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AJ8      ; 206        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ9      ; 214        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ10     ; 216        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1173,9 +1597,15 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; AJ29     ; 335        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AJ30     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AK2      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; AK3      ; 178        ; 8        ; oLEDR[4]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AK4      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AK5      ; 186        ; 8        ; oLEDR[1]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+=======
+; AK3      ; 178        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AK4      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; AK5      ; 186        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; AK6      ; 193        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AK7      ; 198        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AK8      ; 205        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1213,8 +1643,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; B11      ; 585        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B12      ; 577        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B13      ; 573        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; B14      ; 568        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B15      ; 565        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+=======
+; B14      ; 568        ; 3        ; Out[5]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B15      ; 565        ; 3        ; In[3]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; B16      ; 559        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B17      ; 548        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B18      ; 547        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1242,9 +1677,15 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; C10      ; 600        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; C12      ; 584        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; C13      ; 572        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C14      ; 575        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C15      ; 564        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+=======
+; C13      ; 572        ; 3        ; Out[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C14      ; 575        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; C15      ; 564        ; 3        ; In[2]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; C16      ; 558        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C17      ; 554        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C18      ; 546        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1273,8 +1714,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; D11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D12      ; 583        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D13      ; 588        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; D14      ; 571        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 567        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+=======
+; D14      ; 571        ; 3        ; Out[3]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D15      ; 567        ; 3        ; Out[4]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; D16      ; 561        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D17      ; 553        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 541        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -1303,8 +1749,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; E11      ; 596        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E12      ; 589        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E13      ; 579        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; E14      ; 570        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E15      ; 566        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+=======
+; E14      ; 570        ; 3        ; Out[6]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E15      ; 566        ; 3        ; Out[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; E16      ; 560        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; E17      ; 550        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -1364,7 +1815,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; G12      ; 597        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G13      ; 582        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 576        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; G15      ; 562        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+=======
+; G15      ; 562        ; 3        ; In[0]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; G16      ; 555        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G17      ; 551        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G18      ; 542        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1394,7 +1849,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; H12      ; 598        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H13      ; 587        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H14      ; 574        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; H15      ; 563        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+=======
+; H15      ; 563        ; 3        ; In[1]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; H16      ; 557        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H17      ; 552        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ; 535        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1473,11 +1932,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; L1       ; 60         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L2       ; 61         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L3       ; 54         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; L4       ; 55         ; 2        ; iSW[15]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L5       ; 34         ; 2        ; iSW[14]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L6       ; 33         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L7       ; 28         ; 2        ; iSW[16]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L8       ; 27         ; 2        ; iSW[17]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; L4       ; 55         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L5       ; 34         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L6       ; 33         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L7       ; 28         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L8       ; 27         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; L9       ; 30         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L10      ; 29         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L11      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -1503,11 +1970,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; M1       ; 64         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M2       ; 65         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M3       ; 66         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; M4       ; 67         ; 2        ; oHEX3_DP                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M5       ; 53         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M6       ; 49         ; 2        ; oHEX3_D[6]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M7       ; 50         ; 2        ; oHEX3_D[5]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M8       ; 36         ; 2        ; oHEX3_D[4]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; M4       ; 67         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; M5       ; 53         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; M6       ; 49         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; M7       ; 50         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; M8       ; 36         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; M9       ; 35         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M10      ; 48         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1536,10 +2011,17 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; N4       ; 71         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N5       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; N6       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; N7       ; 59         ; 2        ; oHEX3_D[3]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N8       ; 58         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N9       ; 63         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N10      ; 47         ; 2        ; oHEX3_D[2]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; N7       ; 59         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N8       ; 58         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N9       ; 63         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N10      ; 47         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; N11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1563,9 +2045,15 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; P1       ; 75         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P2       ; 76         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P3       ; 73         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; P4       ; 74         ; 2        ; oHEX3_D[1]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P5       ; 78         ; 2        ; #TCK                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; P6       ; 72         ; 2        ; oHEX3_D[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; P4       ; 74         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P5       ; 78         ; 2        ; #TCK                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; P6       ; 72         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; P7       ; 70         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P8       ; 77         ; 2        ; #TDI                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; P9       ; 62         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1621,14 +2109,22 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; R29      ; 404        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R30      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T1       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; T2       ; 87         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+=======
+; T2       ; 87         ; 1        ; Clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; T3       ; 88         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; T4       ; 91         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T5       ; 92         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T6       ; 89         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T7       ; 90         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T8       ; 97         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; T9       ; 96         ; 1        ; iSW[13]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; T9       ; 96         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; T10      ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1647,8 +2143,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; T25      ; 401        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; T26      ; 400        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T27      ; 399        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; T28      ; 397        ; 6        ; iKEY[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; T29      ; 398        ; 6        ; iKEY[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; T28      ; 397        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T29      ; 398        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; T30      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; U1       ; 93         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U2       ; 94         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1658,7 +2159,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; U6       ; 100        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U7       ; 101        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U8       ; 99         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; U9       ; 98         ; 1        ; iSW[12]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; U9       ; 98         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; U10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1678,8 +2183,13 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; U26      ; 393        ; 6        ; ^nSTATUS                                 ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; U27      ; 394        ; 6        ; ^CONF_DONE                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; U28      ; 395        ; 6        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; U29      ; 391        ; 6        ; iKEY[3]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; U30      ; 392        ; 6        ; iKEY[2]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; U29      ; 391        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; U30      ; 392        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; V1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V2       ; 104        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V3       ; 105        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1689,7 +2199,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; V7       ; 118        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V8       ; 117        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V9       ; 116        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; V10      ; 115        ; 1        ; iSW[11]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; V10      ; 115        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; V11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; V12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; V13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1714,7 +2228,11 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; W2       ; 107        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W3       ; 109        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W4       ; 110        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; W5       ; 119        ; 1        ; iSW[10]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; W5       ; 119        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; W6       ; 128        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W7       ; 130        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W8       ; 129        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1732,11 +2250,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; W20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W21      ; 364        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W22      ; 363        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; W23      ; 358        ; 6        ; oLEDG[2]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; W24      ; 359        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W25      ; 367        ; 6        ; oLEDG[1]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; W26      ; 362        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W27      ; 378        ; 6        ; oLEDG[0]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; W23      ; 358        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W24      ; 359        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W25      ; 367        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W26      ; 362        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W27      ; 378        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; W28      ; 379        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W29      ; 383        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W30      ; 384        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1762,11 +2288,19 @@ The pin-out file can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2
 ; Y20      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; Y21      ; 349        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y22      ; 348        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+<<<<<<< HEAD
 ; Y23      ; 346        ; 6        ; oLEDG[5]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y24      ; 345        ; 6        ; oLEDG[4]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y25      ; 361        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y26      ; 360        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y27      ; 375        ; 6        ; oLEDG[3]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+=======
+; Y23      ; 346        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y24      ; 345        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y25      ; 361        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y26      ; 360        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; Y27      ; 375        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Y28      ; 374        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y29      ; 380        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y30      ; 381        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1816,15 +2350,20 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
+<<<<<<< HEAD
 ; |TopDE                     ; 29 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 82   ; 0            ; 29 (1)       ; 0 (0)             ; 0 (0)            ; |TopDE              ; work         ;
 ;    |decoder7:u0|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |TopDE|decoder7:u0  ; work         ;
 ;    |decoder7:u1|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |TopDE|decoder7:u1  ; work         ;
 ;    |decoder7:u2|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |TopDE|decoder7:u2  ; work         ;
 ;    |decoder7:u3|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |TopDE|decoder7:u3  ; work         ;
+=======
+; |decoder7                  ; 7 (7)       ; 7 (7)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 12   ; 0            ; 0 (0)        ; 0 (0)             ; 7 (7)            ; |decoder7           ; work         ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------+
 ; Delay Chain Summary                                                                 ;
 +------------+----------+---------------+---------------+-----------------------+-----+
@@ -2082,10 +2621,76 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - oLEDG[4]              ; 1                 ; 6       ;
 ;      - oLEDG[5]              ; 1                 ; 6       ;
 +------------------------------+-------------------+---------+
+=======
++---------------------------------------------------------------------------------+
+; Delay Chain Summary                                                             ;
++--------+----------+---------------+---------------+-----------------------+-----+
+; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
++--------+----------+---------------+---------------+-----------------------+-----+
+; Out[0] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[1] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[2] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[3] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[4] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[5] ; Output   ; --            ; --            ; --                    ; --  ;
+; Out[6] ; Output   ; --            ; --            ; --                    ; --  ;
+; In[0]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; In[1]  ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; In[2]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; In[3]  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; Clk    ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
++--------+----------+---------------+---------------+-----------------------+-----+
+
+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; In[0]               ;                   ;         ;
+; In[1]               ;                   ;         ;
+; In[2]               ;                   ;         ;
+;      - WideOr6~0    ; 0                 ; 6       ;
+;      - WideOr5~0    ; 0                 ; 6       ;
+;      - WideOr4~0    ; 0                 ; 6       ;
+;      - WideOr3~0    ; 0                 ; 6       ;
+;      - WideOr2~0    ; 0                 ; 6       ;
+;      - WideOr1~0    ; 0                 ; 6       ;
+;      - WideOr0~0    ; 0                 ; 6       ;
+; In[3]               ;                   ;         ;
+;      - WideOr6~0    ; 0                 ; 6       ;
+;      - WideOr5~0    ; 0                 ; 6       ;
+;      - WideOr4~0    ; 0                 ; 6       ;
+;      - WideOr3~0    ; 0                 ; 6       ;
+;      - WideOr2~0    ; 0                 ; 6       ;
+;      - WideOr1~0    ; 0                 ; 6       ;
+;      - WideOr0~0    ; 0                 ; 6       ;
+; Clk                 ;                   ;         ;
++---------------------+-------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                  ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+; Clk  ; PIN_T2   ; 7       ; Clock ; yes    ; Global Clock         ; GCLK3            ; --                        ;
++------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                     ;
++------+----------+---------+----------------------+------------------+---------------------------+
+; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------+----------+---------+----------------------+------------------+---------------------------+
+; Clk  ; PIN_T2   ; 7       ; Global Clock         ; GCLK3            ; --                        ;
++------+----------+---------+----------------------+------------------+---------------------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
+<<<<<<< HEAD
 +-----------------------+---------+
 ; Name                  ; Fan-Out ;
 +-----------------------+---------+
@@ -2140,6 +2745,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; decoder7:u0|WideOr5~0 ; 1       ;
 ; decoder7:u0|WideOr6~0 ; 1       ;
 +-----------------------+---------+
+=======
++-------------+-------------------+
+; Name        ; Fan-Out           ;
++-------------+-------------------+
+; In[3]       ; 7                 ;
+; In[2]       ; 7                 ;
+; In[1]       ; 7                 ;
+; In[0]       ; 7                 ;
+; WideOr0~0   ; 1                 ;
+; WideOr1~0   ; 1                 ;
+; WideOr2~0   ; 1                 ;
+; WideOr3~0   ; 1                 ;
+; WideOr4~0   ; 1                 ;
+; WideOr5~0   ; 1                 ;
+; WideOr6~0   ; 1                 ;
+; Out[6]~reg0 ; 1                 ;
+; Out[5]~reg0 ; 1                 ;
+; Out[4]~reg0 ; 1                 ;
+; Out[3]~reg0 ; 1                 ;
+; Out[2]~reg0 ; 1                 ;
+; Out[1]~reg0 ; 1                 ;
+; Out[0]~reg0 ; 1                 ;
++-------------+-------------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +------------------------------------------------------+
@@ -2147,6 +2776,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
+<<<<<<< HEAD
 ; Block interconnects         ; 71 / 197,592 ( < 1 % ) ;
 ; C16 interconnects           ; 19 / 6,270 ( < 1 % )   ;
 ; C4 interconnects            ; 84 / 123,120 ( < 1 % ) ;
@@ -2154,21 +2784,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Local interconnects         ; 0 / 68,416 ( 0 % )     ;
 ; R24 interconnects           ; 59 / 5,926 ( < 1 % )   ;
 ; R4 interconnects            ; 81 / 167,484 ( < 1 % ) ;
+=======
+; Block interconnects         ; 11 / 197,592 ( < 1 % ) ;
+; C16 interconnects           ; 0 / 6,270 ( 0 % )      ;
+; C4 interconnects            ; 11 / 123,120 ( < 1 % ) ;
+; Global clocks               ; 1 / 16 ( 6 % )         ;
+; Local interconnects         ; 0 / 68,416 ( 0 % )     ;
+; R24 interconnects           ; 0 / 5,926 ( 0 % )      ;
+; R4 interconnects            ; 5 / 167,484 ( < 1 % )  ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +-----------------------------+------------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
+<<<<<<< HEAD
 ; Number of Logic Elements  (Average = 5.80) ; Number of LABs  (Total = 5) ;
 +--------------------------------------------+-----------------------------+
 ; 1                                          ; 1                           ;
+=======
+; Number of Logic Elements  (Average = 7.00) ; Number of LABs  (Total = 1) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 0                           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
 ; 5                                          ; 0                           ;
 ; 6                                          ; 0                           ;
+<<<<<<< HEAD
 ; 7                                          ; 4                           ;
+=======
+; 7                                          ; 1                           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; 8                                          ; 0                           ;
 ; 9                                          ; 0                           ;
 ; 10                                         ; 0                           ;
@@ -2181,6 +2830,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-----------------------------+
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
@@ -2195,27 +2845,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                           ; 0                           ;
 ; 7                                           ; 4                           ;
 +---------------------------------------------+-----------------------------+
+=======
++------------------------------------------------------------------+
+; LAB-wide Signals                                                 ;
++------------------------------------+-----------------------------+
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 1) ;
++------------------------------------+-----------------------------+
+; 1 Clock                            ; 1                           ;
++------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 14.00) ; Number of LABs  (Total = 1) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 0                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
+<<<<<<< HEAD
 ; Number of Signals Sourced Out  (Average = 5.80) ; Number of LABs  (Total = 5) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 1                           ;
+=======
+; Number of Signals Sourced Out  (Average = 7.00) ; Number of LABs  (Total = 1) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 0                           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
+<<<<<<< HEAD
 ; 7                                               ; 4                           ;
+=======
+; 7                                               ; 1                           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
+<<<<<<< HEAD
 ; Number of Distinct Inputs  (Average = 3.60) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
@@ -2223,6 +2917,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 4                           ;
+=======
+; Number of Distinct Inputs  (Average = 5.00) ; Number of LABs  (Total = 1) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 1                           ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 +---------------------------------------------+-----------------------------+
 
 
@@ -2268,6 +2972,7 @@ Info (176444): Device migration not selected. If you intend to use device migrat
 Info (169124): Fitter converted 2 user pins into dedicated programming pins
     Info (169125): Pin ~ASDO~ is reserved at location G7
     Info (169125): Pin ~nCSO~ is reserved at location K9
+<<<<<<< HEAD
 Info (332104): Reading SDC File: 'decoder.out.sdc'
 Warning (332174): Ignored filter at decoder.out.sdc(41): Clk could not be matched with a port
 Warning (332049): Ignored create_clock at decoder.out.sdc(41): Argument <targets> is an empty collection
@@ -2282,6 +2987,47 @@ Info (332111): Found 1 clocks
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+=======
+Critical Warning (169085): No exact pin location assignment(s) for 12 pins of 12 total pins
+    Info (169086): Pin Out[0] not assigned to an exact location on the device
+    Info (169086): Pin Out[1] not assigned to an exact location on the device
+    Info (169086): Pin Out[2] not assigned to an exact location on the device
+    Info (169086): Pin Out[3] not assigned to an exact location on the device
+    Info (169086): Pin Out[4] not assigned to an exact location on the device
+    Info (169086): Pin Out[5] not assigned to an exact location on the device
+    Info (169086): Pin Out[6] not assigned to an exact location on the device
+    Info (169086): Pin In[0] not assigned to an exact location on the device
+    Info (169086): Pin In[1] not assigned to an exact location on the device
+    Info (169086): Pin In[2] not assigned to an exact location on the device
+    Info (169086): Pin In[3] not assigned to an exact location on the device
+    Info (169086): Pin Clk not assigned to an exact location on the device
+Info (332104): Reading SDC File: 'decoder.out.sdc'
+Warning (332061): Virtual clock clk is never referenced in any input or output delay assignment.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 2 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000          Clk
+    Info (332111):   20.000          clk
+Info (176353): Automatically promoted node Clk (placed in PIN T2 (CLK2, LVDSCLK1p, Input))
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+    Info (176211): Number of I/O pins in group: 11 (unused VREF, 3.3V VCCIO, 4 input, 7 output, 0 bidirectional)
+        Info (176212): I/O standards used: 3.3-V LVTTL.
+Info (176215): I/O bank details before I/O pin placement
+    Info (176214): Statistics of I/O banks
+        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  84 pins available
+        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  77 pins available
+        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
+        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  74 pins available
+        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  85 pins available
+        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  81 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  74 pins available
+        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "AUD_ADCLRCK" is assigned to location or region, but does not exist in design
     Warning (15706): Node "AUD_BCLK" is assigned to location or region, but does not exist in design
@@ -2494,6 +3240,10 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "SRAM_DQ[9]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iAUD_ADCDAT" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iCLK_28" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
+    Warning (15706): Node "iCLK_50" is assigned to location or region, but does not exist in design
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
     Warning (15706): Node "iCLK_50_2" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iCLK_50_3" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iCLK_50_4" is assigned to location or region, but does not exist in design
@@ -2501,10 +3251,38 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "iEXT_CLOCK" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iFLASH_RY_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iIRDA_RXD" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
+    Warning (15706): Node "iKEY[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iKEY[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iKEY[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iKEY[3]" is assigned to location or region, but does not exist in design
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
     Warning (15706): Node "iOTG_DREQ0" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iOTG_DREQ1" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iOTG_INT0" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iOTG_INT1" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
+    Warning (15706): Node "iSW[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[10]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[11]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[12]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[13]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[14]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[15]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[16]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[17]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[7]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[8]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "iSW[9]" is assigned to location or region, but does not exist in design
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
     Warning (15706): Node "iTD1_CLK27" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iTD1_D[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "iTD1_D[1]" is assigned to location or region, but does not exist in design
@@ -2611,6 +3389,41 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "oFLASH_RST_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oFLASH_WE_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oFLASH_WP_N" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
+    Warning (15706): Node "oHEX0_DP" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX0_D[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_DP" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX1_D[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_DP" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX2_D[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_DP" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oHEX3_D[6]" is assigned to location or region, but does not exist in design
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
     Warning (15706): Node "oHEX4_DP" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oHEX4_D[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oHEX4_D[1]" is assigned to location or region, but does not exist in design
@@ -2650,6 +3463,36 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "oLCD_ON" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oLCD_RS" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oLCD_RW" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
+    Warning (15706): Node "oLEDG[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[7]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDG[8]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[10]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[11]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[12]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[13]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[14]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[15]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[16]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[17]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[7]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[8]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "oLEDR[9]" is assigned to location or region, but does not exist in design
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
     Warning (15706): Node "oOTG_A[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oOTG_A[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "oOTG_CS_N" is assigned to location or region, but does not exist in design
@@ -2733,17 +3576,26 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "oVGA_VS" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
+<<<<<<< HEAD
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+=======
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+<<<<<<< HEAD
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X12_Y0 to location X23_Y12
+=======
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X36_Y39 to location X47_Y51
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
+<<<<<<< HEAD
 Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 59 output pins without output pin load capacitance assignment
@@ -2818,11 +3670,39 @@ Info: Quartus II 64-Bit Fitter was successful. 0 errors, 457 warnings
     Info: Processing ended: Mon Oct 02 16:24:38 2017
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:14
+=======
+Info (11888): Total time spent on timing analysis during the Fitter is 0.61 seconds.
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 7 output pins without output pin load capacitance assignment
+    Info (306007): Pin "Out[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Out[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:04
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+Info (144001): Generated suppressed messages file /home/lucas/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.fit.smsg
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 538 warnings
+    Info: Peak virtual memory: 559 megabytes
+    Info: Processing ended: Mon Oct  2 13:27:29 2017
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:31
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
+<<<<<<< HEAD
 The suppressed messages can be found in C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.fit.smsg.
+=======
+The suppressed messages can be found in /home/lucas/GitHub/OAC172/Lab2/ex1/Decoder/output_files/decoder.fit.smsg.
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
