@@ -16,6 +16,7 @@
 \usepackage{indentfirst}
 \usepackage[inline]{enumitem}
 
+
 \graphicspath{{./images/}}
 
 \sloppy
@@ -151,9 +152,6 @@ Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e
 		\textbf{OPSLLV} & 170 & 5,397 & 15,048 & 66,454 \\\hline
 		\textbf{OPSRAV} & 174 & 4,908 & 15,736 & 63,549 \\\hline
 		\textbf{OPSRLV} & 170 & 5,445 & 16,137 & 61,969 \\\hline
-		\textbf{OPMULT} & 53 & 3,914 & 8,885 & 112,549 \\\hline
-		\textbf{OPDIV} & 1266 & 4,051 & 9,446 & 105,865 \\\hline
-		\textbf{OPDEBUG} & 11 & 4,549 & 8,255 & 121,139 \\\hline
 	\end{tabular}
 	\caption{Requisitos físicos da \textit{ULA} total e de cada operação. Informações das operações assíncronas.}
 	\label{tab:req21}
@@ -167,16 +165,16 @@ Para a ULA de inteiros foi levantado os requisitos físicos de cada operação e
 		& \textbf{lógicos} & \textbf{atraso (ns)} &  \textbf{atraso (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
 		\hline
 		\textbf{ULA} & 6686 & 6,804 & 14,672 &  68,157 \\\hline
-		\textbf{OPMULT} & 53 & ? & ? & ? \\\hline
-		\textbf{OPDIV} & 1266 & ? & ? & ? \\\hline
-		\textbf{OPMULTU} & ? & ? & ? & ? \\\hline
-		\textbf{OPDIVU} & ? & ? & ? & ? \\\hline
-		\textbf{OPMTHI} & ? & ? & ? & ? \\\hline
-		\textbf{OPMTLO} & ? & ? & ? & ? \\\hline
-		\textbf{OPMADD} & ? & ? & ? & ? \\\hline
-		\textbf{OPMADDU} & ? & ? & ? & ? \\\hline
-		\textbf{OPMSUB} & ? & ? & ? & ? \\\hline
-		\textbf{OPMSUBU}  & ? & ? & ? & ? \\\hline
+		\textbf{OPMULT} & 53 & 3,914 & 8,885 & 112,549 \\\hline
+		\textbf{OPDIV} & 1266 & 4,051 & 9,446 & 105,865 \\\hline
+		\textbf{OPMULTU} & 40 & 5,602 & 22,197 & 45.051 \\\hline
+		\textbf{OPDIVU} & 1127 & 4,419 & 11,187 & 84.624 \\\hline
+		\textbf{OPMTHI} & 11 & 4,743 & 10,741 & 93.101 \\\hline
+		\textbf{OPMTLO} & 11 & 4,743 & 10,741 & 93.101 \\\hline
+		\textbf{OPMADD} & 40 & 5,607 & 21,340 & 46.860 \\\hline
+		\textbf{OPMADDU} & 40 & 5,602 & 22,197 & 45.051 \\\hline
+		\textbf{OPMSUB} & 72 & 5,746 & 23,337 & 42.850 \\\hline
+		\textbf{OPMSUBU}  & 72 & 6,002 & 24,519 & 40.785 \\\hline
 	\end{tabular}
 	\caption{Requisitos físicos da \textit{ULA} total e de cada operação. Informações das operações síncronas.}
 	\label{tab:req22}
@@ -234,30 +232,31 @@ Para a \textit{ULA} de ponto flutuante foi levantado os requisitos físicos de c
 	\item No arquivo \textit{FPALU.v} para testar a \textit{FPULA} completa foi preciso comentar as linhas "\textit{wire [3:0] icontrol}" e "\textit{assign icontrol=OPSQRT}" e descomentar a linha "\textit{input [3:0] icontrol}". No arquivo \textit{FPALU.v} para testar cada operação foi preciso descomentar as linhas "\textit{wire [3:0] icontrol}" e "\textit{assign icontrol=OPSQRT}" e comentar a linha "\textit{input [3:0] icontrol}". A troca de operação avaliada foi feita substituindo o nome da operação na variável \textit{icontrol} (e.g. assign icontrol=OPSQRT);
 	\item Ao trocar a operação desejada foi compilado o projeto;
 	\item Com a nova aba (\textit{Compilation Report - FPULA}) aberta, no menu \textit{Flow Summary} foi possível achar informações da quantidade total de elementos lógicos usado naquela operação;
-	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary > Minimum Propagation Delay} foram encontrados os números de ciclos mínimos da operação avaliada. Estes tempos são medidos desde o ato de inserir o dado na entrada (\textit{idataa} e/ou \textit{idatab}) e resultar em algo na saída (\textit{oCompResult}). Os resultados eram aparentes na aba \textit{RR} (medição ao subir a borda inicial até a subida da borda final), outros na \textit{RF} (medição ao subir a borda inicial até a descida da borda final) \cite{altera};
-	\item A frequência máxima de \textit{clock} utilizável foi gerada a partir do cálculo $F_{MAX} = 1/T$, sendo $T$ o número de ciclos mínimo da operação.
+	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary $>$ Clock to Output Times} foram encontrados os períodos de clock máximos da operação avaliada. Os resultados eram aparentes na aba \textit{Rise} e na \textit{FALL} \cite{altera};
+	\item No menu \textit{TimeQuest Timing Analyzer $>$ Multicorner Datasheet Report Summary $>$ Mínimum Clock to Output Times} foram encontrados os períodos de clock mínimos da operação avaliada. Os resultados eram aparentes na aba \textit{Rise} e na \textit{FALL} \cite{altera};
+	\item A frequência máxima de \textit{clock} utilizável foi gerada a partir do cálculo $F_{MAX} = 1/T$, sendo $T$ o período Máximo de clock da operação.
 \end{itemize}
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		& \textbf{Elementos} & \textbf{Número de ciclos} & \textbf{Frequência máxima de} \\
-		& \textbf{lógicos} & \textbf{mínimo da operação (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
+		& \textbf{Elementos} & \textbf{T de clk} & \textbf{T de clk} &  					\textbf{Frequência máxima de} \\
+		& \textbf{lógicos} & \textbf{mínimo (ns)} & \textbf{máximo (ns)} & \textbf{\textit{clock} utilizável (MHz)} \\
 		\hline
-		\textbf{FPULA} & ? & ? & ? \\\hline
-		\textbf{OPADDS} & ? & ? & ? \\\hline
-		\textbf{OPSUBS} & ? & ? & ? \\\hline
-		\textbf{OPMULS} & ? & ? & ? \\\hline
-		\textbf{OPDIVS} & ? & ? & ? \\\hline
-		\textbf{OPSQRT} & ? & ? & ? \\\hline
-		\textbf{OPABS} & ? & ? & ? \\\hline
-		\textbf{OPNEG} & ? & ? & ? \\\hline
-		\textbf{OPCEQ} & ? & ? & ? \\\hline
-		\textbf{OPCLT} & ? & ? & ? \\\hline
-		\textbf{OPCLE} & ? & ? & ? \\\hline
-		\textbf{OPCVTSW} & ? & ? & ? \\\hline
-		\textbf{OPCVTWS} & ? & ? & ? \\\hline
+		\textbf{FPULA} & 2992 & 6,864 & 19,449 & 51.417 \\\hline
+		\textbf{OPADDS} & 824 & 3,807 & 8,471 & 118.050 \\\hline
+		\textbf{OPSUBS} & 830 & 3,979 & 8,684 & 115.154 \\\hline
+		\textbf{OPMULS} & 280 & 3,808 & 9,064 & 110.327 \\\hline
+		\textbf{OPDIVS} & 325 & 3,498 & 9,748 & 102.585 \\\hline
+		\textbf{OPSQRT} & 807 & 3,749 & 7,773 & 128.650 \\\hline
+		\textbf{OPABS} & 0 & 4,966 & 8,932 & 111.957 \\\hline
+		\textbf{OPNEG} & 0 & 4,522 & 8,934 & 111.932 \\\hline
+		\textbf{OPCEQ} & 49 & 3,432 & 6,446 & 155.135 \\\hline
+		\textbf{OPCLT} & 88 & 3,198 & 5,963 & 167.701 \\\hline
+		\textbf{OPCLE} & 88 & 3,341 & 6,215 & 160.901 \\\hline
+		\textbf{OPCVTSW} & 311 & 3,782 & 7,542 & 132.591 \\\hline
+		\textbf{OPCVTWS} & 453 & 3,984 & 10,358 & 96.544 \\\hline
 	\end{tabular}
 	\caption{Requisitos físicos da \textit{FPULA} total e de cada operação.}
 	\label{tab:req3}
@@ -272,6 +271,7 @@ As funções testadas foram:
 
 \begin{table}[H]
 	\centering
+	\small
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Operação} & \textbf{Vídeo} & \textbf{Operação} & \textbf{Vídeo} \\

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct  9 16:13:18 2017
+Quartus II 32-bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : FPALU
+Top-level Entity Name : FPALU
+Family : Cyclone II
+Total logic elements : 472
+    Total combinational functions : 393
+    Dedicated logic registers : 255
+Total registers : 255
+Total pins : 102
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
