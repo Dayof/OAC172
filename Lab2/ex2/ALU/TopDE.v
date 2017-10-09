@@ -22,11 +22,11 @@ initial
 		oCompResult<=1'b0;
 	end
 	
-//assign idataa=32'hC8000000;
-//assign idatab=32'h40000000;
+assign idataa=32'hC8000000;
+assign idatab=32'h40000000;
 
-assign idataa={{28{iSW[8]}},iSW[8:5]};
-assign idatab={{28{iSW[12]}},iSW[12:9]};
+//assign idataa={{28{iSW[8]}},iSW[8:5]};
+//assign idatab={{28{iSW[12]}},iSW[12:9]};
 
 assign oLEDR[0]=ozero;
 assign oLEDR[1]=ooverflow;

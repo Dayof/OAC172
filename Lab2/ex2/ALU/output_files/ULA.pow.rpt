@@ -1,0 +1,354 @@
+PowerPlay Power Analyzer report for ULA
+Thu Oct  5 16:35:07 2017
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Power Analyzer Summary
+  3. PowerPlay Power Analyzer Settings
+  4. Indeterminate Toggle Rates
+  5. Operating Conditions Used
+  6. Thermal Power Dissipation by Block
+  7. Thermal Power Dissipation by Block Type
+  8. Thermal Power Dissipation by Hierarchy
+  9. Current Drawn from Voltage Supplies Summary
+ 10. VCCIO Supply Current Drawn by I/O Bank
+ 11. VCCIO Supply Current Drawn by Voltage
+ 12. Confidence Metric Details
+ 13. Signal Activities
+ 14. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Thu Oct  5 16:35:07 2017            ;
+; Quartus II 32-bit Version              ; 13.0.0 Build 156 04/24/2013 SJ Web Edition       ;
+; Revision Name                          ; ULA                                              ;
+; Top-level Entity Name                  ; ALU                                              ;
+; Family                                 ; Cyclone II                                       ;
+; Device                                 ; EP2C70F896C6                                     ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 205.89 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 154.99 mW                                        ;
+; I/O Thermal Power Dissipation          ; 50.90 mW                                         ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                    ;
++----------------------------------------------------------------------------+---------+---------------+
+; Option                                                                     ; Setting ; Default Value ;
++----------------------------------------------------------------------------+---------+---------------+
+; Use smart compilation                                                      ; Off     ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On      ; On            ;
+; Enable compact report table                                                ; Off     ; Off           ;
+; Default Power Toggle Rate                                                  ; 12.5%   ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%   ; 12.5%         ;
+; Use vectorless estimation                                                  ; On      ; On            ;
+; Use Input Files                                                            ; Off     ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On      ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off     ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off     ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On      ; On            ;
+; Specified Junction Temperature                                             ; 25      ; 25            ;
+; Ambient Temperature                                                        ; 25      ; 25            ;
+; Use Custom Cooling Solution                                                ; Off     ; Off           ;
+; Board Temperature                                                          ; 25      ; 25            ;
+; Enable HPS                                                                 ; Off     ; Off           ;
+; Processor Frequency                                                        ; 0.0     ; 0.0           ;
++----------------------------------------------------------------------------+---------+---------------+
+
+
++-----------------------------------------+
+; Indeterminate Toggle Rates              ;
++-----------+-----------------------------+
+; Node      ; Reason                      ;
++-----------+-----------------------------+
+; iCLK      ; No valid clock domain found ;
+; iRST      ; No valid clock domain found ;
+; iShamt[0] ; No valid clock domain found ;
+; iShamt[1] ; No valid clock domain found ;
+; iShamt[2] ; No valid clock domain found ;
+; iShamt[3] ; No valid clock domain found ;
+; iShamt[4] ; No valid clock domain found ;
+; iA[0]     ; No valid clock domain found ;
+; iB[0]     ; No valid clock domain found ;
+; iA[1]     ; No valid clock domain found ;
+; iB[1]     ; No valid clock domain found ;
+; iA[2]     ; No valid clock domain found ;
+; iB[2]     ; No valid clock domain found ;
+; iA[3]     ; No valid clock domain found ;
+; iB[3]     ; No valid clock domain found ;
+; iA[4]     ; No valid clock domain found ;
+; iB[4]     ; No valid clock domain found ;
+; iA[5]     ; No valid clock domain found ;
+; iB[5]     ; No valid clock domain found ;
+; iA[6]     ; No valid clock domain found ;
+; iB[6]     ; No valid clock domain found ;
+; iA[7]     ; No valid clock domain found ;
+; iB[7]     ; No valid clock domain found ;
+; iA[8]     ; No valid clock domain found ;
+; iB[8]     ; No valid clock domain found ;
+; iA[9]     ; No valid clock domain found ;
+; iB[9]     ; No valid clock domain found ;
+; iA[10]    ; No valid clock domain found ;
+; iB[10]    ; No valid clock domain found ;
+; iA[11]    ; No valid clock domain found ;
+; iB[11]    ; No valid clock domain found ;
+; iA[12]    ; No valid clock domain found ;
+; iB[12]    ; No valid clock domain found ;
+; iA[13]    ; No valid clock domain found ;
+; iB[13]    ; No valid clock domain found ;
+; iA[14]    ; No valid clock domain found ;
+; iB[14]    ; No valid clock domain found ;
+; iA[15]    ; No valid clock domain found ;
+; iB[15]    ; No valid clock domain found ;
+; iA[16]    ; No valid clock domain found ;
+; iB[16]    ; No valid clock domain found ;
+; iA[17]    ; No valid clock domain found ;
+; iB[17]    ; No valid clock domain found ;
+; iA[18]    ; No valid clock domain found ;
+; iB[18]    ; No valid clock domain found ;
+; iA[19]    ; No valid clock domain found ;
+; iB[19]    ; No valid clock domain found ;
+; iA[20]    ; No valid clock domain found ;
+; iB[20]    ; No valid clock domain found ;
+; iA[21]    ; No valid clock domain found ;
+; iB[21]    ; No valid clock domain found ;
+; iA[22]    ; No valid clock domain found ;
+; iB[22]    ; No valid clock domain found ;
+; iA[23]    ; No valid clock domain found ;
+; iB[23]    ; No valid clock domain found ;
+; iA[24]    ; No valid clock domain found ;
+; iB[24]    ; No valid clock domain found ;
+; iA[25]    ; No valid clock domain found ;
+; iB[25]    ; No valid clock domain found ;
+; iA[26]    ; No valid clock domain found ;
+; iB[26]    ; No valid clock domain found ;
+; iA[27]    ; No valid clock domain found ;
+; iB[27]    ; No valid clock domain found ;
+; iA[28]    ; No valid clock domain found ;
+; iB[28]    ; No valid clock domain found ;
+; iA[29]    ; No valid clock domain found ;
+; iB[29]    ; No valid clock domain found ;
+; iA[30]    ; No valid clock domain found ;
+; iB[30]    ; No valid clock domain found ;
+; iA[31]    ; No valid clock domain found ;
+; iB[31]    ; No valid clock domain found ;
++-----------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     3.3-V LVTTL I/O Standard                ; 3.3 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 25.9 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 2.10 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.10 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                           ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type         ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; I/O                ; 13.03 mW                          ; 0.00 mW                     ; 13.03 mW                       ; 0.00 mW                       ;    0.000                                                  ;
+; Combinational cell ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                     ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------+
+; Compilation Hierarchy Node          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                 ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------+
+; |ALU                                ; 13.03 mW (13.03 mW)                  ; 0.00 mW (0.00 mW)               ; 13.03 mW (13.03 mW)               ; 0.00 mW (0.00 mW)                 ; |ALU                                ;
+;     |hard_block:auto_generated_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |ALU|hard_block:auto_generated_inst ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 136.16 mA               ; 0.00 mA                   ; 136.16 mA                ; 136.16 mA                        ;
+; VCCIO          ; 12.88 mA                ; 0.00 mA                   ; 12.88 mA                 ; 12.88 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 3.3V          ; 1.88 mA             ; 0.00 mA               ; 1.88 mA              ;
+; 2        ; 3.3V          ; 2.10 mA             ; 0.00 mA               ; 2.10 mA              ;
+; 3        ; 3.3V          ; 1.43 mA             ; 0.00 mA               ; 1.43 mA              ;
+; 4        ; 3.3V          ; 1.43 mA             ; 0.00 mA               ; 1.43 mA              ;
+; 5        ; 3.3V          ; 1.45 mA             ; 0.00 mA               ; 1.45 mA              ;
+; 6        ; 3.3V          ; 1.45 mA             ; 0.00 mA               ; 1.45 mA              ;
+; 7        ; 3.3V          ; 1.46 mA             ; 0.00 mA               ; 1.46 mA              ;
+; 8        ; 3.3V          ; 1.67 mA             ; 0.00 mA               ; 1.67 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 3.3V          ; 12.88 mA                ; 0.00 mA                   ; 12.88 mA                 ; 12.88 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                     ;
++----------------------------------------------------------------------------------------+------------+------------+------------+---------------+
+; Data Source                                                                            ; Total      ; Pin        ; Registered ; Combinational ;
++----------------------------------------------------------------------------------------+------------+------------+------------+---------------+
+; Simulation (from file)                                                                 ;            ;            ;            ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)   ; 0 (0.0%)   ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)   ; 0 (0.0%)   ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;            ;            ;            ;               ;
+; Node, entity or clock assignment                                                       ;            ;            ;            ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)   ; 0 (0.0%)   ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)   ; 0 (0.0%)   ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;            ;            ;            ;               ;
+; Vectorless estimation                                                                  ;            ;            ;            ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 77 (51.3%) ; 34 (31.8%) ; 0 (100.0%) ; 43 (100.0%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 77 (51.3%) ; 34 (31.8%) ; 0 (100.0%) ; 43 (100.0%)   ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 77 (51.3%) ; 34 (31.8%) ; 0 (100.0%) ; 43 (100.0%)   ;
+;                                                                                        ;            ;            ;            ;               ;
+; Default assignment                                                                     ;            ;            ;            ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)   ; 0 (0.0%)   ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 73 (48.7%) ; 73 (68.2%) ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;            ;            ;            ;               ;
+; Assumed 0                                                                              ;            ;            ;            ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 73 (48.7%) ; 73 (68.2%) ; 0 (100.0%) ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+------------+------------+------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit PowerPlay Power Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Oct  5 16:35:04 2017
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off ULA -c ULA
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ULA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332068): No clocks defined in design.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Warning (215044): No board thermal model was selected.  Analyzing without board thermal modeling.
+Warning (218001): Found 34 output pins without output pin load capacitance assignment
+    Warning (218002): Pin "oZero" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oOverflow" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[10]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[12]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[13]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[14]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[15]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[16]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[17]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[18]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[19]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[20]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[21]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[22]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[23]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[24]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[25]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[26]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[27]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[28]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[29]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[30]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+    Warning (218002): Pin "oALUresult[31]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for Power Estimation
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 205.89 mW
+Info: Quartus II 32-bit PowerPlay Power Analyzer was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Thu Oct  5 16:35:08 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

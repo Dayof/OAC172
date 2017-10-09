@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+	{{"Slow Model"} {FPALU.vo FPALU_v.sdo}}
+	{{"Fast Model"} {FPALU_fast.vo FPALU_v_fast.sdo}}
+}

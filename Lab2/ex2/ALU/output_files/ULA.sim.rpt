@@ -1,0 +1,541 @@
+Simulator report for ULA
+Fri Oct 06 13:20:15 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 us      ;
+; Simulation Netlist Size     ; 115 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                             ;               ;
+; Vector input source                                                                        ; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ula.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 115          ;
+; Total output ports checked                          ; 91           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 91           ;
+; Total output ports with no 1-value coverage         ; 91           ;
+; Total output ports with no 0-value coverage         ; 91           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------+
+; Missing 1-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; pin_out          ;
+; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; pin_out          ;
+; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; pin_out          ;
+; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; pin_out          ;
+; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; pin_out          ;
+; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; pin_out          ;
+; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; pin_out          ;
+; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; pin_out          ;
+; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; pin_out          ;
+; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; pin_out          ;
+; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; pin_out          ;
+; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; pin_out          ;
+; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; pin_out          ;
+; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; pin_out          ;
+; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; pin_out          ;
+; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; pin_out          ;
+; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; pin_out          ;
+; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; pin_out          ;
+; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; pin_out          ;
+; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; pin_out          ;
+; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; pin_out          ;
+; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; pin_out          ;
+; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; pin_out          ;
+; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; pin_out          ;
+; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; pin_out          ;
+; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; pin_out          ;
+; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; pin_out          ;
+; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; pin_out          ;
+; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; pin_out          ;
+; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; pin_out          ;
+; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; pin_out          ;
+; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; pin_out          ;
+; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; pin_out          ;
+; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; pin_out          ;
+; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; pin_out          ;
+; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; pin_out          ;
+; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; pin_out          ;
+; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; pin_out          ;
+; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; pin_out          ;
+; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; pin_out          ;
+; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; pin_out          ;
+; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; pin_out          ;
+; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; pin_out          ;
+; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; pin_out          ;
+; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; pin_out          ;
+; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; pin_out          ;
+; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; pin_out          ;
+; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; pin_out          ;
+; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; pin_out          ;
+; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; pin_out          ;
+; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; pin_out          ;
+; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; pin_out          ;
+; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; pin_out          ;
+; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; pin_out          ;
+; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; pin_out          ;
+; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; pin_out          ;
+; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; pin_out          ;
+; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; pin_out          ;
+; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; pin_out          ;
+; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; pin_out          ;
+; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; pin_out          ;
+; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; pin_out          ;
+; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; pin_out          ;
+; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; pin_out          ;
+; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; pin_out          ;
+; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; pin_out          ;
+; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; pin_out          ;
+; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; pin_out          ;
+; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; pin_out          ;
+; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; pin_out          ;
+; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; pin_out          ;
+; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; pin_out          ;
+; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; pin_out          ;
+; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; pin_out          ;
+; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; pin_out          ;
+; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; pin_out          ;
+; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; pin_out          ;
+; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; pin_out          ;
+; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; pin_out          ;
+; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; pin_out          ;
+; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; pin_out          ;
+; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; pin_out          ;
+; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; pin_out          ;
+; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; pin_out          ;
+; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; pin_out          ;
+; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; pin_out          ;
+; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; pin_out          ;
+; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; pin_out          ;
+; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; pin_out          ;
+; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; pin_out          ;
+; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; pin_out          ;
+; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; pin_out          ;
+; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; pin_out          ;
+; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; pin_out          ;
+; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; pin_out          ;
+; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; pin_out          ;
+; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; pin_out          ;
+; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; pin_out          ;
+; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; pin_out          ;
+; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; pin_out          ;
+; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; pin_out          ;
+; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; pin_out          ;
+; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; pin_out          ;
+; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; pin_out          ;
+; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; pin_out          ;
+; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; pin_out          ;
+; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; pin_out          ;
+; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; pin_out          ;
+; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; pin_out          ;
+; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; pin_out          ;
+; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; pin_out          ;
+; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; pin_out          ;
+; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; pin_out          ;
+; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; pin_out          ;
+; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; pin_out          ;
+; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; pin_out          ;
+; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; pin_out          ;
+; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; pin_out          ;
+; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; pin_out          ;
+; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; pin_out          ;
+; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; pin_out          ;
+; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; pin_out          ;
+; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; pin_out          ;
+; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; pin_out          ;
+; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; pin_out          ;
+; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; pin_out          ;
+; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; pin_out          ;
+; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; pin_out          ;
+; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; pin_out          ;
+; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; pin_out          ;
+; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; pin_out          ;
+; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; pin_out          ;
+; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; pin_out          ;
+; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; pin_out          ;
+; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; pin_out          ;
+; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; pin_out          ;
+; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; pin_out          ;
+; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; pin_out          ;
+; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; pin_out          ;
+; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; pin_out          ;
+; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; pin_out          ;
+; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; pin_out          ;
+; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; pin_out          ;
+; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; pin_out          ;
+; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; pin_out          ;
+; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; pin_out          ;
+; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; pin_out          ;
+; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; pin_out          ;
+; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; pin_out          ;
+; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; pin_out          ;
+; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; pin_out          ;
+; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; pin_out          ;
+; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; pin_out          ;
+; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; pin_out          ;
+; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; pin_out          ;
+; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; pin_out          ;
+; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; pin_out          ;
+; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; pin_out          ;
+; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; pin_out          ;
+; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; pin_out          ;
+; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; pin_out          ;
+; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; pin_out          ;
+; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; pin_out          ;
+; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; pin_out          ;
+; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; pin_out          ;
+; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; pin_out          ;
+; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; pin_out          ;
+; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; pin_out          ;
+; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; pin_out          ;
+; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; pin_out          ;
+; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; pin_out          ;
+; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; pin_out          ;
+; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; pin_out          ;
+; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; pin_out          ;
+; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; pin_out          ;
+; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; pin_out          ;
+; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; pin_out          ;
+; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; pin_out          ;
+; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; pin_out          ;
+; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; pin_out          ;
+; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 06 13:20:14 2017
+Info: Command: quartus_sim --simulation_results_format=VWF ULA -c ULA
+Info (324025): Using vector source file "C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ula.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[31]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[30]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[29]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[28]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[27]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[26]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[25]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[24]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[23]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[22]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[21]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[20]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[19]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[18]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[17]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[16]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[15]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[14]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[13]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[12]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[11]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[31]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[30]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[29]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[28]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[27]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[26]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[25]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[24]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[23]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[22]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[21]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[20]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[19]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[18]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[17]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[16]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[15]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[14]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[13]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[12]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[11]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iB[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iCLK" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iControlSignal[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iControlSignal[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iControlSignal[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iControlSignal[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iControlSignal[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iRST" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iShamt[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iShamt[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iShamt[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iShamt[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iShamt[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[31]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[30]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[29]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[28]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[27]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[26]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[25]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[24]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[23]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[22]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[21]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[20]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[19]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[18]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[17]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[16]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[15]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[14]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[13]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[12]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[11]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oALUresult[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oOverflow" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "oZero" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[31]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[30]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[29]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[28]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[27]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[26]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[25]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[24]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[23]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[22]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[21]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[20]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[19]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[18]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[17]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[16]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[15]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[14]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[13]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[12]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[11]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "HI[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[31]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[30]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[29]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[28]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[27]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[26]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[25]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[24]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[23]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[22]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[21]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[20]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[19]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[18]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[17]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[16]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[15]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[14]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[13]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[12]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[11]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "LO[0]" in design.
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iCLK_50"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iCLK_28"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iKEY[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iKEY[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iKEY[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iKEY[3]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[3]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[4]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[5]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[6]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[7]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[8]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[9]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[10]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[11]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[12]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[13]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[14]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[15]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[16]"
+Warning (328012): Can't find signal in vector source file for input pin "|TopDE|iSW[17]"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 0
+Info (324045): Vector file ULA.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 198 warnings
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Fri Oct 06 13:20:15 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

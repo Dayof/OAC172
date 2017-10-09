@@ -1,6 +1,11 @@
 Flow report for decoder
+<<<<<<< HEAD
+Mon Oct 02 16:24:50 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+=======
 Mon Oct  2 13:28:03 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 ---------------------
@@ -40,6 +45,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
+; Flow Status                        ; Successful - Mon Oct 02 16:24:50 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; decoder                                         ;
+; Top-level Entity Name              ; TopDE                                           ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C70F896C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 29 / 68,416 ( < 1 % )                           ;
+;     Total combinational functions  ; 29 / 68,416 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 0 / 68,416 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 82 / 622 ( 13 % )                               ;
+=======
 ; Flow Status                        ; Successful - Mon Oct  2 13:28:03 2017           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; decoder                                         ;
@@ -52,6 +71,7 @@ applicable agreement for further details.
 ;     Dedicated logic registers      ; 7 / 68,416 ( < 1 % )                            ;
 ; Total registers                    ; 7                                               ;
 ; Total pins                         ; 12 / 622 ( 2 % )                                ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                                 ;
@@ -64,12 +84,38 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
+; Start date & time ; 10/02/2017 16:24:21 ;
+=======
 ; Start date & time ; 10/02/2017 13:26:49 ;
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 ; Main task         ; Compilation         ;
 ; Revision Name     ; decoder             ;
 +-------------------+---------------------+
 
 
+<<<<<<< HEAD
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 62336548099812.150697226104444 ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                           ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; TopDE       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; TopDE       ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; TopDE       ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; TopDE                          ; decoder       ; --          ; --             ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005             ; Verilog_2001  ; --          ; --             ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                            ; --            ; --          ; --             ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+=======
 +-------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                  ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
@@ -90,6 +136,7 @@ applicable agreement for further details.
 ; VERILOG_INPUT_VERSION               ; SystemVerilog_2005           ; Verilog_2001  ; --          ; --             ;
 ; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                          ; --            ; --          ; --             ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -97,6 +144,28 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 453 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:14     ; 1.0                     ; 774 MB              ; 00:00:14                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 439 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 402 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 386 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:24                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Diego            ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Diego            ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Diego            ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Diego            ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Diego            ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+=======
 ; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 331 MB              ; 00:00:03                           ;
 ; Fitter                    ; 00:00:30     ; 1.0                     ; 559 MB              ; 00:00:30                           ;
 ; Assembler                 ; 00:00:11     ; 1.0                     ; 346 MB              ; 00:00:12                           ;
@@ -117,6 +186,7 @@ applicable agreement for further details.
 ; TimeQuest Timing Analyzer ; lucas-Inspiron-1501 ; Linux Mint ; 18         ; i686           ;
 ; EDA Netlist Writer        ; lucas-Inspiron-1501 ; Linux Mint ; 18         ; i686           ;
 +---------------------------+---------------------+------------+------------+----------------+
+>>>>>>> 49826f47b48f1c19d73f8026184ed5bcc15493d3
 
 
 ------------
