@@ -107,41 +107,49 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 
 % simulação temporal de cada operação
 % usar valores comuns que gerem valores singulares (overflow, zero)
+
+	Operação AND bit a bit com os registradores iA e iB.
+		A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.	 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00000-and-zero.png}
 	\caption{00000-and-zero}
 	\label{fig:00000-and-zero}
 \end{figure}
-
+Operação OR bit a bit com os registradores iA e iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00001-or-zero.png}
 	\caption{00001-or-zero}
 	\label{fig:00001-or-zero}
 \end{figure}
-
+Operação ADD com os registradores iA e iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0. E a saida do registrador oOver que indica overflow com saida 1 se ha e 0 se não. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00010-add-over-zero.png}
 	\caption{00010-add-over-zero}
 	\label{fig:00010-add-over-zero}
 \end{figure}
-
+Operação MFHI do HI para o oALUresult.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00011-mfhi-zero.png}
 	\caption{00011-mfhi-zero}
 	\label{fig:00011-mfhi-zero}
 \end{figure}
-
+Operação SLL bit a bit com os registradores iA, shifitando o valor no shant em bits no iA.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00100-sll-zero.png}
 	\caption{00100-sll-zero}
 	\label{fig:00100-sll-zero}
 \end{figure}
-
+Operação MFLO do LO para o oALUresult.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00101-mflo-zero.png}
@@ -149,6 +157,8 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:00101-mflo-zero}
 \end{figure}
 
+Operação SUB com os registradores iA e iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como a saida do registrador oOver que indica overflow com saida 1 se ha e 0 se não.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00110-sub-over.png}
@@ -156,6 +166,8 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:00110-sub-over}
 \end{figure}
 
+Operação SUB com os registradores iA e iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00110-sub-zero.png}
@@ -163,6 +175,8 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:00110-sub-zero}
 \end{figure}
 
+Operação SLT seta 1 em oALUresult se iA for menor que iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{00111-slt-zero.png}
@@ -170,20 +184,24 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:00111-slt-zero}
 \end{figure}
 
+Operação SRL shitfita o valor em bits no shamt para a direita.  
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01000-srl-zero.png}
 	\caption{01000-srl-zero}
 	\label{fig:01000-srl-zero}
 \end{figure}
-
+Operação SRA shitfita o valor em bits no shamt para a direita.  
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01001-sra-zero.png}
 	\caption{01001-sra-zero}
 	\label{fig:01001-sra-zero}
 \end{figure}
-
+Operação XOR bit a bit.  
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01010-xor-zero.png}
@@ -191,27 +209,32 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:01010-xor-zero}
 \end{figure}
 
+Operação SLTu seta 1 em oALUresult se iA(sem sinal) for menor que iB(sem sinal).
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01011-sltu-zero.png}
 	\caption{01011-sltu-zero}
 	\label{fig:01011-sltu-zero}
 \end{figure}
-
+Operação NOR bit a bit.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01100-nor-zero.png}
 	\caption{01100-nor-zero}
 	\label{fig:01100-nor-zero}
 \end{figure}
-
+Operação MULT entre iA e iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01101-mult-zero.png}
 	\caption{01101-mult-zero}
 	\label{fig:01101-mult-zero}
 \end{figure}
-
+Operação DIV iA por iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01110-div-zero.png}
@@ -219,90 +242,104 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:01110-div-zero}
 \end{figure}
 
+Operação LUI carrega os 16 bits mais significativos do iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{01111-lui-zero.png}
 	\caption{01111-lui-zero}
 	\label{fig:01111-lui-zero}
 \end{figure}
-
+Operação SLLV shitfita o valor em bits do iA para a esquerda no iB e coloca no oALUresult.  
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10000-sllv-zero.png}
 	\caption{10000-sllv-zero}
 	\label{fig:10000-sllv-zero}
 \end{figure}
-
+Operação SRAV shitfita o valor em bits no iA para a direita no iB e coloca no oALUresult. 
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10001-srav-zero.png}
 	\caption{10001-srav-zero}
 	\label{fig:10001-srav-zero}
 \end{figure}
-
+Operação SRLV shitfita o valor em bits no iA para a direita no iB e coloca no oALUresult. 
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10010-srlv-zero.png}
 	\caption{10010-srlv-zero}
 	\label{fig:10010-srlv-zero}
 \end{figure}
-
+Operação MULTU entre iA e iB ambos sem sinal.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10011-multu-zero.png}
 	\caption{10011-multu-zero}
 	\label{fig:10011-multu-zero}
 \end{figure}
-
+Operação DIVu iA por iB ambos sem sinal.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10100-divu-zero.png}
 	\caption{10100-divu-zero}
 	\label{fig:10100-divu-zero}
 \end{figure}
-
+Operação MTHI move do iA para o HI.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10101-mthi-zero.png}
 	\caption{10101-mthi-zero}
 	\label{fig:10101-mthi-zero}
 \end{figure}
-
+Operação MTLO move do iA para o LO.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10110-mtlo-zero.png}
 	\caption{10110-mtlo-zero}
 	\label{fig:10110-mtlo-zero}
 \end{figure}
-
+Operação SGT seta 1 em oALUresult se iA for maior que iB.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{10111-sgt-zero.png}
 	\caption{10111-sgt-zero}
 	\label{10111-sgt-zero}
 \end{figure}
-
+Operação MADD multplica iA por iB e soma no HI.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{11000-madd-zero.png}
 	\caption{11000-madd-zero}
 	\label{fig:11000-madd-zero}
 \end{figure}
-
+Operação MADD multplica iA por iB(AMBOS EM SINAL) e soma no HI.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{11001-maddu-zero.png}
 	\caption{11001-maddu-zero}
 	\label{fig:11001-maddu-zero}
 \end{figure}
-
+Operação MSUB multplica iA por iB e subtrai no HI.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{11010-msub-zero.png}
 	\caption{11010-msub-zero}
 	\label{fig:11010-msub-zero}
 \end{figure}
-
+Operação MSUBu multplica iA por iB(ambos sem sinal) e subtrai no HI.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{11011-msubu-zero.png}
@@ -310,6 +347,56 @@ O arquivo de interface \textit{TopDE.v} foi incluso no projeto, sintetizado e te
 	\label{fig:11011-msubu-zero}
 \end{figure}
 
+\subsection{Exercício 3. Unidade Lógica Aritmética fracionária}
+\label{subsec:ulaint}
+
+\subsubsection{Operações}
+\label{subsubsec:2op}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/0001-adds-over-zero.png}
+	\caption{0001-adds-over-zero}
+	\label{fig:0001-adds-over-zero}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/0001-adds-zero-nan.png}
+	\caption{0001-adds-zero-nan}
+	\label{fig:0001-adds-zero-nan}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/0011-muls-over-zero.png}
+	\caption{0011-muls-over-zero}
+	\label{fig:0011-muls-over-zero}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/0100-divs-nan-under-zero.png}
+	\caption{0100-divs-nan-under-zero}
+	\label{fig:0100-divs-nan-under-zero}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/0101-sqrt-nan-zero.png}
+	\caption{0101-sqrt-nan-zero}
+	\label{fig:0101-sqrt-nan-zero}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens2/1100-cvtws-nan-zero.png}
+	\caption{1100-cvtws-nan-zero}
+	\label{fig:1100-cvtws-nan-zero}
+\end{figure}
 
 
 \subsubsection{Requisitos físicos}
