@@ -353,28 +353,32 @@ A imagem a baixo demonstra um dos valores singulares possíveis, como o registra
 \subsubsection{Operações}
 \label{subsubsec:2op}
 
-
+Operação ADDS , adição de registradores em precisão simples com overflow.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0. E o indicador de overflow, se a saida for 1 ocorreu, se for 0 não.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{imagens2/0001-adds-over-zero.png}
 	\caption{0001-adds-over-zero}
 	\label{fig:0001-adds-over-zero}
 \end{figure}
-
+Operação ADDS , adição de registradores em precisão simples.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.A mesma logica para o "not a number".
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{imagens2/0001-adds-zero-nan.png}
 	\caption{0001-adds-zero-nan}
 	\label{fig:0001-adds-zero-nan}
 \end{figure}
-
+Operação MULTS , multiplicação de registradores em precisão simples com overflow.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0. E o indicador de overflow, se a saida for 1 ocorreu, se for 0 não.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{imagens2/0011-muls-over-zero.png}
 	\caption{0011-muls-over-zero}
 	\label{fig:0011-muls-over-zero}
 \end{figure}
-
+Operação DIVS , divisão de registradores em precisão simples com overflow.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0. E o indicador de overflow, se a saida for 1 ocorreu, se for 0 não. A mesma logica para o "not a number".
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{imagens2/0100-divs-nan-under-zero.png}
@@ -382,7 +386,8 @@ A imagem a baixo demonstra um dos valores singulares possíveis, como o registra
 	\label{fig:0100-divs-nan-under-zero}
 \end{figure}
 
-
+Operação SQRT , raiz quadrada do registrador iA em precisão simples com overflow.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0.  A mesma logica para o "not a number".
 
 \begin{figure}[H]
 	\centering
@@ -390,7 +395,8 @@ A imagem a baixo demonstra um dos valores singulares possíveis, como o registra
 	\caption{0101-sqrt-nan-zero}
 	\label{fig:0101-sqrt-nan-zero}
 \end{figure}
-
+Operação CVTWS , converte de word para precisão simples.
+A imagem a baixo demonstra um dos valores singulares possíveis, como o registrador oZero de um bit que indinca se todos os bits do oALUresult forem 0, se sim a saída é 1, se não é 0. A mesma logica para o "not a number".
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{imagens2/1100-cvtws-nan-zero.png}
@@ -569,10 +575,10 @@ As funções testadas foram:
 		\hline
 		\textbf{ADDS} & \href{}{ADDS}  & \textbf{SUBS} & \href{https://youtu.be/vLYeS5P-PNI}{SUBS} \\\hline
 		\textbf{MULS} &  \href{https://youtu.be/IZqVV-iU26Y}{MULS} & \textbf{DIVS} &  \href{https://youtu.be/3CMRUdgzyYM}{DIVS} \\\hline
-		\textbf{SQRT} &  \href{https://youtu.be/naNeYgvJVP0}{SQRT}  & \textbf{ABS} &  \href{https://youtu.be/bMePNuQysqU}{ABS}  \\\hline
-		\textbf{NEG} &  \href{https://youtu.be/NKX-tBirX9k}{NEG}  & \textbf{CEQ} &  \href{https://youtu.be/9QW3dhkLjDo}{CEQ}  \\\hline
-		\textbf{CLT} &  \href{https://youtu.be/1Ttfm08w3jI}{CLT} & \textbf{CLE} &  \href{https://youtu.be/dkqRH6RjpQI}{CLE}   \\\hline
-		\textbf{CVTSW}  &  \href{https://youtu.be/jgjc1qbvtyQ}{CVTSW}  & \textbf{CVTWS} &  \href{https://youtu.be/USTwqtiWqRc}{CVTWS} \\\hline
+		\textbf{SQRT} &  \href{}{SQRT}  & \textbf{ABS} &  \href{}{ABS}  \\\hline
+		\textbf{NEG} &  \href{}{NEG}  & \textbf{CEQ} &  \href{}{CEQ}  \\\hline
+		\textbf{CLT} &  \href{}{CLT} & \textbf{CLE} &  \href{}{CLE}   \\\hline
+		\textbf{CVTSW}  &  \href{}{CVTSW}  & \textbf{CVTWS} &  \href{}{CVTWS} \\\hline
 	\end{tabular}
 	\caption{Funcionamento das operações da ULA.}
 	\label{tab:youtubeFPULA}
