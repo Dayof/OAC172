@@ -4,13 +4,13 @@ Repositório dedicado para armazenar material produzido nos laboratórios da mat
 
 ## Laboratórios
 
-| Laboratório  | Título        | Data de Entrega |
-| ------------ | ------------- | --------------- |
-| [Lab1](Lab1) | Assembly MIPS | 29/09/2017      |
-| [Lab2](Lab2) | ULA e FPULA   | 09/10/2017      |
-| [Lab3](Lab3) | X             | X               |
-| [Lab4](Lab4) | X             | X               |
-| [Lab5](Lab5) | X             | X               |
+| Laboratório  | Título            | Data de Entrega |
+| ------------ | ----------------- | --------------- |
+| [Lab1](Lab1) | Assembly MIPS     | 29/09/2017      |
+| [Lab2](Lab2) | ULA e FPULA       | 09/10/2017      |
+| [Lab3](Lab3) | CPU MIPS Uniciclo | 30/10/2017      |
+| [Lab4](Lab4) | X                 | X               |
+| [Lab5](Lab5) | X                 | X               |
 
 ## Mídia
 
