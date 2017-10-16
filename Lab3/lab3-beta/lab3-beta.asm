@@ -1,14 +1,12 @@
 .data
 	gravidade: .float -9.8
-	vx: .float 5.6525
-	vy: .float 21.70
 	Not: .float -1.0
 	tw: .float 2.0
 	zero: .float 0.0
 	
 	ten: .float 10.0
-	bn: .asciiz "\n"
-	sp: .asciiz " "
+	#bn: .asciiz "\n"
+	#sp: .asciiz " "
 	
 	one: .float 0.001
 	fall: .float -0.001
@@ -17,11 +15,12 @@
 	cosO: .float 0.2588190451 # 75 graus
 	senO: .float 0.96592582628 # 75 graus
 	
-	msg1: .asciiz "\nDigite a velocidade inicial do lancamento:  "
+	#msg1: .asciiz "\nDigite a velocidade inicial do lancamento:  "
 	
-	arquivo: .asciiz "minhatela.bin"
-
-
+	#arquivo: .asciiz "/home/lucas/GitHub/OAC172/Lab3/lab3-beta/minhatela.bin"
+	
+	Vzero: .float 22.45 #### velocidade inicial do lancamento (decomposta posteriormente em vx e vy)
+	
 .text
 
 	main:
@@ -31,18 +30,10 @@
 		
 		jal lancamento
 			
-			
-		
-	
-	li $v0, 10	#######
-	syscall		#######
-	
-	
-	
+	li $v0, 10	################ FIM DO PROGRAMA
+	syscall		################
 	
 	lancamento:
-		#l.s $f0, vx
-		#l.s $f1, vy
 		l.s $f2, gravidade
 		l.s $f3, Not
 		l.s $f6, tw
@@ -135,33 +126,40 @@
 		li $t0, 0xff000000
 		li $t1, 0xff012c00
 		li $t2, 0xF8F8F8F8
-	  	
 		
-		la $a0,arquivo
-		li $a1,0
-		li $a2,0
-		li $v0,13
-		syscall
+		tela:
+		sw $t2, ($t0)
+		addi $t0, $t0, 0x00000004
 		
-		move $a0,$v0
-		la $a1,0xFF000000
-		li $a2,76800
-		li $v0,14
-		syscall
+		ble $t0, $t1, tela
 		
-		li $v0,16
-		syscall
+		#la $a0,arquivo
+		#li $a1,0
+		#li $a2,0
+		#li $v0,13
+		#syscall
+		
+		#move $a0,$v0
+		#la $a1,0xFF000000
+		#li $a2,76800
+		#li $v0,14
+		#syscall
+		
+		#li $v0,16
+		#syscall
 		
 		jr $ra 		# retorno main
 		
 	decompV:
 	
-		li $v0, 4
-		la $a0, msg1
-		syscall
+		#li $v0, 4
+		#la $a0, msg1
+		#syscall
 		
-		li $v0, 6	# ler velocidade
-		syscall
+		#li $v0, 6	# ler velocidade
+		#syscall
+		
+		l.s $f0, Vzero
 		
 		l.s $f1, cosO
 		l.s $f2, senO
