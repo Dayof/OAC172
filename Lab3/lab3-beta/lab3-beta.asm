@@ -19,7 +19,7 @@
 	
 	msg1: .asciiz "\nDigite a velocidade inicial do lancamento:  "
 	
-	arquivo: .asciiz "/home/lucas/Downloads/bmp2oac(2)/minhatela.bin"
+	arquivo: .asciiz "minhatela.bin"
 
 
 .text
