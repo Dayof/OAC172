@@ -51,6 +51,7 @@
 		mul.s $f5, $f4, $f6		# f5 =tempo de lancamento float
 		
 		li $t1, 0
+		li $t2, 320
 		
 		
 		for:
@@ -97,7 +98,11 @@
 		   	li $s0, 0x07070707	# s0 = cor
 		   	li $s1, 0x00000000	# s0 = cor
 		   	
-		   	mul $t6, $t4, 320	# t6 = y * 320
+		   	#mul $t6, $t4, 320	# t6 = y * 320
+		   	
+		   	mult $t4, $t2		# t4 * t2 (320)
+		   	mflo $t6		# t6 = lo
+		   	
 		   	
 		   	sub $t6, $t6, 320	# t6 = (y * 320) - 320
 		   	bgt $t6, -1, vai	# if (t8 > -1) , pula pro "vai", else {
