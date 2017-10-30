@@ -1,4 +1,6 @@
+.data
 
+.text
 	addd:
 		lui $at, 0x0000
 		ori $t0, $at, 8
