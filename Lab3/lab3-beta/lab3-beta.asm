@@ -17,9 +17,9 @@
 	
 	#msg1: .asciiz "\nDigite a velocidade inicial do lancamento:  "
 	
-	#arquivo: .asciiz "/home/lucas/GitHub/OAC172/Lab3/lab3-beta/minhatela.bin"
+	arquivo: .asciiz "/home/lucas/Downloads/bmp2oac(2)/minhatela.bin"
 	
-	Vzero: .float 22.45 #### velocidade inicial do lancamento (decomposta posteriormente em vx e vy)
+	Vzero: .float 18 #### velocidade inicial do lancamento (decomposta posteriormente em vx e vy)
 	
 .text
 
@@ -52,6 +52,7 @@
 		
 		li $t1, 0
 		li $t2, 320
+		li $t3, -1
 		
 		
 		for:
@@ -106,7 +107,9 @@
 		   	
 		   	sub $t6, $t6, 320	# t6 = (y * 320) - 320
 		   	bgt $t6, -1, vai	# if (t8 > -1) , pula pro "vai", else {
-		   	mul $t6, $t6, -1	# t8 = t8 * (-1) }
+		   	#mul $t6, $t6, -1	# t8 = t8 * (-1) }
+		   	mult $t6, $t3
+		   	mflo $t6
 		   
 		   vai:
 		   	sub $t8, $t6, $t3	# t8 = t6 - x
@@ -132,37 +135,34 @@
 		li $t1, 0xff012c00
 		li $t2, 0xF8F8F8F8
 		
-		tela:
-		sw $t2, ($t0)
-		addi $t0, $t0, 0x00000004
+		#tela:
+		#sw $t2, ($t0)
+		#addi $t0, $t0, 0x00000004
 		
-		ble $t0, $t1, tela
+		#ble $t0, $t1, tela
 		
-		#la $a0,arquivo
-		#li $a1,0
-		#li $a2,0
-		#li $v0,13
-		#syscall
+		la $a0,arquivo
+		li $a1,0
+		li $a2,0
+		li $v0,13
+		syscall
 		
-		#move $a0,$v0
-		#la $a1,0xFF000000
-		#li $a2,76800
-		#li $v0,14
-		#syscall
+		move $a0,$v0
+		la $a1,0xFF000000
+		li $a2,76800
+		li $v0,14
+		syscall
 		
-		#li $v0,16
-		#syscall
-		
+		li $v0,16
+		syscall
+
 		jr $ra 		# retorno main
 		
 	decompV:
 	
-		#li $v0, 4
-		#la $a0, msg1
-		#syscall
 		
-		#li $v0, 6	# ler velocidade
-		#syscall
+		
+		
 		
 		l.s $f0, Vzero
 		

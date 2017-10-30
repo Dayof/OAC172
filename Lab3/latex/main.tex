@@ -66,12 +66,53 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 \subsection{Exercício 4. Diagrama de fluxo para tratamento de exceção}
 \label{subsec:dfluxoexc}
 
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=.8\textwidth]{ex1_st.png}
-%	\caption{Simulação síncrona temporal do \textit{decoder7}.}
-%	\label{fig:ex1st}
-%\end{figure}
+  O tratamento de exceção obtém a causa através de um registrador especial denominado "CAUSE" "\$13", o endereço de retorno é armazenado em outro registrador, o EPC "\$14" (exception progamer counter). Esses registradores especiais não fazem parte do conjunto de registradores de uso geral do MIPS, eles ficam em um local especial , chamado de coprocessor 0. As instruções usadas para acessar esses registradores são o mfc0 e o mtc0.
+	  
+\label
+  -Abaixo você encontrara o diagrama completo da rotina de tratamento de exceção do MIPS, que foi baseada no systemv54.s . Os números conectam o diagrama, fechando o ciclo no número "12".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/1.jpg}
+	\caption{ \textit{Parte 1}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/2.jpg}
+	\caption{ \textit{Parte 2}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/5.jpg}
+	\caption{ \textit{Parte 3}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/6.jpg}
+	\caption{ \textit{Parte 4}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/3.jpg}
+	\caption{ \textit{Parte 5}.}
+	\label{fig:ex1st}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{imagens/4.jpg}
+	\caption{ \textit{Parte 6}.}
+	\label{fig:ex1st}
+\end{figure}
+
 
 \subsection{Exercício 5. Software de lançamento de bola de canhão na FPGA}
 \label{subsec:canhao}
