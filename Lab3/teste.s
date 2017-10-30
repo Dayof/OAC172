@@ -1,11 +1,11 @@
-
+.data 
+FINISH: .asciiz "finish"
+.text
 	addd:
 		lui $at, 0x0000
 		ori $t0, $at, 8
 		lui $at, 0x0000
 		ori $t1, $at, 4
-		#li $t0, 8
-		#li $t1, 4
 		add $t0, $t0, $t1
 		beq $t0, 12, mull
 		jal end
@@ -15,9 +15,8 @@
 		ori $t0, $at, 5
 		lui $at, 0x0000
 		ori $t1, $at, 4
-		#li $t0, 5
-		#li $t1, 4
-		mul $t0, $t0, $t1
+		mult $t0, $t1
+		mflo $t0
 		beq $t0, 20, subb
 		jal end
 
@@ -26,8 +25,6 @@
 		ori $t0, $at, 5
 		lui $at, 0x0000
 		ori $t1, $at, 9
-		#li $t0, 5
-		#li $t1, 9
 		sub $t0, $t0, $t1
 		beq $t0,-4, andd
 		jal end
@@ -37,8 +34,6 @@
 		ori $t0, $at, 1
 		lui $at, 0x0000
 		ori $t1, $at, 4
-		#li $t0, 1
-		#li $t1, 4
 		and $t0, $t0, $t1
 		beq $t0, 0, orr
 		jal end
@@ -48,8 +43,6 @@
 		ori $t0, $at, 1
 		lui $at, 0x0000
 		ori $t1, $at, 4
-		#li $t0,1
-		#li $t1,4
 		or $t0,$t0,$t1
 		beq $t0,5,mfhii
 		jal end
@@ -61,13 +54,12 @@
 
 	mfloo:
 		mflo $t0
-		beq $t0, 8, slll
+		beq $t0, 20, slll
 		jal end
 
 	slll:
 		lui $at, 0x0000
 		ori $t0, $at, 1
-		#li $t0, 1
 		sll $t0, $t0, 3
 		beq $t0, 8, srll
 		jal end
@@ -75,7 +67,6 @@
 	srll:
 		lui $at, 0x0000
 		ori $t0, $at, 8
-		#li $t0, 8
 		srl $t0, $t0, 3
 		beq $t0, 1, sraa
 		jal end
@@ -83,9 +74,8 @@
 	sraa:
 		lui $at, 0x0000
 		ori $t0, $at, 8
-		#li $t0, 8
-		sra $t0, $t0, 3
-		beq $t0, 1, sravv
+		sra $t1, $t0, 3
+		beq $t1, 1, sravv
 		jal end
 
 	sravv:
@@ -93,8 +83,6 @@
 		ori $t0, $at, 8
 		lui $at, 0x0000
 		ori $t1, $at, 3
-		#li $t0, 8
-		#li $t1, 3
 		srav $t0, $t0, $t1
 		beq $t0, 1, sllvv
 		jal end
@@ -104,8 +92,6 @@
 		ori $t0, $at, 1
 		lui $at, 0x0000
 		ori $t1, $at, 3
-		#li $t0, 1
-		#li $t1, 3
 		sllv $t0, $t0, $t1
 		beq $t0, 8, srlvv
 		jal end
@@ -115,8 +101,6 @@
 		ori $t0, $at, 8
 		lui $at, 0x0000
 		ori $t1, $at, 3
-		#li $t0, 8
-		#li $t1, 3
 		srlv $t0, $t0, $t1
 		beq $t0, 1, xorr
 		jal end
@@ -126,21 +110,26 @@
 		ori $t0, $at, 8
 		lui $at, 0x0000
 		ori $t1, $at, 3
-		#li $t0, 8
-		#li $t1, 3
 		xor $t0, $t0, $t1
 		beq $t0, 11, norr
 		jal end
 
 	norr:
 		lui $at, 0x0000
-		ori $t0, $at, 8
+		ori $t0, $at, 4
 		lui $at, 0x0000
-		ori $t1, $at, 3
-		#li $t0, 8
-		#li $t1, 3
+		ori $t1, $at, 5
 		nor $t0, $t0, $t1
-		beq $t0, 0xFFFFFFF4, srll
+		beq $t0, 0xfffffffa, fish
 		jal end
 
+		j fish
 end:
+	la $a0, FINISH
+	li $v0, 4
+	syscall 
+	j fish
+	
+fish:
+	li $v0, 10
+	syscall 
