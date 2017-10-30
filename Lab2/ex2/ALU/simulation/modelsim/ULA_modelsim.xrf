@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ula.vwf
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/TopDE.v
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/Parametros.v
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/Decoder7.v
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ALU.v
-source_file = 1, C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/db/ULA.cbx.xml
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/ula.vwf
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/TopDE.v
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/Parametros.v
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/Decoder7.v
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/ALU.v
+source_file = 1, /home/giordano/OAC172/Lab2/ex2/ALU/db/ULA.cbx.xml
 design_name = TopDE
 instance = comp, \iCLK_50~I , iCLK_50, TopDE, 1
 instance = comp, \iCLK_28~I , iCLK_28, TopDE, 1

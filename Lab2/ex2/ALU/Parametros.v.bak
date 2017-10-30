@@ -33,7 +33,6 @@ parameter
 	 OPMADDU		 = 5'b11001,				 //25 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
 	 OPMSUB		 = 5'b11010,				 //26 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
 	 OPMSUBU		 = 5'b11011,				 //27 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
-	 OPMUL		 = 5'b11100,				 //28		    MUL
 	 
 	 OPDEBUG		 = 5'b11111,				// para medidas de atraso de * / %
 	 
@@ -319,4 +318,3 @@ parameter
 	  
 	  //Adicionados em 2/2016 (Grupo 2)
 	  RM				  = 6'd61;
-	
