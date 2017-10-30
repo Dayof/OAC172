@@ -1,5 +1,5 @@
 --sign_div_unsign DEN_REPRESENTATION="UNSIGNED" DEN_WIDTH=32 LPM_PIPELINE=0 MAXIMIZE_SPEED=5 NUM_REPRESENTATION="UNSIGNED" NUM_WIDTH=32 SKIP_BITS=0 denominator numerator quotient remainder
---VERSION_BEGIN 13.0 cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_lpm_abs 2013:06:12:18:03:43:SJ cbx_lpm_add_sub 2013:06:12:18:03:43:SJ cbx_lpm_divide 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ cbx_util_mgl 2013:06:12:18:03:43:SJ  VERSION_END
+--VERSION_BEGIN 13.0 cbx_cycloneii 2013:04:24:18:16:58:SJ cbx_lpm_abs 2013:04:24:18:16:58:SJ cbx_lpm_add_sub 2013:04:24:18:16:58:SJ cbx_lpm_divide 2013:04:24:18:16:58:SJ cbx_mgl 2013:04:24:18:18:51:SJ cbx_stratix 2013:04:24:18:16:58:SJ cbx_stratixii 2013:04:24:18:16:58:SJ cbx_util_mgl 2013:04:24:18:16:58:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2013 Altera Corporation
@@ -20,7 +20,7 @@
 FUNCTION alt_u_div_k5f (denominator[31..0], numerator[31..0])
 RETURNS ( quotient[31..0], remainder[31..0]);
 
---synthesis_resources = lut 555 
+--synthesis_resources = 
 SUBDESIGN sign_div_unsign_9nh
 ( 
 	denominator[31..0]	:	input;

@@ -1,6 +1,6 @@
 Simulator report for ULA
-Fri Oct 06 13:20:15 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Oct 17 14:30:34 2017
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -50,43 +50,44 @@ applicable agreement for further details.
 ; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896C6 ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                           ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                         ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                      ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                            ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                             ;               ;
-; Vector input source                                                                        ; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ula.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                              ; On            ;
-; Check outputs                                                                              ; Off                                                             ; Off           ;
-; Report simulation coverage                                                                 ; On                                                              ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                              ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                              ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                              ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                             ; Off           ;
-; Detect glitches                                                                            ; Off                                                             ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                             ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                             ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                             ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                             ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                              ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                      ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                             ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                             ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                            ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                        ;               ;
+; Vector input source                                                                        ; /home/giordano/OAC172/Lab2/ex2/ALU/ula.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                         ; On            ;
+; Check outputs                                                                              ; Off                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                       ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 64-Bit to view the waveform report data.
+Please use Quartus II 32-bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -118,97 +119,97 @@ The following table displays output ports that do not toggle to 1 during simulat
 +-------------------+-------------------+------------------+
 ; Node Name         ; Output Port Name  ; Output Port Type ;
 +-------------------+-------------------+------------------+
-; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; pin_out          ;
-; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; pin_out          ;
-; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; pin_out          ;
-; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; pin_out          ;
-; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; pin_out          ;
-; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; pin_out          ;
-; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; pin_out          ;
-; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; pin_out          ;
-; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; pin_out          ;
-; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; pin_out          ;
-; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; pin_out          ;
-; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; pin_out          ;
-; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; pin_out          ;
-; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; pin_out          ;
-; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; pin_out          ;
-; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; pin_out          ;
-; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; pin_out          ;
-; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; pin_out          ;
-; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; pin_out          ;
-; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; pin_out          ;
-; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; pin_out          ;
-; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; pin_out          ;
-; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; pin_out          ;
-; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; pin_out          ;
-; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; pin_out          ;
-; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; pin_out          ;
-; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; pin_out          ;
-; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; pin_out          ;
-; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; pin_out          ;
-; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; pin_out          ;
-; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; pin_out          ;
-; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; pin_out          ;
-; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; pin_out          ;
-; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; pin_out          ;
-; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; pin_out          ;
-; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; pin_out          ;
-; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; pin_out          ;
-; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; pin_out          ;
-; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; pin_out          ;
-; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; pin_out          ;
-; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; pin_out          ;
-; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; pin_out          ;
-; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; pin_out          ;
-; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; pin_out          ;
-; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; pin_out          ;
-; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; pin_out          ;
-; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; pin_out          ;
-; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; pin_out          ;
-; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; pin_out          ;
-; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; pin_out          ;
-; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; pin_out          ;
-; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; pin_out          ;
-; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; pin_out          ;
-; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; pin_out          ;
-; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; pin_out          ;
-; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; pin_out          ;
-; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; pin_out          ;
-; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; pin_out          ;
-; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; pin_out          ;
-; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; pin_out          ;
-; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; pin_out          ;
-; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; pin_out          ;
-; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; pin_out          ;
-; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; pin_out          ;
-; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; pin_out          ;
-; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; pin_out          ;
-; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; pin_out          ;
-; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; pin_out          ;
-; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; pin_out          ;
-; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; pin_out          ;
-; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; pin_out          ;
-; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; pin_out          ;
-; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; pin_out          ;
-; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; pin_out          ;
-; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; pin_out          ;
-; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; pin_out          ;
-; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; pin_out          ;
-; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; pin_out          ;
-; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; pin_out          ;
-; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; pin_out          ;
-; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; pin_out          ;
-; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; pin_out          ;
-; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; pin_out          ;
-; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; pin_out          ;
-; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; pin_out          ;
-; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; pin_out          ;
-; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; pin_out          ;
-; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; pin_out          ;
-; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; pin_out          ;
-; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; pin_out          ;
-; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; pin_out          ;
+; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; padio            ;
+; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; padio            ;
+; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; padio            ;
+; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; padio            ;
+; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; padio            ;
+; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; padio            ;
+; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; padio            ;
+; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; padio            ;
+; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; padio            ;
+; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; padio            ;
+; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; padio            ;
+; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; padio            ;
+; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; padio            ;
+; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; padio            ;
+; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; padio            ;
+; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; padio            ;
+; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; padio            ;
+; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; padio            ;
+; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; padio            ;
+; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; padio            ;
+; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; padio            ;
+; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; padio            ;
+; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; padio            ;
+; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; padio            ;
+; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; padio            ;
+; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; padio            ;
+; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; padio            ;
+; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; padio            ;
+; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; padio            ;
+; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; padio            ;
+; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; padio            ;
+; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; padio            ;
+; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; padio            ;
+; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; padio            ;
+; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; padio            ;
+; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; padio            ;
+; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; padio            ;
+; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; padio            ;
+; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; padio            ;
+; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; padio            ;
+; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; padio            ;
+; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; padio            ;
+; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; padio            ;
+; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; padio            ;
+; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; padio            ;
+; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; padio            ;
+; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; padio            ;
+; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; padio            ;
+; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; padio            ;
+; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; padio            ;
+; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; padio            ;
+; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; padio            ;
+; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; padio            ;
+; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; padio            ;
+; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; padio            ;
+; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; padio            ;
+; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; padio            ;
+; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; padio            ;
+; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; padio            ;
+; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; padio            ;
+; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; padio            ;
+; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; padio            ;
+; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; padio            ;
+; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; padio            ;
+; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; padio            ;
+; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; padio            ;
+; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; padio            ;
+; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; padio            ;
+; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; padio            ;
+; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; padio            ;
+; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; padio            ;
+; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; padio            ;
+; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; padio            ;
+; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; padio            ;
+; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; padio            ;
+; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; padio            ;
+; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; padio            ;
+; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; padio            ;
+; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; padio            ;
+; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; padio            ;
+; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; padio            ;
+; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; padio            ;
+; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; padio            ;
+; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; padio            ;
+; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; padio            ;
+; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; padio            ;
+; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; padio            ;
+; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; padio            ;
+; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; padio            ;
+; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; padio            ;
+; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; padio            ;
 +-------------------+-------------------+------------------+
 
 
@@ -218,97 +219,97 @@ The following table displays output ports that do not toggle to 0 during simulat
 +-------------------+-------------------+------------------+
 ; Node Name         ; Output Port Name  ; Output Port Type ;
 +-------------------+-------------------+------------------+
-; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; pin_out          ;
-; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; pin_out          ;
-; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; pin_out          ;
-; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; pin_out          ;
-; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; pin_out          ;
-; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; pin_out          ;
-; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; pin_out          ;
-; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; pin_out          ;
-; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; pin_out          ;
-; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; pin_out          ;
-; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; pin_out          ;
-; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; pin_out          ;
-; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; pin_out          ;
-; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; pin_out          ;
-; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; pin_out          ;
-; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; pin_out          ;
-; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; pin_out          ;
-; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; pin_out          ;
-; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; pin_out          ;
-; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; pin_out          ;
-; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; pin_out          ;
-; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; pin_out          ;
-; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; pin_out          ;
-; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; pin_out          ;
-; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; pin_out          ;
-; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; pin_out          ;
-; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; pin_out          ;
-; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; pin_out          ;
-; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; pin_out          ;
-; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; pin_out          ;
-; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; pin_out          ;
-; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; pin_out          ;
-; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; pin_out          ;
-; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; pin_out          ;
-; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; pin_out          ;
-; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; pin_out          ;
-; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; pin_out          ;
-; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; pin_out          ;
-; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; pin_out          ;
-; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; pin_out          ;
-; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; pin_out          ;
-; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; pin_out          ;
-; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; pin_out          ;
-; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; pin_out          ;
-; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; pin_out          ;
-; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; pin_out          ;
-; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; pin_out          ;
-; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; pin_out          ;
-; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; pin_out          ;
-; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; pin_out          ;
-; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; pin_out          ;
-; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; pin_out          ;
-; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; pin_out          ;
-; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; pin_out          ;
-; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; pin_out          ;
-; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; pin_out          ;
-; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; pin_out          ;
-; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; pin_out          ;
-; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; pin_out          ;
-; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; pin_out          ;
-; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; pin_out          ;
-; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; pin_out          ;
-; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; pin_out          ;
-; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; pin_out          ;
-; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; pin_out          ;
-; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; pin_out          ;
-; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; pin_out          ;
-; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; pin_out          ;
-; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; pin_out          ;
-; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; pin_out          ;
-; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; pin_out          ;
-; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; pin_out          ;
-; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; pin_out          ;
-; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; pin_out          ;
-; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; pin_out          ;
-; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; pin_out          ;
-; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; pin_out          ;
-; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; pin_out          ;
-; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; pin_out          ;
-; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; pin_out          ;
-; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; pin_out          ;
-; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; pin_out          ;
-; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; pin_out          ;
-; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; pin_out          ;
-; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; pin_out          ;
-; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; pin_out          ;
-; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; pin_out          ;
-; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; pin_out          ;
-; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; pin_out          ;
-; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; pin_out          ;
-; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; pin_out          ;
+; |TopDE|oLEDG[0]   ; |TopDE|oLEDG[0]   ; padio            ;
+; |TopDE|oLEDG[1]   ; |TopDE|oLEDG[1]   ; padio            ;
+; |TopDE|oLEDG[2]   ; |TopDE|oLEDG[2]   ; padio            ;
+; |TopDE|oLEDG[3]   ; |TopDE|oLEDG[3]   ; padio            ;
+; |TopDE|oLEDG[4]   ; |TopDE|oLEDG[4]   ; padio            ;
+; |TopDE|oLEDG[5]   ; |TopDE|oLEDG[5]   ; padio            ;
+; |TopDE|oLEDG[6]   ; |TopDE|oLEDG[6]   ; padio            ;
+; |TopDE|oLEDG[7]   ; |TopDE|oLEDG[7]   ; padio            ;
+; |TopDE|oLEDG[8]   ; |TopDE|oLEDG[8]   ; padio            ;
+; |TopDE|oLEDR[0]   ; |TopDE|oLEDR[0]   ; padio            ;
+; |TopDE|oLEDR[1]   ; |TopDE|oLEDR[1]   ; padio            ;
+; |TopDE|oLEDR[2]   ; |TopDE|oLEDR[2]   ; padio            ;
+; |TopDE|oLEDR[3]   ; |TopDE|oLEDR[3]   ; padio            ;
+; |TopDE|oLEDR[4]   ; |TopDE|oLEDR[4]   ; padio            ;
+; |TopDE|oLEDR[5]   ; |TopDE|oLEDR[5]   ; padio            ;
+; |TopDE|oLEDR[6]   ; |TopDE|oLEDR[6]   ; padio            ;
+; |TopDE|oLEDR[7]   ; |TopDE|oLEDR[7]   ; padio            ;
+; |TopDE|oLEDR[8]   ; |TopDE|oLEDR[8]   ; padio            ;
+; |TopDE|oLEDR[9]   ; |TopDE|oLEDR[9]   ; padio            ;
+; |TopDE|oLEDR[10]  ; |TopDE|oLEDR[10]  ; padio            ;
+; |TopDE|oLEDR[11]  ; |TopDE|oLEDR[11]  ; padio            ;
+; |TopDE|oLEDR[12]  ; |TopDE|oLEDR[12]  ; padio            ;
+; |TopDE|oLEDR[13]  ; |TopDE|oLEDR[13]  ; padio            ;
+; |TopDE|oLEDR[14]  ; |TopDE|oLEDR[14]  ; padio            ;
+; |TopDE|oLEDR[15]  ; |TopDE|oLEDR[15]  ; padio            ;
+; |TopDE|oLEDR[16]  ; |TopDE|oLEDR[16]  ; padio            ;
+; |TopDE|oLEDR[17]  ; |TopDE|oLEDR[17]  ; padio            ;
+; |TopDE|oHEX0_D[0] ; |TopDE|oHEX0_D[0] ; padio            ;
+; |TopDE|oHEX0_D[1] ; |TopDE|oHEX0_D[1] ; padio            ;
+; |TopDE|oHEX0_D[2] ; |TopDE|oHEX0_D[2] ; padio            ;
+; |TopDE|oHEX0_D[3] ; |TopDE|oHEX0_D[3] ; padio            ;
+; |TopDE|oHEX0_D[4] ; |TopDE|oHEX0_D[4] ; padio            ;
+; |TopDE|oHEX0_D[5] ; |TopDE|oHEX0_D[5] ; padio            ;
+; |TopDE|oHEX0_D[6] ; |TopDE|oHEX0_D[6] ; padio            ;
+; |TopDE|oHEX1_D[0] ; |TopDE|oHEX1_D[0] ; padio            ;
+; |TopDE|oHEX1_D[1] ; |TopDE|oHEX1_D[1] ; padio            ;
+; |TopDE|oHEX1_D[2] ; |TopDE|oHEX1_D[2] ; padio            ;
+; |TopDE|oHEX1_D[3] ; |TopDE|oHEX1_D[3] ; padio            ;
+; |TopDE|oHEX1_D[4] ; |TopDE|oHEX1_D[4] ; padio            ;
+; |TopDE|oHEX1_D[5] ; |TopDE|oHEX1_D[5] ; padio            ;
+; |TopDE|oHEX1_D[6] ; |TopDE|oHEX1_D[6] ; padio            ;
+; |TopDE|oHEX2_D[0] ; |TopDE|oHEX2_D[0] ; padio            ;
+; |TopDE|oHEX2_D[1] ; |TopDE|oHEX2_D[1] ; padio            ;
+; |TopDE|oHEX2_D[2] ; |TopDE|oHEX2_D[2] ; padio            ;
+; |TopDE|oHEX2_D[3] ; |TopDE|oHEX2_D[3] ; padio            ;
+; |TopDE|oHEX2_D[4] ; |TopDE|oHEX2_D[4] ; padio            ;
+; |TopDE|oHEX2_D[5] ; |TopDE|oHEX2_D[5] ; padio            ;
+; |TopDE|oHEX2_D[6] ; |TopDE|oHEX2_D[6] ; padio            ;
+; |TopDE|oHEX3_D[0] ; |TopDE|oHEX3_D[0] ; padio            ;
+; |TopDE|oHEX3_D[1] ; |TopDE|oHEX3_D[1] ; padio            ;
+; |TopDE|oHEX3_D[2] ; |TopDE|oHEX3_D[2] ; padio            ;
+; |TopDE|oHEX3_D[3] ; |TopDE|oHEX3_D[3] ; padio            ;
+; |TopDE|oHEX3_D[4] ; |TopDE|oHEX3_D[4] ; padio            ;
+; |TopDE|oHEX3_D[5] ; |TopDE|oHEX3_D[5] ; padio            ;
+; |TopDE|oHEX3_D[6] ; |TopDE|oHEX3_D[6] ; padio            ;
+; |TopDE|oHEX4_D[0] ; |TopDE|oHEX4_D[0] ; padio            ;
+; |TopDE|oHEX4_D[1] ; |TopDE|oHEX4_D[1] ; padio            ;
+; |TopDE|oHEX4_D[2] ; |TopDE|oHEX4_D[2] ; padio            ;
+; |TopDE|oHEX4_D[3] ; |TopDE|oHEX4_D[3] ; padio            ;
+; |TopDE|oHEX4_D[4] ; |TopDE|oHEX4_D[4] ; padio            ;
+; |TopDE|oHEX4_D[5] ; |TopDE|oHEX4_D[5] ; padio            ;
+; |TopDE|oHEX4_D[6] ; |TopDE|oHEX4_D[6] ; padio            ;
+; |TopDE|oHEX5_D[0] ; |TopDE|oHEX5_D[0] ; padio            ;
+; |TopDE|oHEX5_D[1] ; |TopDE|oHEX5_D[1] ; padio            ;
+; |TopDE|oHEX5_D[2] ; |TopDE|oHEX5_D[2] ; padio            ;
+; |TopDE|oHEX5_D[3] ; |TopDE|oHEX5_D[3] ; padio            ;
+; |TopDE|oHEX5_D[4] ; |TopDE|oHEX5_D[4] ; padio            ;
+; |TopDE|oHEX5_D[5] ; |TopDE|oHEX5_D[5] ; padio            ;
+; |TopDE|oHEX5_D[6] ; |TopDE|oHEX5_D[6] ; padio            ;
+; |TopDE|oHEX6_D[0] ; |TopDE|oHEX6_D[0] ; padio            ;
+; |TopDE|oHEX6_D[1] ; |TopDE|oHEX6_D[1] ; padio            ;
+; |TopDE|oHEX6_D[2] ; |TopDE|oHEX6_D[2] ; padio            ;
+; |TopDE|oHEX6_D[3] ; |TopDE|oHEX6_D[3] ; padio            ;
+; |TopDE|oHEX6_D[4] ; |TopDE|oHEX6_D[4] ; padio            ;
+; |TopDE|oHEX6_D[5] ; |TopDE|oHEX6_D[5] ; padio            ;
+; |TopDE|oHEX6_D[6] ; |TopDE|oHEX6_D[6] ; padio            ;
+; |TopDE|oHEX7_D[0] ; |TopDE|oHEX7_D[0] ; padio            ;
+; |TopDE|oHEX7_D[1] ; |TopDE|oHEX7_D[1] ; padio            ;
+; |TopDE|oHEX7_D[2] ; |TopDE|oHEX7_D[2] ; padio            ;
+; |TopDE|oHEX7_D[3] ; |TopDE|oHEX7_D[3] ; padio            ;
+; |TopDE|oHEX7_D[4] ; |TopDE|oHEX7_D[4] ; padio            ;
+; |TopDE|oHEX7_D[5] ; |TopDE|oHEX7_D[5] ; padio            ;
+; |TopDE|oHEX7_D[6] ; |TopDE|oHEX7_D[6] ; padio            ;
+; |TopDE|oHEX0_DP   ; |TopDE|oHEX0_DP   ; padio            ;
+; |TopDE|oHEX1_DP   ; |TopDE|oHEX1_DP   ; padio            ;
+; |TopDE|oHEX2_DP   ; |TopDE|oHEX2_DP   ; padio            ;
+; |TopDE|oHEX3_DP   ; |TopDE|oHEX3_DP   ; padio            ;
+; |TopDE|oHEX4_DP   ; |TopDE|oHEX4_DP   ; padio            ;
+; |TopDE|oHEX5_DP   ; |TopDE|oHEX5_DP   ; padio            ;
+; |TopDE|oHEX6_DP   ; |TopDE|oHEX6_DP   ; padio            ;
+; |TopDE|oHEX7_DP   ; |TopDE|oHEX7_DP   ; padio            ;
 +-------------------+-------------------+------------------+
 
 
@@ -323,11 +324,11 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Simulator
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 06 13:20:14 2017
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Tue Oct 17 14:30:34 2017
 Info: Command: quartus_sim --simulation_results_format=VWF ULA -c ULA
-Info (324025): Using vector source file "C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/ula.vwf"
+Info (324025): Using vector source file "/home/giordano/OAC172/Lab2/ex2/ALU/ula.vwf"
 Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[31]" in design.
 Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[30]" in design.
 Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iA[29]" in design.
@@ -532,10 +533,10 @@ Info (310002): Simulation partitioned into 1 sub-simulations
 Info (328053): Simulation coverage is       0.00 %
 Info (328052): Number of transitions in simulation is 0
 Info (324045): Vector file ULA.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 198 warnings
-    Info: Peak virtual memory: 318 megabytes
-    Info: Processing ended: Fri Oct 06 13:20:15 2017
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 198 warnings
+    Info: Peak virtual memory: 284 megabytes
+    Info: Processing ended: Tue Oct 17 14:30:34 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

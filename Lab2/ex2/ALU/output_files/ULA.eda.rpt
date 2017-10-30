@@ -1,6 +1,6 @@
 EDA Netlist Writer report for ULA
-Fri Oct 06 13:19:53 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Oct 17 14:23:22 2017
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Oct 06 13:19:53 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 17 14:23:22 2017 ;
 ; Revision Name             ; ULA                                   ;
 ; Top-level Entity Name     ; TopDE                                 ;
 ; Family                    ; Cyclone II                            ;
@@ -66,31 +66,31 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                 ;
-+--------------------------------------------------------------------------------------------+
-; Generated Files                                                                            ;
-+--------------------------------------------------------------------------------------------+
-; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA.vo         ;
-; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_fast.vo    ;
-; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_v.sdo      ;
-; C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_v_fast.sdo ;
-+--------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Simulation Generated Files                                            ;
++-----------------------------------------------------------------------+
+; Generated Files                                                       ;
++-----------------------------------------------------------------------+
+; /home/giordano/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA.vo         ;
+; /home/giordano/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_fast.vo    ;
+; /home/giordano/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_v.sdo      ;
+; /home/giordano/OAC172/Lab2/ex2/ALU/simulation/modelsim/ULA_v_fast.sdo ;
++-----------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 06 13:19:53 2017
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Tue Oct 17 14:23:21 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ULA -c ULA
-Info (204026): Generated files "ULA.vo", "ULA_fast.vo", "ULA_v.sdo" and "ULA_v_fast.sdo" in directory "C:/Users/Diego Vaz/Documents/GitHub/OAC172/Lab2/ex2/ALU/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 390 megabytes
-    Info: Processing ended: Fri Oct 06 13:19:54 2017
+Info (204026): Generated files "ULA.vo", "ULA_fast.vo", "ULA_v.sdo" and "ULA_v_fast.sdo" in directory "/home/giordano/OAC172/Lab2/ex2/ALU/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Tue Oct 17 14:23:22 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
