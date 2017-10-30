@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 .data 
 FINISH: .asciiz "finish"
+=======
+.data
+
+>>>>>>> 838c6e0fcb8d6e815865e944599b1d7bb97b853a
 .text
 	addd:
 		lui $at, 0x0000
