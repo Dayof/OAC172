@@ -69,7 +69,7 @@ begin
         OPSRLV:
             oALUresult  = iB >> iA[4:0];
 
-// para testes e simulacao	
+// para testes e simulacao
 		  OPMULT:
             oALUresult  = LO;
         OPMULT:
@@ -91,8 +91,8 @@ begin
     end
     else
         case (iControlSignal)
-				OPMUL:
-					LO    <= iA * iB;
+			OPMUL:
+				LO    <= iA * iB;
             OPMULT:
                 {HI,LO} <= iA * iB;
 
@@ -101,7 +101,7 @@ begin
                     LO    <= iA / iB;
                     HI    <= iA % iB;
                 end
-					
+
             OPMULTU:
                 {HI,LO}   <= $unsigned(iA) * $unsigned(iB);
 
@@ -118,19 +118,19 @@ begin
             // 2015/1
             OPMTLO:
                 LO <= iA;
-					 
+
 				// Relatorio questao B.9) - Grupo 2 - (2/2016)
 				OPMADD:
 					{HI, LO} <= $signed({HI, LO}) + $signed($signed(iA) * $signed(iB));
-				
+
 				// Relatorio questao B.9) - Grupo 2 - (2/2016)
 				OPMADDU:
 					{HI, LO} <= {HI, LO} + ($unsigned(iA) * $unsigned(iB));
-				
+
 				// Relatorio questao B.9) - Grupo 2 - (2/2016)
 				OPMSUB:
 					{HI, LO} <= $signed({HI, LO}) - $signed($signed(iA) * $signed(iB));
-				
+
 				// Relatorio questao B.9) - Grupo 2 - (2/2016)
 				OPMSUBU:
 					{HI, LO} <= {HI, LO} - ($unsigned(iA) * $unsigned(iB));

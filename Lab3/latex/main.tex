@@ -327,23 +327,23 @@ Abaixo, segue o vídeo demonstrativo da simulação do lançamento de bola de ca
 	\label{tab:req23}
 \end{longtable}
 
-
-\footnote{* - $(iFPALUOverflow || wInterruptNotZero)$ AND wNotExcLevel}
+Devido a falta de espaço na tabela os termos \footnote{* - $(iFPALUOverflow || wInterruptNotZero)$ AND wNotExcLevel}
 \footnote{** - iFPALUOverflow ? EXCODEFPALU : EXCODEINT}
-\footnote{*** - wNotUserMode}
-
-
-
-
-
-
-
+\footnote{*** - wNotUserMode} foram referenciados pelo caractere \textit{*} e descritos no rodapé.
 
 \subsection{Exercício 8. Teste do funcionamento das instruções da \textit{ISA}}
 \label{subsec:testeisa}
- 
+
+O programa \textit{teste.s} com 15 instruções da ISA implementada pode ser encontrado na pasta ex8 em conjunto com os arquivos \textit{user\_code.mif} e \textit{user\_data.mif}. 
+
+A instrução que mais demonstrou atraso foi a LW (wReadData) com 56,961 ns com frequência máxima de 17,555 MHz.
+
+O arquivo \textit{teste.s} foi simulado por forma de onda e pela implementação na DE2 como é possível ver no vídeo \url{https://youtu.be/fBfLHquFNG0}.
+  
 \subsection{Exercício 9. Novas instruções usando a \textit{ISA MIPS}}
 \label{subsec:newint}
+
+Foi implementado a operação OPMUL na ULA, definindo o OPCODE e o FUNCT como é possível ver nos arquivos \textit{Parametros.v} e \textit{ALU.v} na pasta do ex9.
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
