@@ -61,25 +61,64 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 \item Verilog HDL
 \end{itemize}
 
-\section{Exercício 2. Analise do processador Multiciclo}
-\label{subsec:dfluxoexc}
+\section{Exercício 2. Análise do processador Multiciclo}
+\label{sec:multiciclo}
 
 
 \section{Exercício 3. Teste do funcionamento das instruções da \textit{ISA} }
-\label{subsec:testeisa}
+\label{sec:testeisa}
 
 
-\section{Exercício 4. Software de lançamento de bola de canhão na FPGA}
-\label{subsec:canhao}
+\section{Exercício 4. Software de lançamento de bola de canhão na \textit{FPGA}}
+\label{sec:canhao}
 
 
 \section{Exercício 5. Demonstração dos cenários}
-\label{subsec:}
+\label{sec:cenarios}
 
   
 \section{Exercício 6. Novas instruções usando a \textit{ISA MIPS}}
-\label{subsec:newint}
+\label{sec:isamips}
 
+Na Tabela~\ref{tab:mul} mostra a instrução \textit{MUL} do tipo R que foi inserida na \textit{ISA MIPS} Multiciclo.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		INSTRUÇÃO & OPCODE (6) & RS (5) & RT (5) & RD (5) & SHAMT (5) & FUNCT (6) \\\hline
+		MUL \$t1, \$t2, \$t3 & 000000 & x & x & x & 00000 & 000010 \\\hline
+	\end{tabular}
+	\caption{Componentes da instrução \textit{MUL}.}
+	\label{tab:mul}
+\end{table}
+
+Para preencher a Tabela~\ref{tab:mul} foi usada a informação que as instruções do tipo R sempre possuem o \textit{OPCODE} em zero. A ordem dos componentes de \textit{MUL} é \textit{MUL RD RS RT}. \textit{RS} e \textit{RT} se referem aos argumentos da operação, no caso, \$t2 e \$t3 respectivamente e \textit{RD} para o registrador destino, ou seja, \$t1. Como \textit{MUL} não é uma instrução que usa operações \textit{SHIFT} então este campo também permanece com zeros. O componente \textit{FUNCT} foi preenchido de acordo com a fonte \cite{mips32}.
+
+Na Tabela~\ref{tab:mul} mostra a instrução \textit{JALR} do tipo R que foi inserida na \textit{ISA MIPS} Multiciclo.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		Instrução & OPCODE (6) & RS (5) & RT (5) & RD (5) & SHAMT (5) & FUNCT (6) \\\hline
+		JALR \$t1 & 000000 & x & 00000 & 11111 & 00000 & 001001 \\\hline
+		JALR \$t1, \$t2 & 000000 & x & 00000 & x & 00000 & 001001 \\\hline
+	\end{tabular}
+	\caption{Componentes da instrução \textit{JALR}.}
+	\label{tab:jalr}
+\end{table}
+
+Para preencher a Tabela~\ref{tab:jalr} também foi usada a informação que as instruções do tipo \textit{R} sempre possuem o \textit{OPCODE} em zero. A ordem dos componentes de \textit{JALR} é \textit{JALR RD RS}. Na instrução com apenas \textit{\$t1} o componente \textit{RD} é preenchido com 11111 para representar o \textit{\$ra}. Em ambas instruções da Tabela~\ref{tab:jalr} o componente \textit{RT} não é utilizado. E como \textit{JALR} não é uma instrução que usa operações \textit{SHIFT} então este campo também permanece com zeros. O componente \textit{FUNCT} foi preenchido de acordo com a fonte \cite{mips32}.
+
+\subsection{Caminho de dados}
+\label{subsec:datapath}
+
+\subsection{Bloco de controle}
+\label{subsec:control}
+
+\subsection{Teste das novas instruções}
+\label{subsec:testeisa}
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
