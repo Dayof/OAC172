@@ -68,13 +68,40 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 \section{Exercício 3. Teste do funcionamento das instruções da \textit{ISA} }
 \label{sec:testeisa}
 
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{waveform.png}
+	\caption{Simulação por forma de onda.}
+	\label{fig:pfunct}
+\end{figure}
+
+A demonstração e explicação do código estão presentes nos seguintes vídeos:
+
+\begin{itemize}
+\item \href{https://youtu.be/byjAeoPzvlc}{Código Multiciclo}
+\item \href{https://youtu.be/1yfLxiZ4ztI}{Formas de Onda}
+\item \href{https://youtu.be/0KF8iVj7nfM}{Implementação na DE2} 
+\end{itemize}
+
 
 \section{Exercício 4. Software de lançamento de bola de canhão na \textit{FPGA}}
 \label{sec:canhao}
 
+Alguns problemas foram encontrados durante execução do exercício. O programa não apresenta nenhum syscall além do 10, ao executar o programa ele apenas preenche a tela com a cor e não realiza o lançamento. Portanto, não foi possível gravar a demonstração do lançamento da bola de canhão.
 
-\section{Exercício 5. Demonstração dos cenários}
-\label{sec:cenarios}
+
+\section{Exercício 5. Implementação do Cartão SD}
+\label{sec:cartaosd}
+
+As limitações observadas ao executar os cenários no cartão sd e impressas no monitor através de um cabo vga foram:
+
+\begin{itemize}
+\item O máximo de pixel da coordenada do eixo x para centralizar o cenário foi 138 pixels. Ao retirar mais, a imagem não foi impressa na tela;
+\item Mesmo com a frequência mais alta, a imagem demora pra ser carregada do cartão sd para o monitor;
+
+\end{itemize} 
+
+
 
   
 \section{Exercício 6. Novas instruções usando a \textit{ISA MIPS}}
@@ -216,6 +243,12 @@ Foi desenvolvido um programa para testar as funções implementadas, conforme mo
 \textbf{OWPC}:Endereço do PC;\\
 \textbf{OwInstr}:Intrução decodificada;\\
 \textbf{OwRegD}:Conteúdo do registrador \$t0;\\
+
+
+
+Por fim, temos a demonstração na DE2 no seguinte vídeo:
+
+\href{https://youtu.be/aTrqM8m8FJc}{Demonstração na DE2}
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
