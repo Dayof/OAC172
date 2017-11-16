@@ -111,6 +111,33 @@ Na Tabela~\ref{tab:mul} mostra a instrução \textit{JALR} do tipo R que foi ins
 
 Para preencher a Tabela~\ref{tab:jalr} também foi usada a informação que as instruções do tipo \textit{R} sempre possuem o \textit{OPCODE} em zero. A ordem dos componentes de \textit{JALR} é \textit{JALR RD RS}. Na instrução com apenas \textit{\$t1} o componente \textit{RD} é preenchido com 11111 para representar o \textit{\$ra}. Em ambas instruções da Tabela~\ref{tab:jalr} o componente \textit{RT} não é utilizado. E como \textit{JALR} não é uma instrução que usa operações \textit{SHIFT} então este campo também permanece com zeros. O componente \textit{FUNCT} foi preenchido de acordo com a fonte \cite{mips32}.
 
+Para implementar estas instruções os arquivos \textit{Parametros.v}, \textit{ALUControl.v}, \textit{Datapath\_MULT.v} e \textit{Control\_MULT.v} foram modificados. 
+
+\subsection{Parêmtros}
+\label{subsec:param}
+
+O \textit{OPCODE} de \textit{MUL} e \textit{JALR} não precisam de nenhuma adição no arquivo já que são do tipo R.
+
+Os componentes \textit{FUNCT} foram adicionados no arquivo como é mostrado na Figura~\ref{fig:pfunct}.
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{pfunct.png}
+	\caption{Parâmetros para o componente \textit{FUNCT} de cada instrução.}
+	\label{fig:pfunct}
+\end{figure}
+
+Os parâmetros para a máquina estado do multiciclo foram adicionados conforme a Figura~\ref{fig:pest}.
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{pest.png}
+	\caption{Parâmetros para a máquina de estados multiciclo.}
+	\label{fig:pest}
+\end{figure}
+
+A operação \textit{MUL} (OPMUL) foi adicionada no arquivo com o binário 11100.
+
 \subsection{Caminho de dados}
 \label{subsec:datapath}
 
