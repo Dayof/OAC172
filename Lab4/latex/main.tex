@@ -136,7 +136,7 @@ Os parâmetros para a máquina estado do multiciclo foram adicionados conforme a
 	\label{fig:pest}
 \end{figure}
 
-A operação \textit{MUL} (OPMUL) foi adicionada no arquivo com o binário 11100.
+A operação \textit{MUL} não foi adicionada no arquivo pois o \textit{OPMULT} implementada no arquivo \textit{ALU.v} já implementa o resultado esperado para \textit{MUL}. No caso seria colocar em \textit{HI} e \textit{LO} o resultado da operação \textit{iA * iB}, sendo que em \textit{HI} estaria os 32 bits mais significativos e \textit{LO} os 32 menos significativos. Como \textit{oALUresult} recebe \textit{LO} em \textit{OPMULT} então já temos o esperado para \textit{MUL}, sendo \textit{oALUresult} nossa representação do \textit{RD}.
 
 \subsection{Caminho de dados}
 \label{subsec:datapath}
