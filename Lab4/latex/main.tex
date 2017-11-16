@@ -109,7 +109,7 @@ Na Tabela~\ref{tab:mul} mostra a instrução \textit{JALR} do tipo R que foi ins
 	\label{tab:jalr}
 \end{table}
 
-Para preencher a Tabela~\ref{tab:jalr} também foi usada a informação que as instruções do tipo \textit{R} sempre possuem o \textit{OPCODE} em zero. A ordem dos componentes de \textit{JALR} é \textit{JALR RD RS}. Na instrução com apenas \textit{\$t1} o componente \textit{RD} é preenchido com 11111 para representar o \textit{\$ra}. Em ambas instruções da Tabela~\ref{tab:jalr} o componente \textit{RT} não é utilizado. E como \textit{JALR} não é uma instrução que usa operações \textit{SHIFT} então este campo também permanece com zeros. O componente \textit{FUNCT} foi preenchido de acordo com a fonte \cite{mips32}.
+Para preencher a Tabela~\ref{tab:jalr} também foi usada a informação que as instruções do tipo \textit{R} sempre possuem o \textit{OPCODE} em zero. A ordem dos componentes de \textit{JALR} é \textit{JALR RD RS}. Na instrução com apenas \textit{\$t1} o componente \textit{RD} é preenchido com 11111 para representar o \textit{\$ra}. Em ambas instruções da Tabela~\ref{tab:jalr} o componente \textit{RT} não é utilizado. E como \textit{JALR} não é uma instrução que usa operações \textit{SHIFT} então este campo também permanece com zero. O componente \textit{FUNCT} foi preenchido de acordo com a fonte \cite{mips32}.
 
 Para implementar estas instruções os arquivos \textit{Parametros.v}, \textit{ALUControl.v}, \textit{Datapath\_MULT.v} e \textit{Control\_MULT.v} foram modificados. 
 
@@ -155,11 +155,67 @@ Conforme explicado acima sobre a operação \textit{MUL}, foi adicionado no arqu
 \subsection{Caminho de dados}
 \label{subsec:datapath}
 
+Para implementar a Função \textit{JALR}, foi modificado o multiplexador \textit{WriteReg} e \textit{WriteData}. Foi ativado a porta 3'd2 de ambos, que estava disponível para uso. No multiplexador \textit{WriteReg}, indicamos que o registrador que vai ser usado é o RT ou o RD, conforme a imagem 3. Já no multiplexador \textit{WriteData}, indicamos que o registrador de destino vai receber o valor de \textit{PC}, conforme na imagem 4.    
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{MUXWR.png}
+	\caption{Multiplexador WriteReg modificado}
+	\label{fig:pest}
+\end{figure}
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{MUXWD.png}
+	\caption{Multiplexador WriteData modificado}
+	\label{fig:pest}
+\end{figure}
+
 \subsection{Bloco de controle}
 \label{subsec:control}
 
+Já no bloco de controle, foi adicionado 2 novos estados para a maquina de estados. Ao passar pelo estado de decodificação, caso seja um \textit{JALR} ou \textit{MUL}, a \textit{Word} receberá os dados apresentados na tabela 3.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		INSTRUÇÃO & Word \\\hline
+		JALR & 00000000000000000001010000000011000000011 \\\hline
+	    MUL  & 00000000000000000000000000000000100000111 \\\hline
+	\end{tabular}
+	\caption{Sinais de controle}
+	\label{tab:mul}
+\end{table}
+
 \subsection{Teste das novas instruções}
 \label{subsec:testeisa}
+
+Foi desenvolvido um programa para testar as funções implementadas, conforme mostra a imagem 5. Logo após, foi testado no Quartus, através de formas de onda, que as instruções estavam funcionando corretamente, conforme mostrado nas figuras 6 e 7.   
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{programa.png}
+	\caption{Programa desenvolvido para teste das funções implementadas}
+	\label{fig:pest}
+\end{figure}
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{teste.png}
+	\caption{Teste na forma de onda}
+	\label{fig:pest}
+\end{figure}
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{images/teste1.png}
+	\caption{Teste na forma de onda}
+	\label{fig:pest}
+\end{figure}
+
+
+\textbf{OWPC}:Endereço do PC;\\
+\textbf{OwInstr}:Intrução decodificada;\\
+\textbf{OwRegD}:Conteúdo do registrador \$t0;\\
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
