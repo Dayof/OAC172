@@ -67,6 +67,13 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 
 \begin{figure}[H]
 	\flushleft
+	\includegraphics[width=1\textwidth]{diagrama_blocos.jpg}
+	\caption{Diagrama de Blocos do Caminho de Dados.}
+	\label{fig:pfunct}
+\end{figure}
+
+\begin{figure}[H]
+	\flushleft
 	\includegraphics[width=1\textwidth]{maquina_estados.jpg}
 	\caption{Máquina de estados do Bloco Controlador.}
 	\label{fig:pfunct}
@@ -208,7 +215,7 @@ Para implementar a Função \textit{JALR}, foi modificado o multiplexador \texti
 \subsection{Bloco de controle}
 \label{subsec:control}
 
-Já no bloco de controle, foi adicionado 2 novos estados para a maquina de estados. Ao passar pelo estado de decodificação, caso seja um \textit{JALR} ou \textit{MUL}, a \textit{Word} receberá os dados apresentados na tabela 3.
+Já no bloco de controle, foi adicionado 3 novos estados para a maquina de estados. Ao passar pelo estado de decodificação, caso seja um \textit{JALR} ou \textit{MUL}, a \textit{Word} receberá os dados apresentados na tabela 3.
 
 \begin{table}[H]
 	\centering
@@ -216,6 +223,7 @@ Já no bloco de controle, foi adicionado 2 novos estados para a maquina de estad
 		\hline
 		INSTRUÇÃO & Word \\\hline
 		JALR & 00000000000000000001010000000011000000011 \\\hline
+	    MUL  & 00000000000000000000000000000000100000101 \\\hline
 	    MUL  & 00000000000000000000000000000000100000111 \\\hline
 	\end{tabular}
 	\caption{Sinais de controle}
@@ -256,6 +264,7 @@ Foi desenvolvido um programa para testar as funções implementadas, conforme mo
 Por fim, temos a demonstração na DE2 no seguinte vídeo:
 
 \href{https://youtu.be/aTrqM8m8FJc}{Demonstração na DE2}
+\href{https://youtu.be/OFwDDysXQxM}{Demonstração MUL na DE2}
 
 \bibliographystyle{sbc}
 \bibliography{relatorio}
