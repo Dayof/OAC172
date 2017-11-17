@@ -33,6 +33,7 @@ parameter
 	 OPMADDU		 = 5'b11001,				 //25 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
 	 OPMSUB		 = 5'b11010,				 //26 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
 	 OPMSUBU		 = 5'b11011,				 //27 		 Relatorio questao B.9) - Grupo 2 - (2/2016)
+	 OPMUL		 = 5'b11100,
 
 /* Operacoes da ULA FP */
     OPADDS      = 4'b0001,
@@ -122,7 +123,7 @@ parameter
     OPCFLT      = 6'h11,                /*OPCODE para operacoes da FPU*/
 	 OPCRM	 	 = 6'h1C,   				 // Grupo 2 - (2/2016)
 	 OPMFUNCT 	 = 6'h1C,   				 // Relatorio questao B.9) - Grupo 2 - (2/2016)
-    OPMUL 		 = 6'h1C,
+    OPCMUL 		 = 6'h1C,
 	 OPCLW       = 6'h23,
     OPCLB       = 6'h20,
     OPCLBU      = 6'h24,
@@ -306,6 +307,7 @@ parameter
     JR              = 6'd16,
 	 JALR				  = 6'd21,
 	 MUL				  = 6'd22,
+	 MULA				  = 6'd23,
 
     // feito no semestre 2013/1 para implementar a deteccao de excecoes (COP0)
     COP0MTC0        = 6'd17,

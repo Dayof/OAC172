@@ -472,8 +472,13 @@ begin
 		
 		MUL:
 		begin
-			word	<= 41'b00000000000000000000000000000000100000110;
-			nx_state	<= FETCH;
+			word	<= 41'b00000000000000000001100000000000100000101;
+			nx_state	<= MULA;
+		end
+		MULA:
+		begin
+			word  <= 41'b00000000000000000001100000000000100000111;
+			nx_state <= FETCH;
 		end
 		IFMT2:
 		begin
