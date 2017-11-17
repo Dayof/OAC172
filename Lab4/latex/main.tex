@@ -97,7 +97,9 @@ A demonstração e explicação do código estão presentes nos seguintes vídeo
 \section{Exercício 4. Software de lançamento de bola de canhão na \textit{FPGA}}
 \label{sec:canhao}
 
-Alguns problemas foram encontrados durante execução do exercício. O programa não apresenta nenhum syscall além do 10, ao executar o programa ele apenas preenche a tela com a cor e não realiza o lançamento. Portanto, não foi possível gravar a demonstração do lançamento da bola de canhão.
+Alguns problemas foram encontrados durante execução do exercício. O programa não apresenta nenhum syscall além do 10, ao executar o programa ele apenas preenche a tela com a cor e não realiza o lançamento.
+
+\href{https://youtu.be/KM9j9fGKz6c}{Demonstração do Lançamento da Bola de Canhão}
 
 
 \section{Exercício 5. Implementação do Cartão SD}
@@ -108,8 +110,17 @@ As limitações observadas ao executar os cenários no cartão sd e impressas no
 \begin{itemize}
 \item O máximo de pixel da coordenada do eixo x para centralizar o cenário foi 138 pixels. Ao retirar mais, a imagem não foi impressa na tela;
 \item Mesmo com a frequência mais alta, a imagem demora pra ser carregada do cartão sd para o monitor;
-
 \end{itemize} 
+
+Segue os vídeos dos cenários:
+
+\begin{itemize}
+\item \href{https://youtu.be/a2omO8XZJIs}{Cenário Blanka}
+\item \href{https://youtu.be/1NFspVSaYR4}{Cenário Balrog}
+\item \href{https://youtu.be/9PXeOKTCW-Y}{Cenário Chunli}
+
+\end{itemize}
+
 
 
 
@@ -150,7 +161,7 @@ Para preencher a Tabela~\ref{tab:jalr} também foi usada a informação que as i
 
 Para implementar estas instruções os arquivos \textit{Parametros.v}, \textit{ALUControl.v}, \textit{Datapath\_MULT.v} e \textit{Control\_MULT.v} foram modificados. 
 
-\subsection{Parêmetros}
+\subsection{Parêmtros}
 \label{subsec:param}
 
 O \textit{OPCODE} de \textit{MUL} e \textit{JALR} não precisam de nenhuma adição no arquivo já que são do tipo R.
@@ -174,20 +185,6 @@ Os parâmetros para a máquina estado do multiciclo foram adicionados conforme a
 \end{figure}
 
 A operação \textit{MUL} não foi adicionada no arquivo pois o \textit{OPMULT} implementada no arquivo \textit{ALU.v} já implementa o resultado esperado para \textit{MUL}. No caso seria colocar em \textit{HI} e \textit{LO} o resultado da operação \textit{iA * iB}, sendo que em \textit{HI} estaria os 32 bits mais significativos e \textit{LO} os 32 menos significativos. Como \textit{oALUresult} recebe \textit{LO} em \textit{OPMULT} então já temos o esperado para \textit{MUL}, sendo \textit{oALUresult} nossa representação do \textit{RD}.
-
-\subsection{Bloco de Controle da ULA}
-\label{subsec:alucontrol}
-
-Conforme explicado acima sobre a operação \textit{MUL}, foi adicionado no arquivo \textit{ALUControl.v} o mapeamento da \textit{FUNMUL} para \textit{OPMULT} já que a versão de teste para \textit{OPMULT} com \textit{oALUresult} recebendo \textit{LO} já implementa a saída esperada para um \textit{OPMUL} (Figura~\ref{fig:controlfunc}). 
-
-\begin{figure}[H]
-	\flushleft
-	\includegraphics[width=1\textwidth]{controlfunc.png}
-	\caption{Mapeamento de \textit{FUNMUL} para \textit{OPMULT}.}
-	\label{fig:controlfunc}
-\end{figure}
-
-% todo : funjalr to opand ?
 
 \subsection{Caminho de dados}
 \label{subsec:datapath}
