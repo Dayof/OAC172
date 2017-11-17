@@ -384,7 +384,7 @@ always @(*)
 		3'd0: wWriteRegister <= wRtorRd;  //Normal mode
 		3'd1: wWriteRegister <= wALUZero ? 5'd31: 5'd0;     //  $ra ou $zero    1/2016
 		3'd2: wWriteRegister <= wRtorRd;    // 
-//		3'd3: wWriteRegister <= 5'd05;    //$a0 Store timer HI  // Disponivel
+		3'd3: wWriteRegister <= wRtorRd;   
 //		3'd4: wWriteRegister <= 5'd04;    //$a0 Store Random  // Disponivel
 		3'd5: wWriteRegister <= wRT;      //mfc1
 		3'd6: wWriteRegister <= wRT;      //mfc0 - feito no semestre 2013/1 para implementar a deteccao de excecoes (COP0)
@@ -399,8 +399,8 @@ always @(*)
 	case (Store)
 		3'd0: wRegWriteData <= wMemorALU;	//Normal mode
 		3'd1: wRegWriteData <= PC;			// $RA Jal
-		3'd2: wRegWriteData <= PC;     	//Store timer LO   // Disponivel
-//		3'd3: wRegWriteData <= RegTimerHI;	//Store timer HI   // Disponivel
+		3'd2: wRegWriteData <= PC;     	
+		3'd3: wRegWriteData <= wALUResult;
 //		3'd4: wRegWriteData <= RandInt;		//Store Random   // Disponivel
 `ifdef FPU
 		3'd5: wRegWriteData <= FP_A;		//mfc1
