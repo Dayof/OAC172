@@ -17,9 +17,7 @@
 	
 	#msg1: .asciiz "\nDigite a velocidade inicial do lancamento:  "
 	
-	arquivo: .asciiz "/home/lucas/Downloads/bmp2oac(2)/minhatela.bin"
-	
-	Vzero: .float 18 #### velocidade inicial do lancamento (decomposta posteriormente em vx e vy)
+	Vzero: .float 22 #### velocidade inicial do lancamento (decomposta posteriormente em vx e vy)
 	
 .text
 
@@ -135,35 +133,15 @@
 		li $t1, 0xff012c00
 		li $t2, 0xF8F8F8F8
 		
-		#tela:
-		#sw $t2, ($t0)
-		#addi $t0, $t0, 0x00000004
+		tela:
+		sw $t2, ($t0)
+		addi $t0, $t0, 0x00000004
 		
-		#ble $t0, $t1, tela
-		
-		la $a0,arquivo
-		li $a1,0
-		li $a2,0
-		li $v0,13
-		syscall
-		
-		move $a0,$v0
-		la $a1,0xFF000000
-		li $a2,76800
-		li $v0,14
-		syscall
-		
-		li $v0,16
-		syscall
+		ble $t0, $t1, tela
 
 		jr $ra 		# retorno main
 		
 	decompV:
-	
-		
-		
-		
-		
 		l.s $f0, Vzero
 		
 		l.s $f1, cosO
