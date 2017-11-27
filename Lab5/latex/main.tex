@@ -66,10 +66,50 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 
 \subsection{Diagrama de Blocos do Caminho de Dados}
 
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{caminho_de_dados.jpg}
+	\caption{Diagrama de Blocos do Caminho de Dados.}
+	\label{fig:pfunct}
+\end{figure}
+
 \subsection{Tabela Verdade dos Sinais de Controle}
 
 \section{Exercício 3. Análise unidades de Hazard e Forward}
 \label{sec:hazardforward}
+
+A unidade de Fowarding detecta e trata os hazards que podem acontecer com instruções nas etapas EX e WB, mais especificamente em operações que tentam ler registradores que estão sendo modificados por instruções em etapas posteriores do processador.
+
+ add \$t0, \$t1, \$t2 
+ add \$t3, \$t0, \$t0 
+
+é um exemplo e
+
+ add \$t0, \$t1, \$t2 
+ sub \$s0, \$s1, \$s2 
+ add \$s0, \$t0, \$t0 
+
+também.
+
+A unidade de Hazard implementada trata os casos:
+
+-  Desvio condicional (beq, bne), que dão flush na etapa anterior para que aconteça o desvio.
+
+ bne \$t0, \$t1, LABEL
+ add \$t0, \$t1, \$t2
+
+- jr, quando uma instrução em EX tiver o registrador destino igual ao Rs da instrução em ID ou a instrução em Mem for escrever em \$ra.
+
+ addi \$ra, \$ra, 0x0AC 
+ jr \$ra 
+
+-lw, caso padrão onde alguma instrução precisa do valor que ainda não foi modificado na memória.
+
+lw \$t0, 0 (\$t1)
+sub \$t2, \$t1, \$t1
+
+
+Esses casos foram observados na ISA implementada.
 
 \section{Exercício 4. Teste do funcionamento das instruções da \textit{ISA} }
 \label{sec:testeisa}
