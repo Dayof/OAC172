@@ -68,36 +68,34 @@ Todos os códigos escritos neste laboratório podem ser encontrados no repositó
 
 \begin{figure}[H]
 	\flushleft
-<<<<<<< HEAD
-	\includegraphics[width=1\textwidth]{caminho_de_dados.jpg}
-	\caption{Diagrama de Blocos do Caminho de Dados.}
-=======
 	\includegraphics[width=1\textwidth]{pipe.jpg}
-	\caption{Caminho de dados - Pipeline.}
->>>>>>> f71af385d19a66a4fd140ed8b4f6af5a95a2f933
-	\label{fig:pfunct}
+	\caption{Diagrama de Blocos do Caminho de Dados.}
+	\label{fig:pipe}
 \end{figure}
 
 \subsection{Tabela Verdade dos Sinais de Controle}
 
 \begin{figure}[H]
 	\flushleft
-	\includegraphics[width=1\textwidth]{ex.png}
-	\caption{Controle da execução.}
-	\label{fig:pfunct}
+	\includegraphics[width=1\textwidth]{escrita.png}
+	\caption{Sinais de controle de Dados.}
+	\label{fig:escrita}
 \end{figure}
+
+\begin{figure}[H]
+	\flushleft
+	\includegraphics[width=1\textwidth]{ex.png}
+	\caption{Sinais de controle de Dados.}
+	\label{fig:ex}
+\end{figure}
+
 \begin{figure}[H]
 	\flushleft
 	\includegraphics[width=1\textwidth]{mem.png}
-	\caption{Controle de acesso a memória.}
-	\label{fig:pfunct}
+	\caption{Sinais de controle de Dados.}
+	\label{fig:mem}
 \end{figure}
-\begin{figure}[H]
-	\flushleft
-	\includegraphics[width=1\textwidth]{escrita.png}
-	\caption{Controle de escrita.}
-	\label{fig:pfunct}
-\end{figure}
+
 \section{Exercício 3. Análise unidades de Hazard e Forward}
 \label{sec:hazardforward}
 
@@ -136,7 +134,7 @@ Esses casos foram observados na ISA implementada.
 
 \section{Exercício 4. Teste do funcionamento das instruções da \textit{ISA} }
 \label{sec:testeisa}
-Foram testadas várias instruções da ISA MIPS atraves do algoritmo teste.s . Alguns exemplos são o ADD, SUB, DIV, MULT, AND, OR...
+
 A demonstração e explicação do código estão presentes nos seguintes vídeos:
 
 \begin{itemize}
@@ -147,8 +145,6 @@ A demonstração e explicação do código estão presentes nos seguintes vídeo
 
 \section{Exercício 5. Software de lançamento de bola de canhão na \textit{FPGA}}
 \label{sec:canhao}
-
-Foi implementado o syscall 6 no algoritmo de simulação do lançamento da bola de canhão. Testes com o teclado foram excutados inserindo velocidades iniciais diferentes de lançamento.
 
 Segue a simulação da bola de canhão:
 
@@ -161,7 +157,8 @@ Segue a simulação da bola de canhão:
 As limitações observadas ao executar os cenários no cartão sd e impressas no monitor através de um cabo vga foram:
 
 \begin{itemize}
-\item A velocidade de acesso a memória do cartão SD é muito lenta comparada a leitura da memória da FPGA, por isso uma boa estratégia é copiar parte dos dados e armazenar na FPGA e após isso efetuar a exibição na tela. Isso sera muito útil no momento dos carregamentos do jogo, aumentando muito a otimzação. 
+\item 
+\item 
 \end{itemize} 
 
 Segue o vídeo dos cenários:
