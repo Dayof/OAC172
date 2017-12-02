@@ -72,7 +72,7 @@ Main:
 	slti $t4, $t3, 1		#################################
 	beq	$t4, $zero, WriteVGA	#################################
 	
-	add $t8, $zero, $t7		# T9 = ENDERECO DA SEGUNDA IMAGEM DO CARTAO
+	add $t8, $zero, $t7		# T8 = ENDERECO DA SEGUNDA IMAGEM DO CARTAO
 	add $t8, $t8, 0x00010E00	# ADICIONA A DEFASAGEM FISICA DO CARTAO SD, VARIA DE CARTAO PARA CARTAO
 	
 	sub $t7, $t7, 0x00013000	# ESPACO ENTRE OS ENDERECOS DAS IMAGENS
@@ -90,8 +90,8 @@ Main:
 	li	$t3, VGA_QTD_BYTE	#################################
 	
 	addi $t6, $t6, 1		#################################
-	slt $t7, $t6, $t5		#################################
-	beq $t7, $zero, fim		#################################
+	slt $s1, $t6, $t5		#################################
+	beq $s1, $zero, fim		#################################
 	j Maps				#################################
      
      fim:			
