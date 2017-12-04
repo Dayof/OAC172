@@ -31,7 +31,6 @@
 		li $v0, 16
 		syscall
 		
-	    mov:
 		# Abre o arquivo sprite
 		la $a0, f2
 		li $a1, 0
@@ -59,88 +58,6 @@
 		li $a2, 100
 		jal PrintBuffer
 		
-		# Abre o arquivo sprite
-		la $a0, f3
-		li $a1, 0
-		li $a2, 0
-		li $v0, 13
-		syscall
-		# Le o sprite para a memoria BUFFER
-		move $a0, $v0
-		la $a1, buf
-		li $a2, 5270
-		li $v0, 14
-		syscall
-		#Fecha o arquivo
-		li $v0, 16
-		syscall
-
-		la $a0, lutador
-		li $a1, 100
-		li $a2, 100
-		la $s1, salvo
-		jal PrintLutador
-		
-		la $a0, bufe
-		li $a1, 100
-		li $a2, 100
-		jal PrintBuffer
-		
-		# Abre o arquivo sprite
-		la $a0, f4
-		li $a1, 0
-		li $a2, 0
-		li $v0, 13
-		syscall
-		# Le o sprite para a memoria BUFFER
-		move $a0, $v0
-		la $a1, buf
-		li $a2, 5270
-		li $v0, 14
-		syscall
-		#Fecha o arquivo
-		li $v0, 16
-		syscall
-
-		la $a0, lutador
-		li $a1, 100
-		li $a2, 100
-		la $s1, salvo
-		jal PrintLutador
-		
-		la $a0, bufe
-		li $a1, 100
-		li $a2, 100
-		jal PrintBuffer
-		
-		# Abre o arquivo sprite
-		la $a0, f5
-		li $a1, 0
-		li $a2, 0
-		li $v0, 13
-		syscall
-		# Le o sprite para a memoria BUFFER
-		move $a0, $v0
-		la $a1, buf
-		li $a2, 5270
-		li $v0, 14
-		syscall
-		#Fecha o arquivo
-		li $v0, 16
-		syscall
-
-		la $a0, lutador
-		li $a1, 100
-		li $a2, 100
-		la $s1, salvo
-		jal PrintLutador
-		
-		la $a0, bufe
-		li $a1, 100
-		li $a2, 100
-		jal PrintBuffer
-		
-		j mov
 	
 	
 	li $v0, 10 	################# exit ################
@@ -212,5 +129,5 @@ out22:	addi $t6, $t8, 320
 	move $t8, $t6
 	addi $t2, $t2, 1
 	move $t3, $zero
-	j for1
+	j for12
 out12:	jr $ra

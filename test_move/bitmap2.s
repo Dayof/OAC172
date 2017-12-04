@@ -8,6 +8,8 @@
 .data 
 SPRITE: .byte 92,49,0,0 #Altura da imagem, largura da imagem
 BUFFER: .space 5300	#Endere�o inicial do buffer
+
+
 FILE2: .asciiz "parte1.bin"
 FILE3: .asciiz "parte2.bin"
 FILE4: .asciiz "parte3.bin"
